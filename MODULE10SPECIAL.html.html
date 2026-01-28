@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 10: Special Populations & Safety</title>
+    <style>
+        /* EXACT STYLES FROM MODULE 6 */
+        body {
+            font-family: 'Calibri', 'Segoe UI', sans-serif;
+            line-height: 1.5;
+            color: #2c3e50;
+            margin: 2cm;
+            background-color: #ffffff;
+            counter-reset: chapter section figure table;
+        }
+        
+        h1 {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #1a5276;
+            text-align: center;
+            border-bottom: 3px double #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #2980b9;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #154360;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+        
+        h4 {
+            font-size: 12.5pt;
+            font-weight: bold;
+            color: #21618c;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        
+        .module-title {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #21618c;
+            margin-top: 40px;
+            border-left: 6px solid #3498db;
+            padding-left: 15px;
+        }
+        
+        .chapter-number {
+            background-color: #3498db;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        /* Lists */
+        ul, ol {
+            padding-left: 1.5em;
+            margin-bottom: 1em;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-size: 11.5pt;
+        }
+        
+        .sub-list {
+            list-style-type: lower-alpha;
+            padding-left: 2.5em;
+        }
+        
+        .drug-list {
+            columns: 2;
+            column-gap: 50px;
+            margin-top: 15px;
+        }
+        
+        .drug-list li {
+            break-inside: avoid;
+        }
+        
+        /* Special Boxes */
+        .study-format {
+            background-color: #e8f4fc;
+            border: 1px solid #aed6f1;
+            border-left: 6px solid #2e86c1;
+            padding: 20px;
+            margin-top: 30px;
+            page-break-inside: avoid;
+        }
+        
+        .clinical-pearl {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 6px solid #fdcb6e;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .warning-box {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-left: 6px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .definition-box {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-left: 6px solid #17a2b8;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        /* Tables */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 11pt;
+        }
+        
+        .comparison-table th {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #1a5276;
+        }
+        
+        .comparison-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        /* Page Layout */
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .footer-note {
+            font-size: 9pt;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 10px;
+        }
+        
+        /* Drug Template - EXACT MATCH */
+        .drug-template {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+            page-break-inside: avoid;
+        }
+        
+        .drug-template h4 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        
+        .template-section {
+            margin-bottom: 15px;
+        }
+        
+        .template-label {
+            font-weight: bold;
+            color: #2980b9;
+            display: inline-block;
+            width: 180px;
+        }
+        
+        /* Emoji Styling */
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        /* Print Specific */
+        @media print {
+            body {
+                margin: 1.5cm;
+                font-size: 11pt;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            .no-print {
+                display: none;
+            }
+            
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        
+        /* Learning Objectives */
+        .learning-objectives {
+            background-color: #e8f6f3;
+            border: 1px solid #a2d9ce;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .objective-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .objective-list li:before {
+            content: "✓ ";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* Module 10 Specific Colors */
+        .pregnancy-pink {
+            color: #e84393;
+            font-weight: bold;
+        }
+        
+        .pediatric-blue {
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .geriatric-gold {
+            color: #f39c12;
+            font-weight: bold;
+        }
+        
+        .safety-red {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .monitoring-green {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .storage-purple {
+            color: #8e44ad;
+            font-weight: bold;
+        }
+        
+        /* Module 10 Specific Boxes */
+        .safety-alert {
+            background-color: #f2d7d5;
+            border: 2px solid #c0392b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .pregnancy-box {
+            background-color: #fce4ec;
+            border: 2px solid #e84393;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .pediatric-box {
+            background-color: #e3f2fd;
+            border: 2px solid #3498db;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .geriatric-box {
+            background-color: #fff3e0;
+            border: 2px solid #f39c12;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .crash-cart-box {
+            background-color: #2c3e50;
+            border: 2px solid #34495e;
+            color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .storage-box {
+            background-color: #e8f8f5;
+            border: 2px solid #45b39d;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .error-box {
+            background-color: #f4ecf7;
+            border: 2px solid #8e44ad;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="module-title">
+    <span class="emoji">🟩</span> MODULE 10: SPECIAL POPULATIONS & SAFETY (HIGH-YIELD)
+    <div style="font-size: 12pt; font-weight: normal; font-style: italic; color: #7f8c8d;">
+        (Pregnancy, Pediatrics, Geriatrics, High-Risk Drugs, Medication Errors, Crash Cart Drugs, Storage)
+    </div>
+</div>
+
+<div class="learning-objectives">
+    <h3 style="color: #148f77; margin-top: 0;">📖 Learning Objectives</h3>
+    <ul class="objective-list">
+        <li>Master medication safety in pregnancy with FDA categories and safe alternatives</li>
+        <li>Understand pediatric dosing calculations and weight-based formulas</li>
+        <li>Learn geriatric pharmacokinetic changes and dose adjustments</li>
+        <li>Recognize and manage high-risk medications requiring therapeutic drug monitoring</li>
+        <li>Identify and prevent common fatal medication errors</li>
+        <li>Navigate emergency crash cart medications and their indications</li>
+        <li>Understand storage requirements and stability of emergency injectables</li>
+        <li>Apply medication safety principles across all special populations</li>
+    </ul>
+</div>
+
+<!-- INTRODUCTION -->
+<h2><span class="chapter-number">0</span> Introduction: Medication Safety Across Lifespan</h2>
+
+<div class="warning-box">
+    <strong>⚠️ MEDICATION SAFETY IS NON-NEGOTIABLE:</strong> 7,000-9,000 Americans die each year from medication errors. Pediatric dosing errors are 3x more likely. Geriatric patients experience 2x more adverse drug reactions. Pregnancy requires dual consideration of mother and fetus. Know your high-risk drugs, calculate carefully, and double-check everything.
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 Core Concept:</strong> Special population pharmacology follows key principles:<br>
+    1. <strong class="pregnancy-pink">Pregnancy:</strong> FDA categories, placental transfer, fetal effects, breastfeeding compatibility<br>
+    2. <strong class="pediatric-blue">Pediatrics:</strong> Weight-based dosing, developmental pharmacology, formulation considerations<br>
+    3. <strong class="geriatric-gold">Geriatrics:</strong> Pharmacokinetic changes (ADME), polypharmacy, increased sensitivity<br>
+    4. <strong class="safety-red">Safety:</strong> High-alert medications, error prevention, monitoring requirements<br>
+    5. <strong class="storage-purple">Storage:</strong> Stability, compatibility, beyond-use dating, emergency access<br>
+    This module synthesizes safety principles across all populations.
+</div>
+
+<!-- STUDY FORMAT -->
+<div class="study-format">
+    <h3><span class="emoji">📋</span> HOW WE WILL STUDY EACH TOPIC (FIXED TEMPLATE)</h3>
+    <p><strong>For each special population section, we will follow a consistent format:</strong></p>
+    <ol>
+        <li><strong>Physiological changes</strong> affecting drug handling</li>
+        <li><strong>Dosing principles</strong> and adjustments</li>
+        <li><strong>High-risk medications</strong> specific to population</li>
+        <li><strong>Safe alternatives</strong> when possible</li>
+        <li><strong>Monitoring requirements</strong> for safety</li>
+        <li><strong>Common errors</strong> and prevention strategies</li>
+        <li><strong>Emergency considerations</strong> for critical situations</li>
+        <li><strong>Clinical pearls</strong> for safe practice</li>
+    </ol>
+</div>
+
+<!-- CHAPTER 1: PREGNANCY PHARMACOLOGY -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">1</span> Pregnancy Pharmacology</h2>
+
+<div class="definition-box">
+    <strong>FDA Pregnancy Categories (Old System - Still Relevant):</strong><br>
+    • <strong>Category A:</strong> Controlled studies show no risk (rare: levothyroxine)<br>
+    • <strong>Category B:</strong> Animal studies show no risk, no human studies OR animal studies show risk but human studies show no risk (most antibiotics)<br>
+    • <strong>Category C:</strong> Animal studies show risk, no human studies OR no studies in animals or humans (many emergency drugs)<br>
+    • <strong>Category D:</strong> Evidence of human fetal risk, but benefits may outweigh risks (phenytoin, lithium)<br>
+    • <strong>Category X:</strong> Contraindicated in pregnancy (warfarin, isotretinoin, methotrexate)
+</div>
+
+<h3>1.1 Physiological Changes in Pregnancy</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 25%;">System</th>
+            <th>Changes</th>
+            <th>Pharmacokinetic Impact</th>
+            <th>Clinical Implications</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Cardiovascular</strong></td>
+            <td>↑ Blood volume (45%), ↑ CO (30-50%), ↓ SVR</td>
+            <td>Increased Vd for water-soluble drugs, potential underdosing</td>
+            <td>May need higher loading doses, monitor for hypotension</td>
+        </tr>
+        <tr>
+            <td><strong>Renal</strong></td>
+            <td>↑ GFR (50%), ↑ renal blood flow</td>
+            <td>Increased clearance of renally excreted drugs</td>
+            <td>May need increased dose/frequency of antibiotics, LMWH</td>
+        </tr>
+        <tr>
+            <td><strong>Hepatic</strong></td>
+            <td>↑ CYP3A4, ↑ CYP2D6, ↓ CYP1A2 activity</td>
+            <td>Altered metabolism of specific drug substrates</td>
+            <td>Variable effect - some drugs cleared faster, some slower</td>
+        </tr>
+        <tr>
+            <td><strong>Gastrointestinal</strong></td>
+            <td>↓ Gastric emptying, ↓ gastric acid</td>
+            <td>Delayed absorption of oral drugs, especially in labor</td>
+            <td>IV route preferred in active labor, consider delayed onset</td>
+        </tr>
+        <tr>
+            <td><strong>Respiratory</strong></td>
+            <td>↑ Minute ventilation (50%), ↓ FRC</td>
+            <td>Faster induction with inhalational agents</td>
+            <td>Rapid desaturation during apnea, pre-oxygenate well</td>
+        </tr>
+        <tr>
+            <td><strong>Placental</strong></td>
+            <td>Transfer depends on lipid solubility, MW, protein binding</td>
+            <td>Most drugs cross placenta to some extent</td>
+            <td>Consider fetal effects, especially 1st trimester organogenesis</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="pregnancy-box">
+    <strong>🤰 EMERGENCY DRUGS IN PREGNANCY - QUICK GUIDE:</strong><br>
+    <br>
+    <strong>✅ GENERALLY SAFE (Category B/C - benefits usually outweigh risks):</strong><br>
+    • <strong class="pregnancy-pink">Analgesics:</strong> Acetaminophen (A), morphine (C), fentanyl (C)<br>
+    • <strong class="pregnancy-pink">Antibiotics:</strong> Penicillins (B), cephalosporins (B), azithromycin (B), metronidazole (B)<br>
+    • <strong class="pregnancy-pink">Anticoagulants:</strong> Heparin/LMWH (B - doesn't cross placenta)<br>
+    • <strong class="pregnancy-pink">Antihypertensives:</strong> Labetalol (C), hydralazine (C), nifedipine (C)<br>
+    • <strong class="pregnancy-pink">RSI drugs:</strong> Succinylcholine (C), rocuronium (B), ketamine (B), etomidate (C)<br>
+    <br>
+    <strong>⚠️ USE WITH CAUTION/RISK-BENEFIT (Category D):</strong><br>
+    • <strong class="pregnancy-pink">Anticonvulsants:</strong> Phenytoin (D), valproate (D) - teratogenic<br>
+    • <strong class="pregnancy-pink">ACE inhibitors/ARBs:</strong> (D) - 2nd/3rd trimester: fetal renal failure<br>
+    • <strong class="pregnancy-pink">Warfarin:</strong> (D/X) - teratogenic (1st trimester), fetal hemorrhage (3rd)<br>
+    <br>
+    <strong>❌ GENERALLY AVOID (Category X/Contraindicated):</strong><br>
+    • <strong class="pregnancy-pink">Methotrexate</strong> (X) - highly teratogenic<br>
+    • <strong class="pregnancy-pink">Statins</strong> (X) - theoretical risk, usually avoided<br>
+    • <strong class="pregnancy-pink">Misoprostol</strong> (X) - unless for induction/PPH<br>
+    • <strong class="pregnancy-pink">Fluoroquinolones</strong> (C) - avoided due to cartilage toxicity in animals
+</div>
+
+<h3>1.2 High-Risk Scenarios in Pregnancy</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 25%;">Emergency Condition</th>
+            <th>First-line Treatment</th>
+            <th>Alternatives</th>
+            <th>Special Considerations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Status epilepticus</strong></td>
+            <td>Lorazepam 4 mg IV<br>Levetiracetam load</td>
+            <td>Phenytoin/fosphenytoin (D)<br>Valproate (D) - avoid if possible</td>
+            <td>Maternal seizures more harmful to fetus than most drugs<br>Monitor fetal heart rate</td>
+        </tr>
+        <tr>
+            <td><strong>Severe hypertension (preeclampsia)</strong></td>
+            <td>Labetalol 20 mg IV, then 40-80 mg q10min<br>Max 300 mg</td>
+            <td>Hydralazine 5-10 mg IV q20min<br>Nifedipine XL 10-20 mg PO</td>
+            <td>Avoid rapid drops in BP (placental hypoperfusion)<br>Target diastolic 90-100 mmHg</td>
+        </tr>
+        <tr>
+            <td><strong>Anaphylaxis</strong></td>
+            <td>Epinephrine 0.3-0.5 mg IM<br>Same dose as non-pregnant</td>
+            <td>Diphenhydramine 25-50 mg IV<br>Ranitidine 50 mg IV</td>
+            <td>Epinephrine does NOT cause placental vasoconstriction at anaphylaxis doses<br>Left lateral position</td>
+        </tr>
+        <tr>
+            <td><strong>Cardiac arrest</strong></td>
+            <td>Standard ACLS drugs<br>Manual left uterine displacement</td>
+            <td>Perimortem C-section if >20 weeks and no ROSC in 4 min</td>
+            <td>Gestational age >20 weeks → manual LUD during CPR<br>Early consideration of perimortem C-section</td>
+        </tr>
+        <tr>
+            <td><strong>Asthma exacerbation</strong></td>
+            <td>Same as non-pregnant<br>Albuterol, steroids, magnesium</td>
+            <td>Theophylline (C) - 2nd line<br>Epinephrine for severe cases</td>
+            <td>Uncontrolled asthma worse for fetus than medications<br>Goal SpO₂ >95%, PaCO₂ 30-32 mmHg</td>
+        </tr>
+        <tr>
+            <td><strong>Sepsis</strong></td>
+            <td>Broad-spectrum antibiotics within 1 hour<br>Piperacillin-tazobactam (B)</td>
+            <td>Meropenem (B), vancomycin (B)<br>Gentamicin (D) - monitor levels</td>
+            <td>Maternal sepsis mortality 5x higher in pregnancy<br>Early antibiotics, source control</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- CHAPTER 2: PEDIATRIC PHARMACOLOGY -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">2</span> Pediatric Pharmacology</h2>
+
+<div class="definition-box">
+    <strong>Pediatric Age Categories:</strong><br>
+    • <strong>Preterm neonate:</strong> <37 weeks gestational age<br>
+    • <strong>Term neonate:</strong> 0-28 days<br>
+    • <strong>Infant:</strong> 1 month - 1 year<br>
+    • <strong>Toddler:</strong> 1-3 years<br>
+    • <strong>Preschool:</strong> 3-5 years<br>
+    • <strong>School-age:</strong> 6-12 years<br>
+    • <strong>Adolescent:</strong> 13-18 years<br>
+    • <strong>Adult dosing:</strong> Usually starts at 12 years or >40 kg
+</div>
+
+<h3>2.1 Developmental Pharmacology Principles</h3>
+
+<div class="pediatric-box">
+    <strong>👶 PEDIATRIC DOSING RULES - NEVER GUESS, ALWAYS CALCULATE:</strong><br>
+    <br>
+    <strong>1. WEIGHT-BASED DOSING (MOST ACCURATE):</strong><br>
+    • Dose (mg) = Weight (kg) × Dose (mg/kg)<br>
+    • <strong class="pediatric-blue">Example:</strong> Amoxicillin 50 mg/kg/day = 15 kg child × 50 mg/kg = 750 mg/day<br>
+    • Use ACTUAL weight for emergency drugs, IDEAL body weight for some drugs<br>
+    <br>
+    <strong>2. BODY SURFACE AREA (BSA) DOSING (FOR CHEMOTHERAPY):</strong><br>
+    • BSA (m²) = √[Height (cm) × Weight (kg) / 3600]<br>
+    • Dose (mg) = BSA (m²) × Dose (mg/m²)<br>
+    • Most accurate but complex - use calculator<br>
+    <br>
+    <strong>3. AGE-BASED DOSING (WHEN WEIGHT UNKNOWN):</strong><br>
+    • Use Broselow tape or length-based system<br>
+    • Formulas: Weight (kg) = (Age in years × 2) + 8 (for 1-10 years)<br>
+    • <strong>LAST RESORT</strong> - measure/weigh if possible<br>
+    <br>
+    <strong>4. MAXIMUM ADULT DOSE RULE:</strong><br>
+    • Pediatric dose should not exceed adult dose<br>
+    • <strong class="pediatric-blue">Example:</strong> Acetaminophen max 1g/dose adult → child dose capped at 1g even if weight-based >1g
+</div>
+
+<h3>2.2 Common Pediatric Emergency Drugs & Doses</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">Drug</th>
+            <th>Indication</th>
+            <th>Neonatal Dose (0-28 days)</th>
+            <th>Infant/Child Dose</th>
+            <th>Special Considerations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Epinephrine</strong><br>(1:10,000)</td>
+            <td>Cardiac arrest, anaphylaxis</td>
+            <td>0.01 mg/kg IV/IO<br>(0.1 mL/kg of 0.1 mg/mL)</td>
+            <td>0.01 mg/kg IV/IO q3-5min<br>0.01 mg/kg IM (1:1,000) for anaphylaxis</td>
+            <td>Different concentrations:<br>1:10,000 (0.1 mg/mL) for IV<br>1:1,000 (1 mg/mL) for IM/ET</td>
+        </tr>
+        <tr>
+            <td><strong>Amiodarone</strong></td>
+            <td>VF/pulseless VT, stable VT</td>
+            <td>5 mg/kg IV/IO load<br>(limited data)</td>
+            <td>5 mg/kg IV/IO load (max 300 mg)<br>Repeat 5 mg/kg (max 15 mg/kg/day)</td>
+            <td>Prolongs QT - monitor ECG<br>Use lidocaine if congenital LQTS</td>
+        </tr>
+        <tr>
+            <td><strong>Atropine</strong></td>
+            <td>Symptomatic bradycardia</td>
+            <td>0.02 mg/kg IV/IO/ET<br>(min 0.1 mg, max 0.5 mg)</td>
+            <td>0.02 mg/kg IV/IO/ET<br>(min 0.1 mg, max 1 mg child, 2 mg adolescent)</td>
+            <td>Minimum dose 0.1 mg (avoid paradoxical bradycardia)<br>ET dose: 0.04-0.06 mg/kg</td>
+        </tr>
+        <tr>
+            <td><strong>Ketamine</strong></td>
+            <td>RSI, procedural sedation</td>
+            <td>1-2 mg/kg IV (limited data)</td>
+            <td>1-2 mg/kg IV RSI<br>4-5 mg/kg IM if no IV<br>0.5-1 mg/kg IV for sedation</td>
+            <td>Pre-treat with atropine for secretions<br>Consider midazolam for emergence</td>
+        </tr>
+        <tr>
+            <td><strong>Ceftriaxone</strong></td>
+            <td>Meningitis, severe infection</td>
+            <td>50 mg/kg IV q24h<br>100 mg/kg load for meningitis</td>
+            <td>50-75 mg/kg IV q24h (max 2 g)<br>100 mg/kg load then 50 mg/kg q12h for meningitis</td>
+            <td>Avoid with calcium-containing solutions (precipitate)<br>Once daily dosing OK for most indications</td>
+        </tr>
+        <tr>
+            <td><strong>Dexamethasone</strong></td>
+            <td>Croup, meningitis adjunct</td>
+            <td>0.15 mg/kg IV/IM/PO</td>
+            <td>0.15 mg/kg IV/IM/PO (max 10 mg)<br>Croup: 0.6 mg/kg PO (max 10 mg)</td>
+            <td>For meningitis: give with or before antibiotics<br>For croup: single dose usually sufficient</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>2.3 Pediatric Resuscitation Drugs - Quick Reference</h3>
+
+<div class="crash-cart-box">
+    <strong>🧒 PEDIATRIC ADVANCED LIFE SUPPORT (PALS) - KEY DRUGS:</strong><br>
+    <br>
+    <strong>CARDIAC ARREST (VF/pVT):</strong><br>
+    1. <strong class="pediatric-blue">Epinephrine:</strong> 0.01 mg/kg IV/IO (0.1 mL/kg of 0.1 mg/mL) q3-5min<br>
+    2. <strong class="pediatric-blue">Amiodarone:</strong> 5 mg/kg IV/IO or <strong class="pediatric-blue">Lidocaine:</strong> 1 mg/kg IV/IO<br>
+    3. <strong class="pediatric-blue">Magnesium sulfate</strong> (for torsades): 25-50 mg/kg IV/IO (max 2 g)<br>
+    <br>
+    <strong>BRADYCARDIA (Symptomatic):</strong><br>
+    1. <strong class="pediatric-blue">Epinephrine</strong> IV/IO: 0.01 mg/kg (0.1 mL/kg of 0.1 mg/mL)<br>
+    2. <strong class="pediatric-blue">Atropine:</strong> 0.02 mg/kg IV/IO (min 0.1 mg, max 1 mg child/2 mg adolescent)<br>
+    3. <strong class="pediatric-blue">Dopamine</strong> infusion: 2-20 mcg/kg/min<br>
+    <br>
+    <strong>TACHYCARDIA (With pulses):</strong><br>
+    • <strong class="pediatric-blue">Adenosine</strong> (SVT): 0.1 mg/kg rapid IV push (max 6 mg), then 0.2 mg/kg (max 12 mg)<br>
+    • <strong class="pediatric-blue">Amiodarone</strong> (stable VT): 5 mg/kg over 20-60 min<br>
+    • <strong class="pediatric-blue">Procainamide</strong> (stable VT): 15 mg/kg over 30-60 min (max single dose 17 mg/kg)<br>
+    <br>
+    <strong>STATUS EPILEPTICUS:</strong><br>
+    1. <strong class="pediatric-blue">Lorazepam:</strong> 0.1 mg/kg IV (max 4 mg)<br>
+    2. <strong class="pediatric-blue">Midazolam:</strong> 0.1 mg/kg IV or 0.2 mg/kg IM<br>
+    3. <strong class="pediatric-blue">Fosphenytoin:</strong> 20 mg PE/kg IV/IM<br>
+    4. <strong class="pediatric-blue">Levetiracetam:</strong> 60 mg/kg IV (max 4500 mg)
+</div>
+
+<!-- CHAPTER 3: GERIATRIC PHARMACOLOGY -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">3</span> Geriatric Pharmacology</h2>
+
+<div class="definition-box">
+    <strong>Beers Criteria:</strong> A list of potentially inappropriate medications for older adults (≥65 years) that should generally be avoided due to increased risk of adverse drug events. Examples: benzodiazepines, anticholinergics, meperidine, sliding scale insulin.
+</div>
+
+<h3>3.1 Age-Related Pharmacokinetic Changes (ADME)</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">Process</th>
+            <th>Age-Related Changes</th>
+            <th>Effect on Drug Handling</th>
+            <th>Clinical Implications</th>
+            <th>Commonly Affected Drugs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Absorption</strong></td>
+            <td>↓ Gastric acid, ↓ GI blood flow, ↓ motility</td>
+            <td>Variable - some drugs absorbed slower, some faster</td>
+            <td>Delayed onset, potential for erratic absorption</td>
+            <td>Levothyroxine, digoxin, iron</td>
+        </tr>
+        <tr>
+            <td><strong>Distribution</strong></td>
+            <td>↑ Body fat %, ↓ Total body water, ↓ Muscle mass, ↓ Albumin</td>
+            <td>Lipophilic drugs: ↑ Vd, ↑ half-life<br>Water-soluble: ↓ Vd, ↑ initial concentration<br>Protein-bound: ↑ free fraction</td>
+            <td>Lipophilic: prolonged effect<br>Water-soluble: higher initial levels<br>Highly protein-bound: increased effect</td>
+            <td>Benzodiazepines, opioids (lipophilic)<br>Alcohol, digoxin (water-soluble)<br>Warfarin, phenytoin (protein-bound)</td>
+        </tr>
+        <tr>
+            <td><strong>Metabolism</strong></td>
+            <td>↓ Liver mass, ↓ hepatic blood flow, variable CYP activity</td>
+            <td>↓ Phase I metabolism (oxidation), preserved Phase II (conjugation)</td>
+            <td>Prolonged half-life of hepatically metabolized drugs</td>
+            <td>Benzodiazepines, opioids, TCAs, theophylline</td>
+        </tr>
+        <tr>
+            <td><strong>Excretion</strong></td>
+            <td>↓ Renal blood flow, ↓ GFR, ↓ tubular function</td>
+            <td>↓ Clearance of renally excreted drugs</td>
+            <td>Accumulation, toxicity unless dose adjusted</td>
+            <td>Digoxin, aminoglycosides, vancomycin, lithium, gabapentin</td>
+        </tr>
+        <tr>
+            <td><strong>Sensitivity</strong></td>
+            <td>Altered receptor sensitivity, ↓ homeostatic reserve</td>
+            <td>Increased response to some drugs at lower concentrations</td>
+            <td>Enhanced effects, increased side effects</td>
+            <td>Benzodiazepines, opioids, warfarin, antihypertensives</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="geriatric-box">
+    <strong>👵 GERIATRIC PRESCRIBING PRINCIPLES - "START LOW, GO SLOW":</strong><br>
+    <br>
+    <strong>1. DOSE ADJUSTMENT RULES:</strong><br>
+    • <strong class="geriatric-gold">Renally cleared drugs:</strong> Use Cockcroft-Gault or MDRD for CrCl<br>
+    &nbsp;&nbsp;• CrCl = [(140 - age) × weight (kg)] / [72 × SCr] (× 0.85 if female)<br>
+    • <strong class="geriatric-gold">Initial doses:</strong> 25-50% of adult dose for many drugs<br>
+    • <strong class="geriatric-gold">Titration:</strong> Increase slowly with longer intervals between changes<br>
+    <br>
+    <strong>2. HIGH-RISK DRUGS IN ELDERLY (Beers Criteria):</strong><br>
+    • <strong class="safety-red">Benzodiazepines:</strong> Increased fall risk, delirium - avoid especially long-acting<br>
+    • <strong class="safety-red">Anticholinergics:</strong> Diphenhydramine, oxybutynin - delirium, dry mouth, constipation<br>
+    • <strong class="safety-red">Antipsychotics:</strong> Black box warning for dementia-related psychosis (increased mortality)<br>
+    • <strong class="safety-red">NSAIDs:</strong> Increased GI bleed, renal impairment, heart failure exacerbation<br>
+    • <strong class="safety-red">Sulfonylureas:</strong> Glyburide - prolonged hypoglycemia<br>
+    <br>
+    <strong>3. POLYPHARMACY REDUCTION STRATEGIES:</strong><br>
+    • Regular medication review (brown bag review)<br>
+    • Consider deprescribing unnecessary medications<br>
+    • Use one drug for multiple conditions when possible<br>
+    • Avoid prescribing cascades (treating side effects with more drugs)
+</div>
+
+<h3>3.2 Emergency Drug Adjustments in Geriatrics</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">Drug Class</th>
+            <th>Geriatric Adjustment</th>
+            <th>Rationale</th>
+            <th>Monitoring</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Opioids</strong><br>(morphine, fentanyl)</td>
+            <td>25-50% of usual adult dose<br>Increase interval (q6-8h → q8-12h)</td>
+            <td>Increased sensitivity, decreased clearance, respiratory depression risk</td>
+            <td>Respiratory rate, sedation scale, pain score<br>Watch for delirium</td>
+        </tr>
+        <tr>
+            <td><strong>Benzodiazepines</strong><br>(midazolam, lorazepam)</td>
+            <td>50% reduction in dose<br>Avoid unless absolutely necessary</td>
+            <td>Increased sensitivity, prolonged half-life, delirium risk</td>
+            <td>Sedation, confusion, respiratory rate<br>Consider alternatives (dexmedetomidine)</td>
+        </tr>
+        <tr>
+            <td><strong>Anticoagulants</strong><br>(LMWH, DOACs)</td>
+            <td>Dose adjust for renal function<br>Consider reduced doses</td>
+            <td>Decreased renal clearance, increased bleeding risk</td>
+            <td>Renal function, bleeding signs, anti-Xa levels for LMWH</td>
+        </tr>
+        <tr>
+            <td><strong>Antibiotics</strong><br>(aminoglycosides, vancomycin)</td>
+            <td>Dose adjust for renal function<br>Extended dosing intervals</td>
+            <td>Decreased renal clearance, accumulation, toxicity</td>
+            <td>Serum creatinine, drug levels, hearing assessment</td>
+        </tr>
+        <tr>
+            <td><strong>Sedative-hypnotics</strong><br>(propofol, etomidate)</td>
+            <td>Reduce dose by 30-50%<br>Give slowly over 2-3 minutes</td>
+            <td>Increased sensitivity, hemodynamic instability</td>
+            <td>BP, heart rate, level of sedation<br>Have vasopressors ready</td>
+        </tr>
+        <tr>
+            <td><strong>Antipsychotics</strong><br>(haloperidol, olanzapine)</td>
+            <td>Low doses (haloperidol 0.5-1 mg)<br>Avoid in dementia if possible</td>
+            <td>Increased sensitivity, QTc prolongation, extrapyramidal symptoms</td>
+            <td>ECG (QTc), EPS symptoms, sedation<br>Black box warning for dementia</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- CHAPTER 4: HIGH-RISK DRUGS & MONITORING -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">4</span> High-Risk Drugs & Monitoring</h2>
+
+<div class="safety-alert">
+    <strong>🚨 INSTITUTE FOR SAFE MEDICATION PRACTICES (ISMP) HIGH-ALERT MEDICATIONS:</strong><br>
+    • Adrenergic agonists (epinephrine, norepinephrine)<br>
+    • Adrenergic antagonists (beta-blockers)<br>
+    • Antiarrhythmics (amiodarone, lidocaine)<br>
+    • Anticoagulants (heparin, warfarin, DOACs)<br>
+    • Chemotherapeutic agents<br>
+    • Concentrated electrolytes (KCl, MgSO₄, NaCl >0.9%)<br>
+    • Insulin and oral hypoglycemics<br>
+    • Opioids (all formulations)<br>
+    • Neuromuscular blocking agents<br>
+    • Moderate sedation agents (propofol, midazolam)<br>
+    • Parenteral nutrition<br>
+    • Look-alike/sound-alike drugs
+</div>
+
+<h3>4.1 Therapeutic Drug Monitoring (TDM) Requirements</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 15%;">Drug</th>
+            <th>Therapeutic Range</th>
+            <th>Toxic Level</th>
+            <th>Timing of Levels</th>
+            <th>Clinical Implications</th>
+            <th>Dose Adjustment Factors</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Vancomycin</strong></td>
+            <td>Trough: 10-20 mg/L<br>(15-20 for pneumonia/meningitis)</td>
+            <td>Trough >20 mg/L<br>(ototoxicity, nephrotoxicity)</td>
+            <td>Trough: before 4th dose<br>Peak: not routinely needed</td>
+            <td>Nephrotoxicity (5-25%)<br>Ototoxicity (rare)</td>
+            <td>Renal function, weight, age<br>Loading dose: 25-30 mg/kg</td>
+        </tr>
+        <tr>
+            <td><strong>Gentamicin</strong><br>(once daily)</td>
+            <td>Peak: not needed for OD<br>Trough: <1 mg/L</td>
+            <td>Trough >2 mg/L<br>Peak >12 mg/L (traditional)</td>
+            <td>Trough: before 2nd or 3rd dose</td>
+            <td>Nephrotoxicity (5-25%)<br>Ototoxicity (2-25%)</td>
+            <td>Renal function, weight<br>Dose: 5-7 mg/kg once daily</td>
+        </tr>
+        <tr>
+            <td><strong>Phenytoin</strong></td>
+            <td>Total: 10-20 mg/L<br>Free: 1-2 mg/L</td>
+            <td>Total >20 mg/L<br>(nystagmus >20, ataxia >30)</td>
+            <td>Trough, at steady state (5-7 days after dose change)</td>
+            <td>CNS toxicity, gingival hyperplasia<br>Rash, blood dyscrasias</td>
+            <td>Albumin, renal/hepatic function<br>Nonlinear kinetics</td>
+        </tr>
+        <tr>
+            <td><strong>Digoxin</strong></td>
+            <td>0.5-0.9 ng/mL<br>(HF: 0.5-0.8, AF: 0.8-1.2)</td>
+            <td>>2.0 ng/mL<br>(toxic at lower levels with hypokalemia)</td>
+            <td>Trough, at least 6h after last dose<br>At steady state (7-14 days)</td>
+            <td>Nausea, arrhythmias, visual changes<br>Increased mortality if >1.2</td>
+            <td>Renal function, electrolytes (K⁺, Mg²⁺, Ca²⁺)<br>Drug interactions</td>
+        </tr>
+        <tr>
+            <td><strong>Lithium</strong></td>
+            <td>Acute mania: 0.8-1.2 mEq/L<br>Maintenance: 0.6-0.8 mEq/L</td>
+            <td>>1.5 mEq/L (mild)<br>>2.0 mEq/L (severe)</td>
+            <td>Trough, 12h after last dose<br>Weekly initially, then q3-6mo</td>
+            <td>Neurotoxicity, nephrogenic DI, hypothyroidism<br>Teratogenicity (1st trimester)</td>
+            <td>Renal function, sodium, hydration status<br>NSAIDs, diuretics, ACEIs</td>
+        </tr>
+        <tr>
+            <td><strong>Theophylline</strong></td>
+            <td>5-15 mcg/mL<br>(asthma: 10-20)</td>
+            <td>>20 mcg/mL<br>(seizures >40)</td>
+            <td>Trough, at steady state (2-3 days after dose change)</td>
+            <td>Nausea, tachycardia, seizures<br>Narrow therapeutic index</td>
+            <td>Smoking, liver disease, drug interactions<br>Age (↓ clearance in elderly)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>4.2 Narrow Therapeutic Index Drugs</h3>
+
+<div class="error-box">
+    <strong>💊 NARROW THERAPEUTIC INDEX (NTI) DRUGS - SMALL MARGIN FOR ERROR:</strong><br>
+    <br>
+    <strong>DEFINITION:</strong> Drugs where small changes in dose or blood concentration can lead to serious therapeutic failures or adverse effects.<br>
+    <br>
+    <strong>COMMON NTI DRUGS:</strong><br>
+    1. <strong class="safety-red">Warfarin</strong> (INR target 2-3, bleeding risk if >4.5)<br>
+    2. <strong class="safety-red">Digoxin</strong> (therapeutic 0.5-0.9, toxic >2.0 ng/mL)<br>
+    3. <strong class="safety-red">Lithium</strong> (therapeutic 0.6-1.2, toxic >1.5 mEq/L)<br>
+    4. <strong class="safety-red">Phenytoin</strong> (nonlinear kinetics, small changes cause big level changes)<br>
+    5. <strong class="safety-red">Theophylline</strong> (therapeutic 5-15, toxic >20 mcg/mL)<br>
+    6. <strong class="safety-red">Cyclosporine/tacrolimus</strong> (transplant rejection vs toxicity)<br>
+    7. <strong class="safety-red">Aminoglycosides</strong> (nephro/ototoxicity with small overdose)<br>
+    <br>
+    <strong>SAFETY MEASURES FOR NTI DRUGS:</strong><br>
+    • Double-check calculations and doses<br>
+    • Therapeutic drug monitoring (TDM)<br>
+    • Patient education about adherence and symptoms<br>
+    • Avoid automatic substitution (brand/generic)<br>
+    • Clear communication between prescribers<br>
+    • Computerized alerts for interactions
+</div>
+
+<!-- CHAPTER 5: COMMON FATAL MEDICATION ERRORS -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">5</span> Common Fatal Medication Errors</h2>
+
+<div class="warning-box">
+    <strong>⚠️ "NEVER EVENTS" IN MEDICATION SAFETY:</strong><br>
+    • Wrong route administration (IV push vs IV infusion)<br>
+    • Look-alike/sound-alike drug confusion<br>
+    • Tenfold dosing errors (decimal point errors)<br>
+    • Wrong patient, wrong drug, wrong dose, wrong route, wrong time<br>
+    • High-risk drug administration without monitoring<br>
+    • Failure to check allergies<br>
+    • Unlabeled syringes or containers
+</div>
+
+<h3>5.1 Top 10 Most Dangerous Medication Errors</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 15%;">Error Type</th>
+            <th>Common Examples</th>
+            <th>Potential Consequences</th>
+            <th>Prevention Strategies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Wrong Route</strong></td>
+            <td>• Vincristine IT instead of IV (fatal)<br>• IV potassium undiluted/rapid push<br>• IM/SC drugs given IV</td>
+            <td>Neurotoxicity, cardiac arrest, tissue necrosis, death</td>
+            <td>• Route-specific connectors (Luer-lock prevention)<br>• Clear labeling<br>• Double-check before administration</td>
+        </tr>
+        <tr>
+            <td><strong>Look-alike/Sound-alike</strong></td>
+            <td>• Hydralazine/hydrOXYzine<br>• Insulin/Innohep (tinzaparin)<br>• Lamotrigine/lamivudine/lomitapide</td>
+            <td>Wrong therapy, toxicity, treatment failure</td>
+            <td>• Tall man lettering (hydrALAzine/hydrOXYzine)<br>• Separate storage<br>• Read back orders</td>
+        </tr>
+        <tr>
+            <td><strong>Tenfold Errors</strong></td>
+            <td>• Morphine 10 mg vs 1 mg<br>• Insulin units (U100 vs U500)<br>• Pediatric decimal errors</td>
+            <td>Overdose, respiratory depression, hypoglycemia, death</td>
+            <td>• Leading zero (0.5 mg, not .5 mg)<br>• No trailing zero (5 mg, not 5.0 mg)<br>• Weight-based dose calculators</td>
+        </tr>
+        <tr>
+            <td><strong>Concentration Confusion</strong></td>
+            <td>• Epinephrine 1:1,000 vs 1:10,000<br>• Heparin 1,000 vs 10,000 units/mL<br>• Lidocaine 1% vs 2%</td>
+            <td>10x overdose, cardiac arrest, toxicity</td>
+            <td>• Standardize concentrations<br>• Double-check concentration before drawing up<br>• Pre-filled syringes when possible</td>
+        </tr>
+        <tr>
+            <td><strong>IV Push vs Infusion</strong></td>
+            <td>• IV push phenytoin (cardiac arrest)<br>• Rapid IV potassium<br>• IV push magnesium</td>
+            <td>Cardiac arrest, arrhythmias, respiratory arrest</td>
+            <td>• Maximum infusion rates posted<br>• Pump programming safeguards<br>• Education on high-risk IV pushes</td>
+        </tr>
+        <tr>
+            <td><strong>Wrong Patient</strong></td>
+            <td>• Similar names in same room<br>• Wristband not checked<br>• Computer selection error</td>
+            <td>Wrong treatment, missed treatment, toxicity</td>
+            <td>• Two patient identifiers<br>• Barcode scanning<br>• Medication reconciliation</td>
+        </tr>
+        <tr>
+            <td><strong>Allergy Overlooked</strong></td>
+            <td>• Penicillin given to penicillin-allergic<br>• Contrast in shellfish allergy<br>• NSAIDs in aspirin-sensitive asthma</td>
+            <td>Anaphylaxis, death, severe reactions</td>
+            <td>• Allergy alerts in electronic records<br>• Patient verification before administration<br>• Red allergy bands</td>
+        </tr>
+        <tr>
+            <td><strong>Incorrect Timing</strong></td>
+            <td>• Insulin given without checking glucose<br>• Warfarin without checking INR<br>• Chemotherapy on wrong day</td>
+            <td>Hypoglycemia, bleeding, toxicity, treatment failure</td>
+            <td>• Protocol-driven administration<br>• Required checks before giving<br>• Computerized decision support</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>5.2 High-Risk IV Medications - Maximum Infusion Rates</h3>
+
+<div class="clinical-pearl">
+    <strong>💉 CRITICAL IV INFUSION RATES - NEVER EXCEED:</strong><br>
+    <br>
+    <strong>POTASSIUM CHLORIDE:</strong><br>
+    • Peripheral: <strong class="safety-red">10 mEq/hour</strong> (max concentration 40 mEq/L)<br>
+    • Central: <strong class="safety-red">20 mEq/hour</strong> (max concentration 200 mEq/L)<br>
+    • Cardiac monitoring required for >10 mEq/hour<br>
+    • NEVER give IV push - cardiac arrest<br>
+    <br>
+    <strong>MAGNESIUM SULFATE:</strong><br>
+    • Routine replacement: 1-2 g/hour<br>
+    • Eclampsia/pre-eclampsia: 1-2 g/hour after loading<br>
+    • Torsades/arrhythmia: 1-2 g over 5-20 min<br>
+    • Monitor: Deep tendon reflexes, respiratory rate, serum Mg<br>
+    <br>
+    <strong>PHENYTOIN/FOSPHENYTOIN:</strong><br>
+    • Phenytoin: <strong class="safety-red">50 mg/min</strong> max (cardiac monitoring)<br>
+    • Fosphenytoin: 150 mg PE/min max<br>
+    • Risk: Purple glove syndrome, cardiovascular collapse<br>
+    • Dilute in NS only (precipitates in dextrose)<br>
+    <br>
+    <strong>INSULIN:</strong><br>
+    • IV push: Only regular insulin, for hyperkalemia<br>
+    • Infusion: Usually 0.05-0.1 units/kg/hour for DKA<br>
+    • Hypoglycemia risk if rate too high<br>
+    • MUST use infusion pump, check glucose hourly<br>
+</div>
+
+<!-- CHAPTER 6: EMERGENCY CRASH CART DRUGS -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">6</span> Emergency Crash Cart Drugs</h2>
+
+<div class="definition-box">
+    <strong>Crash Cart Organization (Typically):</strong><br>
+    • <strong>Top drawer:</strong> Airway equipment (ET tubes, laryngoscopes, LMAs)<br>
+    • <strong>Second drawer:</strong> ACLS drugs (pre-filled syringes, vials)<br>
+    • <strong>Third drawer:</strong> IV supplies, tape, dressings<br>
+    • <strong>Bottom drawer:</strong> Defibrillator pads, monitoring equipment<br>
+    • <strong>Side pockets:</strong> Specialized drugs (thrombolytics, antidotes)
+</div>
+
+<h3>6.1 Standard Crash Cart Drug Inventory</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 15%;">Drug</th>
+            <th>Common Forms in Cart</th>
+            <th>Standard Adult Dose</th>
+            <th>Key Indications</th>
+            <th>Special Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Epinephrine</strong></td>
+            <td>1 mg/10 mL (1:10,000)<br>Prefilled syringes</td>
+            <td>1 mg IV/IO q3-5min</td>
+            <td>Cardiac arrest, anaphylaxis, symptomatic bradycardia</td>
+            <td>Different concentrations:<br>1:1,000 (1 mg/mL) for IM<br>1:10,000 (0.1 mg/mL) for IV</td>
+        </tr>
+        <tr>
+            <td><strong>Amiodarone</strong></td>
+            <td>300 mg/20 mL<br>150 mg/3 mL prefilled</td>
+            <td>300 mg IV/IO load,<br>150 mg repeat if needed</td>
+            <td>VF/pulseless VT, stable VT, atrial arrhythmias</td>
+            <td>Prolongs QT, incompatible with many drugs<br>Use separate line</td>
+        </tr>
+        <tr>
+            <td><strong>Atropine</strong></td>
+            <td>1 mg/10 mL<br>Prefilled syringes</td>
+            <td>1 mg IV/IO q3-5min<br>Max 3 mg total</td>
+            <td>Symptomatic bradycardia, organophosphate poisoning</td>
+            <td>Minimum dose 0.5 mg in adults (avoid paradoxical bradycardia)</td>
+        </tr>
+        <tr>
+            <td><strong>Calcium Chloride</strong></td>
+            <td>1 g/10 mL</td>
+            <td>500-1000 mg IV/IO</td>
+            <td>Hyperkalemia, calcium channel blocker overdose, hypocalcemia</td>
+            <td>Prefer calcium chloride over gluconate (3x more elemental calcium)<br>Give slowly</td>
+        </tr>
+        <tr>
+            <td><strong>Sodium Bicarbonate</strong></td>
+            <td>50 mEq/50 mL<br>Prefilled syringes</td>
+            <td>1 mEq/kg IV/IO<br>Repeat based on ABG</td>
+            <td>Severe metabolic acidosis (pH <7.1), hyperkalemia, TCA overdose</td>
+            <td>Not routine in cardiac arrest<br>Can worsen intracellular acidosis</td>
+        </tr>
+        <tr>
+            <td><strong>Lidocaine</strong></td>
+            <td>100 mg/10 mL<br>1 g/25 mL for infusion</td>
+            <td>1-1.5 mg/kg IV/IO<br>Then 1-4 mg/min infusion</td>
+            <td>VF/pVT (alternative to amiodarone), ventricular ectopy</td>
+            <td>Less effective than amiodarone for VF<br>Monitor for CNS toxicity</td>
+        </tr>
+        <tr>
+            <td><strong>Magnesium Sulfate</strong></td>
+            <td>2 g/10 mL<br>4 g/50 mL</td>
+            <td>1-2 g IV/IO over 5-20 min</td>
+            <td>Torsades de pointes, eclampsia, refractory VF/VT</td>
+            <td>For torsades: 1-2 g IV push<br>Monitor reflexes, respiratory rate</td>
+        </tr>
+        <tr>
+            <td><strong>Dopamine</strong></td>
+            <td>400 mg/5 mL<br>For dilution</td>
+            <td>2-20 mcg/kg/min infusion</td>
+            <td>Hypotension, bradycardia (chronotropic)</td>
+            <td>Different receptors at different doses:<br>>10 mcg/kg/min: alpha effects</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>6.2 Crash Cart Setup & Maintenance</h3>
+
+<div class="crash-cart-box">
+    <strong>⚡ CRASH CART STANDARDIZATION & CHECKLIST:</strong><br>
+    <br>
+    <strong>DAILY CHECKS (Nursing):</strong><br>
+    • Defibrillator: Battery charged, pads available, test shock delivered<br>
+    • Oxygen: Tank full, flowmeter working, masks available<br>
+    • Suction: Working, tubing connected, Yankauer available<br>
+    • Airway equipment: Laryngoscope blades light, ET tubes available<br>
+    • Drug box: Sealed, not expired, accessible<br>
+    <br>
+    <strong>WEEKLY/MONTHLY CHECKS (Pharmacy/Respiratory):</strong><br>
+    • Drug expiration dates (replace expired items immediately)<br>
+    • Controlled substance count and reconciliation<br>
+    • Specialty equipment: Video laryngoscope, surgical airway kit<br>
+    • Pediatric equipment and drugs (if applicable)<br>
+    • Documentation log up to date<br>
+    <br>
+    <strong>AFTER USE PROTOCOL:</strong><br>
+    1. Restock immediately after use<br>
+    2. Document all used drugs and equipment<br>
+    3. Replace controlled substances with witness<br>
+    4. Charge defibrillator<br>
+    5. Complete incident report if needed<br>
+    6. Notify pharmacy for drug replacement<br>
+    <br>
+    <strong>STANDARDIZATION BENEFITS:</strong><br>
+    • Same layout in all crash carts in institution<br>
+    • Color-coded drawers/sections<br>
+    • Pre-calculated pediatric doses (Broselow tape)<br>
+    • Quick reference guides attached<br>
+    • Regular training/drills for staff
+</div>
+
+<!-- CHAPTER 7: STORAGE & STABILITY OF INJECTABLES -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">7</span> Storage & Stability of Injectables</h2>
+
+<div class="definition-box">
+    <strong>Beyond-Use Dating (BUD):</strong> The date after which a compounded sterile preparation should not be used. Different from manufacturer expiration date. Determined based on preparation conditions, storage, and sterility considerations.
+</div>
+
+<h3>7.1 Storage Requirements for Common Emergency Drugs</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">Drug/Class</th>
+            <th>Storage Temperature</th>
+            <th>Light Sensitivity</th>
+            <th>Special Requirements</th>
+            <th>Stability After Opening/Mixing</th>
+            <th>Common Pitfalls</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Epinephrine</strong></td>
+            <td>20-25°C (room temp)<br>Do NOT refrigerate</td>
+            <td>YES - protect from light</td>
+            <td>Avoid excessive heat (>40°C)<br>Discard if brown/discolored</td>
+            <td>Single-use vial: discard after use<br>Prefilled syringe: check expiration</td>
+            <td>Degrades to adrenochrome (brown)<br>Loss of potency with time</td>
+        </tr>
+        <tr>
+            <td><strong>Nitroglycerin</strong><br>(IV, SL, spray)</td>
+            <td>20-25°C (room temp)</td>
+            <td>YES - protect from light</td>
+            <td>Volatile - keep bottle tightly closed<br>Plastic absorbs NTG - use glass</td>
+            <td>IV solution: 24 hours at room temp<br>SL tablets: unstable after bottle opened</td>
+            <td>Loss of potency in plastic containers<br>Tablets expire 3-6 months after opening</td>
+        </tr>
+        <tr>
+            <td><strong>Insulin</strong></td>
+            <td>Unopened: 2-8°C<br>Opened: 20-25°C × 28 days</td>
+            <td>YES - protect from light</td>
+            <td>Do NOT freeze<br>Discard if cloudy/precipitate</td>
+            <td>Vial: 28 days room temp after opening<br>Pen: 28 days after first use</td>
+            <td>Room temperature stability varies by type<br>Regular insulin more stable than analogs</td>
+        </tr>
+        <tr>
+            <td><strong>Propofol</strong></td>
+            <td>20-25°C (room temp)<br>Do NOT refrigerate</td>
+            <td>YES - protect from light</td>
+            <td>Supports bacterial growth<br>Use within 6-12 hours of opening</td>
+            <td>Single patient use only<br>Discard within 12 hours of spiking</td>
+            <td>Fatal infections from contamination<br>Strict aseptic technique required</td>
+        </tr>
+        <tr>
+            <td><strong>Vecuronium/Rocuronium</strong></td>
+            <td>2-8°C (refrigerated)<br>Stable at room temp × 30 days</td>
+            <td>No</td>
+            <td>Protect from freezing<br>May precipitate if frozen/thawed</td>
+            <td>After reconstitution: 24 hours refrigerated<br>Check for precipitation</td>
+            <td>Precipitation with freezing<br>Store refrigerated for long-term stability</td>
+        </tr>
+        <tr>
+            <td><strong>Phenytoin</strong><br>(IV)</td>
+            <td>20-25°C (room temp)</td>
+            <td>YES - protect from light</td>
+            <td>Precipitates in dextrose solutions<br>Use NS only for dilution</td>
+            <td>After dilution in NS: 4 hours at room temp<br>Do NOT refrigerate (precipitates)</td>
+            <td>Famous for precipitation<br>"Purple glove syndrome" with extravasation</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>7.2 Compatibility & Incompatibility Guidelines</h3>
+
+<div class="storage-box">
+    <strong>🧪 CRITICAL IV DRUG INCOMPATIBILITIES:</strong><br>
+    <br>
+    <strong>NEVER MIX IN SAME LINE/SYRINGE:</strong><br>
+    1. <strong class="storage-purple">Heparin + antibiotics</strong> (especially penicillins, gentamicin) - inactivation<br>
+    2. <strong class="storage-purple">Phenytoin + dextrose</strong> - precipitation (use NS only)<br>
+    3. <strong class="storage-purple">Insulin + any other drug</strong> - adsorption to plastic, unpredictable dosing<br>
+    4. <strong class="storage-purple">Amiodarone + most other drugs</strong> - incompatible with many solutions<br>
+    5. <strong class="storage-purple">Sodium bicarbonate + calcium</strong> - precipitation (calcium carbonate)<br>
+    6. <strong class="storage-purple">Propofol + any other drug</strong> - lipid emulsion breaks down<br>
+    <br>
+    <strong>Y-SITE INCOMPATIBILITIES (COMMON):</strong><br>
+    • Amphotericin B + electrolyte solutions (precipitate)<br>
+    • Ceftriaxone + calcium-containing solutions (precipitate, especially in neonates)<br>
+    • Furosemide + acidic solutions (precipitate at pH <5.5)<br>
+    • Midazolam + albumin (precipitate)<br>
+    • Vancomycin + heparin (precipitate)<br>
+    <br>
+    <strong>SAFETY RULES:</strong><br>
+    1. When in doubt, use separate IV lines<br>
+    2. Flush line with NS between incompatible drugs (10-20 mL)<br>
+    3. Check compatibility references (Trissel's, Micromedex)<br>
+    4. Monitor for precipitation, cloudiness, color change<br>
+    5. Use in-line filters for certain drugs (amphotericin, TPN)
+</div>
+
+<h3>7.3 Beyond-Use Dating for Compounded Preparations</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 25%;">Preparation Condition</th>
+            <th>Storage Temperature</th>
+            <th>Maximum Beyond-Use Date</th>
+            <th>Examples</th>
+            <th>Documentation Required</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Low-risk level compounding</strong><br>(ISO Class 5 environment)</td>
+            <td>Room temperature (20-25°C)</td>
+            <td>48 hours</td>
+            <td>IV antibiotic admixtures<br>Patient-controlled analgesia<br>Simple IV solutions</td>
+            <td>Preparation date/time<br>Expiration date/time<br>Initials of preparer</td>
+        </tr>
+        <tr>
+            <td><strong>Low-risk level compounding</strong><br>(ISO Class 5 environment)</td>
+            <td>Refrigerated (2-8°C)</td>
+            <td>14 days</td>
+            <td>Refrigerated antibiotics<br>TPN solutions<br>Certain chemotherapy</td>
+            <td>Preparation date/time<br>Expiration date/time<br>Storage temperature</td>
+        </tr>
+        <tr>
+            <td><strong>Medium-risk level compounding</strong><br>(Multiple sterile ingredients)</td>
+            <td>Room temperature</td>
+            <td>30 hours</td>
+            <td>Complex TPN<br>Epidural solutions<br>Certain chemotherapy combinations</td>
+            <td>All ingredients/lots<br>Preparation conditions<br>Quality control testing</td>
+        </tr>
+        <tr>
+            <td><strong>High-risk level compounding</strong><br>(Non-sterile ingredients)</td>
+            <td>Room temperature</td>
+            <td>24 hours</td>
+            <td>Compounded from non-sterile powders<br>Bulk compounding</td>
+            <td>Sterility testing<br>Endotoxin testing<br>Full quality control</td>
+        </tr>
+        <tr>
+            <td><strong>Immediate use compounding</strong><br>(Emergency, bedside)</td>
+            <td>Administer immediately</td>
+            <td>1 hour</td>
+            <td>Emergency drugs during code<br>OR anesthesia preparations<br>STAT bedside preparations</td>
+            <td>Date/time prepared<br>Reason for immediate use<br>Administered immediately</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- APPENDIX: SAFETY QUICK REFERENCE GUIDES -->
+<div class="page-break"></div>
+<h2>Appendix: Safety Quick Reference Guides</h2>
+
+<h3>Pediatric Weight Estimation Formulas</h3>
+
+<div class="clinical-pearl">
+    <strong>👶 PEDIATRIC WEIGHT ESTIMATION (WHEN SCALES UNAVAILABLE):</strong><br>
+    <br>
+    <strong>BROSELOW TAPE (MOST ACCURATE):</strong><br>
+    • Color-coded by length<br>
+    • Provides weight, equipment sizes, drug doses<br>
+    • Updated regularly - ensure current version<br>
+    <br>
+    <strong>AGE-BASED FORMULAS:</strong><br>
+    • <strong class="pediatric-blue">1-12 months:</strong> Weight (kg) = (age in months/2) + 4<br>
+    • <strong class="pediatric-blue">1-5 years:</strong> Weight (kg) = (age in years × 2) + 8<br>
+    • <strong class="pediatric-blue">6-12 years:</strong> Weight (kg) = (age in years × 3) + 7<br>
+    • <strong class="pediatric-blue">Adolescents:</strong> Use adult doses if >40 kg or Tanner stage >3<br>
+    <br>
+    <strong>LENGTH-BASED (IF AGE UNKNOWN):</strong><br>
+    • Measure length from crown to heel<br>
+    • Use Broselow tape or length-weight charts<br>
+    • More accurate than age-based guessing<br>
+    <br>
+    <strong>EMERGENCY RULE:</strong><br>
+    • When in doubt, use the LOWER estimated weight<br>
+    • For resuscitation drugs, it's safer to slightly underdose than overdose<br>
+    • Weigh the child as soon as possible
+</div>
+
+<h3>Geriatric Renal Function Estimation</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Formula</th>
+            <th>Calculation</th>
+            <th>Advantages</th>
+            <th>Limitations</th>
+            <th>When to Use</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Cockcroft-Gault</strong></td>
+            <td>CrCl = [(140 - age) × weight (kg)] / (72 × SCr) × (0.85 if female)</td>
+            <td>Historical standard, many dosing guidelines based on this</td>
+            <td>Overestimates in obese, underestimates in malnourished</td>
+            <td>Drug dosing (especially antibiotics, renally cleared drugs)</td>
+        </tr>
+        <tr>
+            <td><strong>MDRD</strong><br>(Modification of Diet in Renal Disease)</td>
+            <td>eGFR = 175 × (SCr)⁻¹.¹⁵⁴ × (age)⁻⁰.²⁰³ × (0.742 if female) × (1.212 if African American)</td>
+            <td>More accurate at lower GFR, standardized to 1.73 m² BSA</td>
+            <td>Less accurate at higher GFR (>60), not validated for drug dosing</td>
+            <td>Staging CKD, monitoring renal function</td>
+        </tr>
+        <tr>
+            <td><strong>CKD-EPI</strong></td>
+            <td>Complex formula using SCr, age, sex, race</td>
+            <td>More accurate at higher GFR, better mortality prediction</td>
+            <td>Complex calculation, requires calculator</td>
+            <td>Research, epidemiological studies</td>
+        </tr>
+        <tr>
+            <td><strong>24-hour Urine Collection</strong></td>
+            <td>CrCl = (Urine Cr × Urine volume) / (Plasma Cr × 1440)</td>
+            <td>Gold standard for actual measurement</td>
+            <td>Cumbersome, inaccurate if collection incomplete</td>
+            <td>When precise measurement needed (chemotherapy, research)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Emergency Drug Shelf Life & Storage Cheat Sheet</h3>
+
+<div class="storage-box">
+    <strong>📅 CRITICAL DRUG STABILITY - MEMORIZE THESE:</strong><br>
+    <br>
+    <strong>REFRIGERATE (2-8°C):</strong><br>
+    • <strong class="storage-purple">Succinylcholine</strong> - but stable at room temp × 14 days<br>
+    • <strong class="storage-purple">Vecuronium/rocuronium</strong> - stable at room temp × 30 days<br>
+    • <strong class="storage-purple">Insulin</strong> (unopened) - opened stable × 28 days room temp<br>
+    • <strong class="storage-purple">Vaccines</strong> - most require refrigeration<br>
+    • <strong class="storage-purple">Certain antibiotics</strong> - check manufacturer<br>
+    <br>
+    <strong>PROTECT FROM LIGHT:</strong><br>
+    • <strong class="storage-purple">Nitroglycerin</strong> - degrades rapidly in light<br>
+    • <strong class="storage-purple">Epinephrine</strong> - turns brown (adrenochrome)<br>
+    • <strong class="storage-purple">Nitroprusside</strong> - degraded by light to cyanide<br>
+    • <strong class="storage-purple">Amiodarone</strong> - light sensitive<br>
+    • <strong class="storage-purple">Propofol</strong> - light sensitive<br>
+    <br>
+    <strong>ROOM TEMP STABLE:</strong><br>
+    • <strong class="storage-purple">Most emergency drugs</strong> if used within expiration<br>
+    • <strong class="storage-purple">Epinephrine</strong> - DO NOT refrigerate (crystallizes)<br>
+    • <strong class="storage-purple">Naloxone</strong> - stable at room temp<br>
+    • <strong class="storage-purple">Atropine</strong> - stable at room temp<br>
+    <br>
+    <strong>DO NOT FREEZE:</strong><br>
+    • <strong class="storage-purple">Insulin</strong> - destroys structure<br>
+    • <strong class="storage-purple">Albumin</strong> - precipitates<br>
+    • <strong class="storage-purple">IVIG</strong> - precipitates<br>
+    • <strong class="storage-purple">Most protein-based drugs</strong>
+</div>
+
+<div class="footer-note">
+    <strong>© Emergency Medicine Education Team | Confidential Educational Material</strong><br>
+    This document is for educational purposes only. Always follow local protocols and guidelines.<br>
+    Medications and doses may vary by institution. Verify all information before clinical application.<br>
+    Version 1.0 | Last updated: [Current Date] | Module 10 of 10 - COMPLETE SERIES
+</div>
+
+</body>
+</html>

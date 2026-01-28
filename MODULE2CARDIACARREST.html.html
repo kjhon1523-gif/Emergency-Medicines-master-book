@@ -1,0 +1,1812 @@
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Module 2: Cardiac Arrest, Shock & Vasoactive Drugs</title> <style> /* Main Styles from Previous Document - EXACT MATCH */ body { font-family: 'Calibri', 'Segoe UI', sans-serif; line-height: 1.5; color: #2c3e50; margin: 2cm; background-color: #ffffff; counter-reset: chapter section figure table; }
+    h1 {
+        font-size: 28pt;
+        font-weight: bold;
+        color: #1a5276;
+        text-align: center;
+        border-bottom: 3px double #3498db;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+    
+    h2 {
+        font-size: 18pt;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #2980b9;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 30px;
+        page-break-after: avoid;
+    }
+    
+    h3 {
+        font-size: 14pt;
+        font-weight: bold;
+        color: #154360;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        page-break-after: avoid;
+    }
+    
+    h4 {
+        font-size: 12.5pt;
+        font-weight: bold;
+        color: #21618c;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    
+    .module-title {
+        font-size: 20pt;
+        font-weight: bold;
+        color: #21618c;
+        margin-top: 40px;
+        border-left: 6px solid #3498db;
+        padding-left: 15px;
+    }
+    
+    .chapter-number {
+        background-color: #3498db;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    /* Lists */
+    ul, ol {
+        padding-left: 1.5em;
+        margin-bottom: 1em;
+    }
+    
+    li {
+        margin-bottom: 8px;
+        font-size: 11.5pt;
+    }
+    
+    .sub-list {
+        list-style-type: lower-alpha;
+        padding-left: 2.5em;
+    }
+    
+    .drug-list {
+        columns: 2;
+        column-gap: 50px;
+        margin-top: 15px;
+    }
+    
+    .drug-list li {
+        break-inside: avoid;
+    }
+    
+    /* Special Boxes - EXACT MATCH */
+    .study-format {
+        background-color: #e8f4fc;
+        border: 1px solid #aed6f1;
+        border-left: 6px solid #2e86c1;
+        padding: 20px;
+        margin-top: 30px;
+        page-break-inside: avoid;
+    }
+    
+    .clinical-pearl {
+        background-color: #fff3cd;
+        border: 1px solid #ffeaa7;
+        border-left: 6px solid #fdcb6e;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .warning-box {
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-left: 6px solid #e74c3c;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .definition-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        border-left: 6px solid #17a2b8;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    /* Tables - EXACT MATCH */
+    .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 11pt;
+    }
+    
+    .comparison-table th {
+        background-color: #2980b9;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #1a5276;
+    }
+    
+    .comparison-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        vertical-align: top;
+    }
+    
+    .comparison-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+    
+    /* Figures and Captions - EXACT MATCH */
+    .figure {
+        text-align: center;
+        margin: 20px 0;
+        page-break-inside: avoid;
+    }
+    
+    .figure img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .caption {
+        font-style: italic;
+        font-size: 10.5pt;
+        color: #666;
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+    /* Page Layout - EXACT MATCH */
+    .page-break {
+        page-break-before: always;
+    }
+    
+    .footer-note {
+        font-size: 9pt;
+        color: #7f8c8d;
+        text-align: center;
+        margin-top: 30px;
+        border-top: 1px solid #ecf0f1;
+        padding-top: 10px;
+    }
+    
+    /* Drug Template - EXACT MATCH */
+    .drug-template {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 5px;
+        page-break-inside: avoid;
+    }
+    
+    .drug-template h4 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+        margin-top: 0;
+    }
+    
+    .template-section {
+        margin-bottom: 15px;
+    }
+    
+    .template-label {
+        font-weight: bold;
+        color: #2980b9;
+        display: inline-block;
+        width: 180px;
+    }
+    
+    /* Emoji Styling - EXACT MATCH */
+    .emoji {
+        font-size: 1.2em;
+    }
+    
+    /* Print Specific - EXACT MATCH */
+    @media print {
+        body {
+            margin: 1.5cm;
+            font-size: 11pt;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    
+    /* Learning Objectives - EXACT MATCH */
+    .learning-objectives {
+        background-color: #e8f6f3;
+        border: 1px solid #a2d9ce;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    
+    .objective-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .objective-list li:before {
+        content: "✓ ";
+        color: #27ae60;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    /* Additional Styles for Module 2 */
+    .algorithm-box {
+        background-color: #e8f8f5;
+        border: 2px solid #76d7c4;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        font-family: 'Courier New', monospace;
+        font-size: 11pt;
+    }
+    
+    .dosing-card {
+        background-color: #fef9e7;
+        border: 1px solid #f7dc6f;
+        border-left: 4px solid #f1c40f;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    
+    .shock-type {
+        background-color: #f4ecf7;
+        border: 1px solid #d7bde2;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    
+    .shock-type h4 {
+        color: #8e44ad;
+        margin-top: 0;
+    }
+    
+    .acls-alert {
+        background-color: #f2d7d5;
+        border: 2px solid #c0392b;
+        color: #c0392b;
+        padding: 15px;
+        margin: 20px 0;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+    }
+</style>
+</head> <body>
+<div class="module-title">
+    <span class="emoji">🟦</span> MODULE 2: CARDIAC ARREST, SHOCK & VASOACTIVE DRUGS
+    <div style="font-size: 12pt; font-weight: normal; font-style: italic; color: #7f8c8d;">
+        (CORE LIFE-SAVING)
+    </div>
+</div>
+
+<div class="learning-objectives">
+    <h3 style="color: #148f77; margin-top: 0;">📖 Learning Objectives</h3>
+    <ul class="objective-list">
+        <li>Master ACLS algorithms and drug administration during cardiac arrest</li>
+        <li>Understand pathophysiology and management of different shock types</li>
+        <li>Learn mechanism of action, dosing, and administration of 10 core vasoactive drugs</li>
+        <li>Differentiate between vasopressors, inotropes, and chronotropes</li>
+        <li>Recognize and manage adverse effects of emergency cardiac drugs</li>
+        <li>Prepare and titrate vasoactive infusions correctly</li>
+        <li>Understand pediatric modifications for cardiac emergency drugs</li>
+        <li>Apply knowledge to clinical scenarios and exam questions</li>
+    </ul>
+</div>
+
+<!-- INTRODUCTION -->
+<h2><span class="chapter-number">0</span> Introduction: The Critical Minute</h2>
+
+<div class="warning-box">
+    <strong>⚠️ TIME IS MYOCARDIUM:</strong> For every minute without CPR and defibrillation, survival decreases by 7-10%. Early drug administration is critical but must not delay high-quality CPR and defibrillation.
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 Core Concept:</strong> Vasoactive drugs work by manipulating three key cardiovascular parameters:<br>
+    1. <strong>Preload</strong> (volume/venous return)<br>
+    2. <strong>Afterload</strong> (systemic vascular resistance)<br>
+    3. <strong>Contractility</strong> (myocardial squeeze)<br>
+    Understanding this helps predict each drug's effects.
+</div>
+
+<!-- CHAPTER 1: ACLS OVERVIEW -->
+<h2><span class="chapter-number">1</span> ACLS Relevance & Cardiac Arrest Management</h2>
+
+<h3>1.1 Universal Cardiac Arrest Algorithm</h3>
+
+<div class="algorithm-box">
+    <strong>BASIC LIFE SUPPORT (BLS) FIRST:</strong><br>
+    1. Check responsiveness<br>
+    2. Activate emergency response<br>
+    3. Check breathing/pulse (≤10 seconds)<br>
+    4. Begin CPR: 30:2 ratio, 100-120 compressions/min<br>
+    5. Apply AED/defibrillator when available<br>
+    <br>
+    <strong>ADVANCED LIFE SUPPORT (ACLS):</strong><br>
+    6. Continue high-quality CPR<br>
+    7. Establish airway (advanced airway every 2 minutes)<br>
+    8. Obtain IV/IO access<br>
+    9. Identify rhythm: Shockable vs Non-shockable<br>
+    10. Administer appropriate drugs<br>
+    11. Treat reversible causes (Hs and Ts)
+</div>
+
+<h3>1.2 Reversible Causes of Cardiac Arrest (Hs and Ts)</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 15%;">Category</th>
+            <th>Causes</th>
+            <th>Treatment</th>
+            <th>Key Drugs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Hypoxia</strong></td>
+            <td>Airway obstruction, respiratory failure, pneumonia</td>
+            <td>Oxygen, ventilation, airway management</td>
+            <td>None specific</td>
+        </tr>
+        <tr>
+            <td><strong>Hypovolemia</strong></td>
+            <td>Hemorrhage, dehydration, burns</td>
+            <td>Fluid resuscitation, blood products</td>
+            <td>Crystalloids, blood</td>
+        </tr>
+        <tr>
+            <td><strong>Hypo/Hyperkalemia</strong></td>
+            <td>Renal failure, diuretics, metabolic disorders</td>
+            <td>Calcium, insulin/glucose, salbutamol, dialysis</td>
+            <td>Calcium chloride, insulin, bicarbonate</td>
+        </tr>
+        <tr>
+            <td><strong>Hypothermia</strong></td>
+            <td>Cold exposure, drowning</td>
+            <td>Rewarming (passive/active)</td>
+            <td>Warmed IV fluids</td>
+        </tr>
+        <tr>
+            <td><strong>Tension Pneumothorax</strong></td>
+            <td>Trauma, mechanical ventilation</td>
+            <td>Needle decompression, chest tube</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td><strong>Tamponade</strong></td>
+            <td>Trauma, MI, malignancy</td>
+            <td>Pericardiocentesis, surgery</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td><strong>Toxins</strong></td>
+            <td>Drug overdose, poisoning</td>
+            <td>Antidotes, supportive care</td>
+            <td>Naloxone, flumazenil, specific antidotes</td>
+        </tr>
+        <tr>
+            <td><strong>Thrombosis</strong></td>
+            <td>MI, PE</td>
+            <td>PCI, thrombolytics, embolectomy</td>
+            <td>Tenecteplase, heparin</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- CHAPTER 2: SHOCK TYPES -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">2</span> Shock Types: Pathophysiology & Management</h2>
+
+<div class="definition-box">
+    <strong>Shock:</strong> A life-threatening condition of circulatory failure leading to inadequate tissue perfusion and oxygenation. Characterized by hypotension (SBP <90 mmHg or MAP <65 mmHg) with evidence of organ dysfunction.
+</div>
+
+<h3>2.1 Classification of Shock</h3>
+
+<div class="shock-type">
+    <h4>1. HYPOVOLEMIC SHOCK</h4>
+    <ul>
+        <li><strong>Pathophysiology:</strong> ↓ Preload → ↓ Stroke volume → ↓ Cardiac output</li>
+        <li><strong>Causes:</strong> Hemorrhage, dehydration, burns, pancreatitis</li>
+        <li><strong>Clinical Signs:</strong> Cool/clammy skin, tachycardia, ↓ urine output</li>
+        <li><strong>Management:</strong> FLUIDS FIRST (crystalloids, blood), control bleeding</li>
+        <li><strong>Drugs:</strong> Vasopressors only if fluids fail (norepinephrine)</li>
+    </ul>
+</div>
+
+<div class="shock-type">
+    <h4>2. CARDIOGENIC SHOCK</h4>
+    <ul>
+        <li><strong>Pathophysiology:</strong> Pump failure → ↓ Contractility → ↓ Cardiac output</li>
+        <li><strong>Causes:</strong> MI, cardiomyopathy, arrhythmias, valvular disorders</li>
+        <li><strong>Clinical Signs:</strong> Pulmonary edema, jugular venous distension, cool extremities</li>
+        <li><strong>Management:</strong> Inotropes, revascularization, mechanical support</li>
+        <li><strong>Drugs:</strong> Dobutamine (first-line), dopamine, milrinone</li>
+    </ul>
+</div>
+
+<div class="shock-type">
+    <h4>3. DISTRIBUTIVE SHOCK</h4>
+    <ul>
+        <li><strong>Pathophysiology:</strong> Vasodilation → ↓ SVR → ↓ Blood pressure</li>
+        <li><strong>Causes:</strong> Sepsis, anaphylaxis, neurogenic shock, adrenal crisis</li>
+        <li><strong>Clinical Signs:</strong> Warm/flushed skin, wide pulse pressure (early)</li>
+        <li><strong>Management:</strong> Fluids + vasopressors, treat underlying cause</li>
+        <li><strong>Drugs:</strong> Norepinephrine (first-line), vasopressin, adrenaline</li>
+    </ul>
+</div>
+
+<div class="shock-type">
+    <h4>4. OBSTRUCTIVE SHOCK</h4>
+    <ul>
+        <li><strong>Pathophysiology:</strong> Mechanical obstruction → ↓ Cardiac output</li>
+        <li><strong>Causes:</strong> Tension pneumothorax, cardiac tamponade, PE</li>
+        <li><strong>Clinical Signs:</strong> Beck's triad (tamponade), unilateral breath sounds</li>
+        <li><strong>Management:</strong> Treat obstruction (needle decompression, pericardiocentesis)</li>
+        <li><strong>Drugs:</strong> None specific - treat cause</li>
+    </ul>
+</div>
+
+<h3>2.2 Hemodynamic Parameters in Shock</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Shock Type</th>
+            <th>CO/CI</th>
+            <th>SVR</th>
+            <th>PCWP</th>
+            <th>CVP</th>
+            <th>First-Line Drug</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Hypovolemic</strong></td>
+            <td>↓↓</td>
+            <td>↑</td>
+            <td>↓↓</td>
+            <td>↓↓</td>
+            <td>Fluids → Norepinephrine</td>
+        </tr>
+        <tr>
+            <td><strong>Cardiogenic</strong></td>
+            <td>↓↓</td>
+            <td>↑↑</td>
+            <td>↑↑</td>
+            <td>↑↑</td>
+            <td>Dobutamine</td>
+        </tr>
+        <tr>
+            <td><strong>Septic</strong></td>
+            <td>↑ (early) ↓ (late)</td>
+            <td>↓↓</td>
+            <td>↓ or normal</td>
+            <td>↓ or normal</td>
+            <td>Norepinephrine</td>
+        </tr>
+        <tr>
+            <td><strong>Neurogenic</strong></td>
+            <td>↓ or normal</td>
+            <td>↓↓</td>
+            <td>↓</td>
+            <td>↓</td>
+            <td>Norepinephrine</td>
+        </tr>
+        <tr>
+            <td><strong>Anaphylactic</strong></td>
+            <td>↑ (early) ↓ (late)</td>
+            <td>↓↓</td>
+            <td>↓</td>
+            <td>↓</td>
+            <td>Adrenaline IM</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- CHAPTER 3: DRUG 1 - ADRENALINE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">3</span> Core Drug 1: Adrenaline (Epinephrine)</h2>
+
+<div class="drug-template">
+    <h4>ADRENALINE (EPINEPHRINE) - THE UNIVERSAL RESUSCITATION DRUG</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Non-selective alpha & beta adrenergic agonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • <strong>Alpha-1 (α₁):</strong> Vasoconstriction → ↑ SVR, ↑ BP, ↓ mucosal edema<br>
+        • <strong>Beta-1 (β₁):</strong> ↑ Heart rate, ↑ contractility, ↑ cardiac output<br>
+        • <strong>Beta-2 (β₂):</strong> Bronchodilation, vasodilation (skeletal muscle), glycogenolysis
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Cardiac arrest (VF/pVT, PEA, asystole) - ACLS<br>
+        • Anaphylaxis/severe allergic reactions<br>
+        • Symptomatic bradycardia (after atropine fails)<br>
+        • Severe hypotension/shock unresponsive to fluids<br>
+        • Severe asthma/bronchospasm refractory to bronchodilators<br>
+        • Bradycardia in heart transplant patients (denervated heart)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • <strong>Absolute:</strong> None in cardiac arrest<br>
+        • <strong>Relative:</strong> Hypertension, CAD, arrhythmias, hyperthyroidism, pheochromocytoma<br>
+        • Caution with halogenated anesthetics (arrhythmia risk)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Cardiac arrest:</strong> 1 mg IV/IO every 3-5 minutes (1:10,000 = 0.1 mg/mL)<br>
+        • <strong>Anaphylaxis IM:</strong> 0.3-0.5 mg IM (1:1000 = 1 mg/mL) in anterolateral thigh<br>
+        • <strong>Anaphylaxis IV (refractory):</strong> 0.1 mg IV slowly (1:10,000) over 5-10 minutes<br>
+        • <strong>Infusion:</strong> Start 0.05-0.1 mcg/kg/min, titrate to effect (max 1 mcg/kg/min)<br>
+        • <strong>Symptomatic bradycardia:</strong> 2-10 mcg/min infusion
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>Cardiac arrest:</strong> 0.01 mg/kg IV/IO (max 1 mg) every 3-5 minutes<br>
+        • <strong>Anaphylaxis IM:</strong> 0.01 mg/kg IM (max 0.3 mg <30kg, 0.5 mg >30kg)<br>
+        • <strong>Infusion:</strong> 0.1-1 mcg/kg/min, titrate
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>IM:</strong> 1:1000 (1 mg/mL) - anterolateral thigh (vastus lateralis)<br>
+        • <strong>IV bolus:</strong> 1:10,000 (0.1 mg/mL) - dilute if needed<br>
+        • <strong>Infusion:</strong> Mix 1 mg in 250 mL NS = 4 mcg/mL OR 6 mg in 100 mL = 60 mcg/mL<br>
+        • <strong>Endotracheal:</strong> 2-2.5 times IV dose diluted in 5-10 mL NS (use only if no IV/IO)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Anxiety, tremor, headache, pallor<br>
+        • Tachycardia, palpitations<br>
+        • Nausea, vomiting<br>
+        • Dry mouth
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Ventricular arrhythmias (VF, VT)<br>
+        • Severe hypertension → cerebral hemorrhage<br>
+        • Myocardial ischemia/infarction<br>
+        • Pulmonary edema<br>
+        • Tissue necrosis with extravasation<br>
+        • Hyperglycemia, hyperlactatemia
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>Beta-blockers:</strong> Unopposed alpha effects → severe hypertension<br>
+        • <strong>TCAs, MAOIs:</strong> Potentiate effects - hypertensive crisis<br>
+        • <strong>Halogenated anesthetics:</strong> Increased arrhythmia risk<br>
+        • <strong>Digoxin:</strong> Increased arrhythmia risk<br>
+        • <strong>Ergot alkaloids:</strong> Extreme vasoconstriction
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>Anaphylaxis:</strong> IM FIRST, NOT IV (IV can cause fatal arrhythmias)<br>
+        • <strong>Cardiac arrest:</strong> Give during CPR, NOT during pulse checks<br>
+        • <strong>Infusions:</strong> Use central line if possible (tissue necrosis risk)<br>
+        • <strong>Never mix</strong> with sodium bicarbonate (inactivates adrenaline)<br>
+        • <strong>Half-life:</strong> 2-3 minutes - frequent dosing needed in arrest<br>
+        • <strong>Color:</strong> Clear solution, turns pink/brown if oxidized (DISCARD)
+    </div>
+</div>
+
+<div class="dosing-card">
+    <h4>💡 Quick Dosing Guide: Adrenaline Infusion</h4>
+    <strong>Standard Concentration:</strong> 1 mg in 250 mL NS = 4 mcg/mL<br>
+    <strong>Formula:</strong> Rate (mL/hr) = [Dose (mcg/kg/min) × Weight (kg) × 60] / Concentration (mcg/mL)<br>
+    <strong>Example:</strong> 70 kg patient at 0.1 mcg/kg/min: (0.1 × 70 × 60) / 4 = 105 mL/hr
+</div>
+
+<!-- CHAPTER 4: DRUG 2 - NORADRENALINE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">4</span> Core Drug 2: Noradrenaline (Norepinephrine)</h2>
+
+<div class="drug-template">
+    <h4>NORADRENALINE (NOREPINEPHRINE) - FIRST-LINE VASOPRESSOR</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Predominant alpha, some beta-1 adrenergic agonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • <strong>Alpha-1 (α₁):</strong> Potent vasoconstriction → ↑ SVR, ↑ BP<br>
+        • <strong>Alpha-2 (α₂):</strong> Presynaptic inhibition of norepinephrine release<br>
+        • <strong>Beta-1 (β₁):</strong> Mild ↑ inotropy, chronotropy<br>
+        • <strong>Beta-2 (β₂):</strong> Minimal effect
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • <strong>First-line</strong> for septic shock (after adequate fluid resuscitation)<br>
+        • Distributive shock (neurogenic, anaphylactic - after adrenaline)<br>
+        • Cardiogenic shock with vasodilation<br>
+        • Refractory hypotension<br>
+        • Perioperative hypotension
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Hypovolemic shock (correct volume first)<br>
+        • Mesenteric or peripheral vascular thrombosis<br>
+        • Concurrent use of MAOIs (within 14 days)<br>
+        • Relative: Severe peripheral vascular disease, hypertension
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Starting dose:</strong> 0.05-0.1 mcg/kg/min (typically 2-4 mcg/min)<br>
+        • <strong>Titration:</strong> Increase by 0.05-0.1 mcg/kg/min every 5-10 minutes<br>
+        • <strong>Usual range:</strong> 0.01-0.3 mcg/kg/min (up to 1 mcg/kg/min in extreme cases)<br>
+        • <strong>Bolus:</strong> NOT recommended (severe hypertension risk)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>Starting dose:</strong> 0.05-0.1 mcg/kg/min<br>
+        • <strong>Titrate:</strong> Similar to adults, careful monitoring<br>
+        • <strong>Max:</strong> 1-2 mcg/kg/min (rarely needed)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Route:</strong> Central venous line STRONGLY recommended<br>
+        • <strong>Preparation:</strong> 4 mg in 250 mL D5W or NS = 16 mcg/mL<br>
+        • <strong>Alternative:</strong> 8 mg in 250 mL = 32 mcg/mL (for fluid restriction)<br>
+        • <strong>Must use infusion pump</strong> with pressure bag if peripheral<br>
+        • Use in-line filter (0.22 micron) recommended
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Headache, anxiety<br>
+        • Bradycardia (reflex response to hypertension)<br>
+        • Reduced urine output at high doses<br>
+        • Injection site reactions
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Severe hypertension<br>
+        • Tissue necrosis/ischemia with extravasation<br>
+        • Arrhythmias (less than adrenaline)<br>
+        • Mesenteric ischemia<br>
+        • Digital ischemia/gangrene<br>
+        • Renal impairment at high doses
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>MAOIs:</strong> Hypertensive crisis<br>
+        • <strong>TCAs:</strong> Potentiate pressor effect<br>
+        • <strong>Beta-blockers:</strong> Unopposed alpha → severe hypertension<br>
+        • <strong>Ergot alkaloids:</strong> Extreme vasoconstriction<br>
+        • <strong>Guamethidine:</strong> Potentiates effect
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>ALWAYS give through central line</strong> if possible<br>
+        • <strong>If extravasation occurs:</strong> Stop infusion, aspirate residual, infiltrate phentolamine (5-10 mg in 10 mL saline)<br>
+        • <strong>Monitor:</strong> BP every 2-5 minutes during titration<br>
+        • <strong>In septic shock:</strong> Target MAP ≥65 mmHg<br>
+        • <strong>Weaning:</strong> Decrease by 0.05 mcg/kg/min every 30-60 minutes<br>
+        • <strong>Compatibility:</strong> Incompatible with alkaline solutions (bicarbonate)
+    </div>
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 NORADRENALINE vs ADRENALINE:</strong><br>
+    • <strong>Noradrenaline:</strong> Strong alpha, weak beta → ↑ BP via vasoconstriction<br>
+    • <strong>Adrenaline:</strong> Strong alpha & beta → ↑ BP via vasoconstriction AND ↑ cardiac output<br>
+    <em>Choose noradrenaline for pure vasodilation, adrenaline for combined pump failure + vasodilation</em>
+</div>
+
+<!-- CHAPTER 5: DRUG 3 - DOPAMINE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">5</span> Core Drug 3: Dopamine</h2>
+
+<div class="drug-template">
+    <h4>DOPAMINE - THE DOSE-DEPENDENT DRUG</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Endogenous catecholamine, precursor to noradrenaline
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • <strong>Dose-dependent effects:</strong><br>
+        &nbsp;&nbsp;1-3 mcg/kg/min: Dopaminergic (DA₁) → renal/splanchnic vasodilation<br>
+        &nbsp;&nbsp;3-10 mcg/kg/min: Beta-1 (β₁) → ↑ cardiac output<br>
+        &nbsp;&nbsp;>10 mcg/kg/min: Alpha (α) → vasoconstriction<br>
+        • Metabolized to noradrenaline (contributing to effects at higher doses)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • <strong>Historical:</strong> Shock (less preferred now)<br>
+        • <strong>Current:</strong> Symptomatic bradycardia unresponsive to atropine<br>
+        • Low cardiac output states (cardiogenic shock)<br>
+        • <strong>NOTE:</strong> Not recommended as first-line for septic shock per Surviving Sepsis Campaign
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Pheochromocytoma<br>
+        • Ventricular arrhythmias<br>
+        • Hypovolemia (correct first)<br>
+        • Relative: Severe peripheral vascular disease, MAOI use
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Renal dose:</strong> 1-3 mcg/kg/min (questionable efficacy)<br>
+        • <strong>Inotropic dose:</strong> 3-10 mcg/kg/min<br>
+        • <strong>Vasopressor dose:</strong> 10-20 mcg/kg/min<br>
+        • <strong>Max:</strong> 20 mcg/kg/min (higher doses cause excessive vasoconstriction)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • Same weight-based dosing as adults<br>
+        • Start 5 mcg/kg/min, titrate to effect<br>
+        • Max 20 mcg/kg/min
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Route:</strong> Central line preferred, peripheral with caution<br>
+        • <strong>Preparation:</strong> 400 mg in 250 mL D5W or NS = 1600 mcg/mL<br>
+        • <strong>Alternative:</strong> 200 mg in 250 mL = 800 mcg/mL<br>
+        • Protect from light (use opaque cover or bag)<br>
+        • Incompatible with alkaline solutions, furosemide, acyclovir
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Nausea, vomiting<br>
+        • Headache<br>
+        • Tachycardia, palpitations<br>
+        • Peripheral vasoconstriction (high dose)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Ventricular arrhythmias<br>
+        • Myocardial ischemia<br>
+        • Gangrene of extremities (high dose, extravasation)<br>
+        • Tissue necrosis with extravasation<br>
+        • Hypopituitarism with prolonged infusion (inhibits prolactin)<br>
+        • Immunosuppression
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>MAOIs:</strong> Hypertensive crisis<br>
+        • <strong>Beta-blockers:</strong> Unopposed alpha effects<br>
+        • <strong>Phenytoin:</strong> Hypotension, bradycardia<br>
+        • <strong>Ergot alkaloids:</strong> Extreme vasoconstriction<br>
+        • <strong>Inhalational anesthetics:</strong> Arrhythmias
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>"Renal dose dopamine" (1-3 mcg/kg/min) is of unproven benefit</strong><br>
+        • <strong>ALWAYS specify mcg/kg/min</strong> - never just "mcg/min"<br>
+        • <strong>Extravasation treatment:</strong> Phentolamine 5-10 mg in 10 mL saline infiltrated<br>
+        • <strong>Tachyphylaxis</strong> develops within 24-48 hours<br>
+        • <strong>Monitor:</strong> ECG continuously, urine output, peripheral perfusion<br>
+        • <strong>Weaning:</strong> Taper slowly to avoid hypotension<br>
+        • <strong>Color:</strong> Clear, colorless to slightly yellow (discard if discolored)
+    </div>
+</div>
+
+<div class="warning-box">
+    <strong>⚠️ DOPAMINE CONTROVERSY:</strong> Recent large trials (SOAP II) showed dopamine has higher arrhythmia rates and mortality in cardiogenic shock compared to noradrenaline. Use with caution and consider alternatives.
+</div>
+
+<!-- CHAPTER 6: DRUG 4 - DOBUTAMINE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">6</span> Core Drug 4: Dobutamine</h2>
+
+<div class="drug-template">
+    <h4>DOBUTAMINE - PURE INOTROPE</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Synthetic catecholamine, predominantly beta-1 agonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • <strong>Beta-1 (β₁):</strong> Strong inotropy → ↑ stroke volume, ↑ cardiac output<br>
+        • <strong>Beta-2 (β₂):</strong> Mild vasodilation → ↓ SVR (afterload reduction)<br>
+        • <strong>Alpha-1 (α₁):</strong> Minimal effect (racemic mixture cancels out)<br>
+        • Net effect: ↑ Cardiac output with mild ↓ in BP (due to afterload reduction)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • <strong>First-line for cardiogenic shock</strong> with adequate BP<br>
+        • Acute decompensated heart failure with low cardiac output<br>
+        • Weaning from cardiopulmonary bypass<br>
+        • Dobutamine stress echocardiography<br>
+        • Septic shock with myocardial depression (with vasopressor)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Hypovolemia (correct first)<br>
+        • Idiopathic hypertrophic subaortic stenosis (IHSS)<br>
+        • Severe hypotension (SBP <80 mmHg) without vasopressor<br>
+        • Ventricular tachycardia<br>
+        • Sensitivity to sulfites (contains sodium metabisulfite)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Starting dose:</strong> 2-3 mcg/kg/min<br>
+        • <strong>Titration:</strong> Increase by 1-2 mcg/kg/min every 10-30 minutes<br>
+        • <strong>Usual range:</strong> 2-20 mcg/kg/min<br>
+        • <strong>Max:</strong> 40 mcg/kg/min (rarely effective above 20)<br>
+        • No loading dose required
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>Starting dose:</strong> 2-3 mcg/kg/min<br>
+        • <strong>Range:</strong> 2-20 mcg/kg/min<br>
+        • Same titration as adults
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Route:</strong> Peripheral or central line acceptable<br>
+        • <strong>Preparation:</strong> 250 mg in 250 mL D5W or NS = 1000 mcg/mL<br>
+        • <strong>Alternative:</strong> 500 mg in 250 mL = 2000 mcg/mL<br>
+        • Protect from light<br>
+        • Stable for 24 hours at room temperature, 48 hours refrigerated
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Tachycardia, palpitations<br>
+        • Headache<br>
+        • Nausea<br>
+        • Mild hypotension (due to vasodilation)<br>
+        • Increased myocardial oxygen demand
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Ventricular arrhythmias (less than dopamine)<br>
+        • Myocardial ischemia (increases O₂ demand)<br>
+        • Hypotension (if vasodilation predominates)<br>
+        • Hypokalemia (beta-2 effect)<br>
+        • Tachyphylaxis (develops within 72 hours)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>Beta-blockers:</strong> Antagonize effect<br>
+        • <strong>MAOIs:</strong> Hypertensive crisis possible<br>
+        • <strong>Insulin:</strong> May require adjustment (affects glucose)<br>
+        • <strong>Digoxin:</strong> Increased arrhythmia risk<br>
+        • <strong>General anesthetics:</strong> Increased arrhythmia risk
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>NOT a vasopressor</strong> - can cause hypotension!<br>
+        • Often combined with noradrenaline in septic shock (for myocardial depression)<br>
+        • <strong>Monitor:</strong> Cardiac output if available, BP, HR, ECG continuously<br>
+        • Effects seen within 1-2 minutes, peak at 10 minutes<br>
+        • Short half-life (2 minutes) - rapid titration possible<br>
+        • <strong>Weaning:</strong> Taper by 1-2 mcg/kg/min every 30-60 minutes<br>
+        • <strong>For cardiogenic shock:</strong> Use if SBP >90 mmHg, add vasopressor if <90
+    </div>
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 DOBUTAMINE vs DOPAMINE in CARDIOGENIC SHOCK:</strong><br>
+    • <strong>Dobutamine:</strong> ↑ Contractility, ↓ Afterload → Best for "cold and wet" with adequate BP<br>
+    • <strong>Dopamine:</strong> ↑ Contractility, ↑ Heart rate, ↑ BP → Better for "cold and wet" with low BP<br>
+    <em>Recent evidence favors dobutamine for most cardiogenic shock cases</em>
+</div>
+
+<!-- CHAPTER 7: DRUG 5 - ATROPINE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">7</span> Core Drug 5: Atropine</h2>
+
+<div class="drug-template">
+    <h4>ATROPINE - ANTICHOLINERGIC FOR BRADYCARDIA</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Anticholinergic, competitive muscarinic antagonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Blocks acetylcholine at muscarinic receptors<br>
+        • <strong>Cardiac:</strong> Blocks vagal tone → ↑ heart rate (positive chronotropy)<br>
+        • <strong>Other:</strong> Dries secretions, relaxes smooth muscle, dilates pupils<br>
+        • Has CNS effects at high doses (can cross blood-brain barrier)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • <strong>First-line for symptomatic bradycardia</strong> (ACLS algorithm)<br>
+        • Organophosphate/nerve agent poisoning<br>
+        • Premedication to reduce secretions (anesthesia)<br>
+        • Asystole/pulseless electrical activity (PEA) with bradycardia<br>
+        • Reversal of muscarinic side effects of other drugs
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Narrow-angle glaucoma (relative)<br>
+        • Myasthenia gravis (can worsen weakness)<br>
+        • Obstructive uropathy (BPH)<br>
+        • Obstructive GI disorders<br>
+        • Tachycardia (may worsen)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Symptomatic bradycardia:</strong> 0.5 mg IV every 3-5 minutes (max 3 mg total)<br>
+        • <strong>Asystole/PEA:</strong> 1 mg IV (single dose, repeat once if needed)<br>
+        • <strong>Organophosphate poisoning:</strong> 2-5 mg IV, then 1-2 mg every 5-60 minutes<br>
+        • <strong>Premedication:</strong> 0.4-0.6 mg IM 30-60 minutes pre-op
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>Bradycardia:</strong> 0.02 mg/kg IV (min 0.1 mg, max 0.5 mg child, 1 mg adolescent)<br>
+        • <strong>Repeat:</strong> May repeat once in 5 minutes<br>
+        • <strong>Min dose:</strong> 0.1 mg (to avoid paradoxical bradycardia)<br>
+        • <strong>Organophosphate:</strong> 0.05-0.1 mg/kg, then 0.02-0.05 mg/kg every 10-30 minutes
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Routes:</strong> IV, IO, IM, endotracheal, subcutaneous<br>
+        • <strong>Preparation:</strong> Available as 0.1 mg/mL, 0.5 mg/mL, 1 mg/mL<br>
+        • For IV: Give rapidly (over 1 minute)<br>
+        • For ET: Use 2-2.5 times IV dose diluted in 5-10 mL NS<br>
+        • <strong>Compatibility:</strong> Most IV solutions, avoid alkaline solutions
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Dry mouth, dry skin<br>
+        • Blurred vision, photophobia<br>
+        • Urinary retention<br>
+        • Constipation<br>
+        • Flushing, fever (especially children)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Tachycardia → myocardial ischemia<br>
+        • Hypertension<br>
+        • CNS effects: restlessness, confusion, hallucinations (high dose)<br>
+        • Paralytic ileus<br>
+        • Hyperthermia (reduced sweating)<br>
+        • Paradoxical bradycardia with low doses (<0.5 mg)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>Other anticholinergics:</strong> Additive effects<br>
+        • <strong>Digoxin:</strong> Increased vagal tone may be blocked<br>
+        • <strong>Amantadine, antihistamines, TCAs:</strong> Additive anticholinergic effects<br>
+        • <strong>Ketamine:</strong> Increased secretions (atropine sometimes given with)<br>
+        • <strong>Metoclopramide:</strong> Antagonizes GI effects
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>AVOID doses <0.5 mg in adults</strong> - can cause paradoxical bradycardia<br>
+        • <strong>Less effective in heart transplant patients</strong> (denervated heart)<br>
+        • Onset: 1-2 minutes, peak: 2-4 minutes, duration: 2-6 hours<br>
+        • <strong>Not effective for beta-blocker/calcium channel blocker overdose</strong><br>
+        • In organophosphate poisoning: "Secretions, secretions, secretions" - keep giving until secretions dry<br>
+        • <strong>Red man syndrome:</strong> Flushing, especially in children (not allergic)<br>
+        • <strong>Antidote for overdose:</strong> Physostigmine (rarely used)
+    </div>
+</div>
+
+<!-- CHAPTER 8: DRUG 6 - AMIODARONE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">8</span> Core Drug 6: Amiodarone</h2>
+
+<div class="drug-template">
+    <h4>AMIODARONE - BROAD-SPECTRUM ANTIARRHYTHMIC</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Class III antiarrhythmic (Vaughan Williams), with I, II, IV properties
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • <strong>Class III:</strong> Blocks potassium channels → ↑ action potential duration, ↑ refractory period<br>
+        • <strong>Class I:</strong> Sodium channel blockade (use-dependent)<br>
+        • <strong>Class II:</strong> Non-competitive beta-blockade<br>
+        • <strong>Class IV:</strong> Calcium channel blockade (weak)<br>
+        • Also has alpha-blocking and anti-thyroid effects
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • <strong>First-line for shock-refractory VF/pVT</strong> (ACLS)<br>
+        • Stable wide-complex tachycardia (especially with impaired LV function)<br>
+        • Atrial fibrillation/flutter with rapid ventricular response<br>
+        • Ventricular tachycardia (stable and unstable)<br>
+        • Recurrent ventricular arrhythmias prophylaxis
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • <strong>Absolute:</strong> Severe sinus node dysfunction, 2nd/3rd degree heart block without pacemaker<br>
+        • Cardiogenic shock (except for arrhythmia treatment)<br>
+        • Severe hypotension<br>
+        • Known hypersensitivity to iodine/amiodarone<br>
+        • Thyroid dysfunction (relative)<br>
+        • Pulmonary fibrosis (relative)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Cardiac arrest (VF/pVT):</strong> 300 mg IV push, then 150 mg second dose if needed<br>
+        • <strong>Perfusing arrhythmia loading:</strong> 150 mg over 10 minutes, then 1 mg/min × 6 hrs, then 0.5 mg/min<br>
+        • <strong>Maintenance infusion:</strong> 0.5 mg/min (720 mg/24 hrs)<br>
+        • <strong>Oral loading:</strong> 800-1600 mg/day × 1-3 weeks, then 400 mg/day
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>Cardiac arrest:</strong> 5 mg/kg IV/IO bolus (max 300 mg)<br>
+        • <strong>Perfusing VT:</strong> 5 mg/kg over 20-60 minutes<br>
+        • <strong>Infusion:</strong> 5-15 mcg/kg/min (consult specialist)<br>
+        • Use with extreme caution - not well studied in children
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Routes:</strong> IV only (central line preferred due to phlebitis risk)<br>
+        • <strong>Preparation:</strong> Comes as 150 mg/3 mL ampoule (50 mg/mL)<br>
+        • For infusion: Dilute in D5W only (NOT saline - precipitates)<br>
+        • Use in-line filter (1.2 micron) recommended<br>
+        • Administer through dedicated line if possible
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Hypotension (vasodilation, negative inotropy)<br>
+        • Bradycardia<br>
+        • Nausea, vomiting (especially with rapid infusion)<br>
+        • Metallic taste<br>
+        • Photosensitivity, skin discoloration (blue-gray)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • <strong>Pulmonary fibrosis</strong> (dose and duration dependent)<br>
+        • Thyroid dysfunction (hypo or hyper)<br>
+        • Hepatotoxicity (elevated LFTs)<br>
+        • Corneal microdeposits (vision changes)<br>
+        • Peripheral neuropathy<br>
+        • Torsades de pointes (less than other class III drugs)<br>
+        • Phlebitis with peripheral administration
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>Warfarin:</strong> Potentiates effect (reduce warfarin dose by 30-50%)<br>
+        • <strong>Digoxin:</strong> Increases levels (reduce digoxin dose by 50%)<br>
+        • <strong>Beta-blockers, CCBs:</strong> Additive bradycardia, hypotension<br>
+        • <strong>Statins:</strong> Increased risk of myopathy (especially simvastatin)<br>
+        • <strong>Phenytoin:</strong> Increases phenytoin levels<br>
+        • <strong>Cyclosporine:</strong> Increases levels
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>In cardiac arrest:</strong> Give after 2nd or 3rd shock if still in VF/pVT<br>
+        • <strong>Hypotension common</strong> with rapid infusion - give over at least 10 minutes<br>
+        • <strong>Half-life:</strong> Extremely long (13-103 days!) - accumulates in fat<br>
+        • <strong>Contains iodine</strong> - can interfere with thyroid tests<br>
+        • <strong>Monitor:</strong> ECG, BP, LFTs, TFTs, CXR (for pulmonary toxicity)<br>
+        • <strong>Dilute in D5W only</strong> - precipitates in saline!<br>
+        • <strong>Alternative to lidocaine</strong> in cardiac arrest, especially with impaired LV
+    </div>
+</div>
+
+<div class="acls-alert">
+    ⚡ ACLS ALERT: For shock-refractory VF/pVT: CPR → Shock → CPR → Adrenaline → CPR → Shock → CPR → Amiodarone
+</div>
+
+<!-- CHAPTER 9: DRUG 7 - LIDOCAINE (CARDIAC) -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">9</span> Core Drug 7: Lidocaine (Cardiac Use)</h2>
+
+<div class="drug-template">
+    <h4>LIDOCAINE - CLASS IB ANTIARRHYTHMIC</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Class IB antiarrhythmic, local anesthetic
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Blocks fast sodium channels (use-dependent)<br>
+        • Suppresses automaticity in Purkinje fibers<br>
+        • Shortens action potential duration in ventricles<br>
+        • Raises ventricular fibrillation threshold<br>
+        • Minimal effect on conduction velocity at normal doses
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • <strong>Alternative to amiodarone</strong> for shock-refractory VF/pVT<br>
+        • Stable monomorphic VT (especially with normal LV function)<br>
+        • VT prophylaxis after MI (historical use)<br>
+        • Digitalis-induced ventricular arrhythmias<br>
+        • Local anesthesia (different formulation/use)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Severe heart block (without pacemaker)<br>
+        • Adams-Stokes syndrome<br>
+        • Severe sinoatrial node dysfunction<br>
+        • Hypersensitivity to amide local anesthetics<br>
+        • Wolff-Parkinson-White syndrome (relative)<br>
+        • Severe hepatic impairment
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Cardiac arrest (VF/pVT):</strong> 1-1.5 mg/kg IV push, repeat 0.5-0.75 mg/kg in 5-10 min (max 3 mg/kg total)<br>
+        • <strong>Perfusing VT loading:</strong> 1-1.5 mg/kg IV, then 0.5-0.75 mg/kg every 5-10 min (max 3 mg/kg)<br>
+        • <strong>Maintenance infusion:</strong> 1-4 mg/min (typically 2 mg/min)<br>
+        • <strong>ET tube:</strong> 2-2.5 times IV dose (2-4 mg/kg) diluted in 5-10 mL NS
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>Cardiac arrest:</strong> 1 mg/kg IV/IO (max 100 mg)<br>
+        • <strong>Bolus:</strong> 1 mg/kg, may repeat in 10-15 minutes<br>
+        • <strong>Infusion:</strong> 20-50 mcg/kg/min<br>
+        • Use with caution - not first-line in children
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Routes:</strong> IV, IO, endotracheal<br>
+        • <strong>Preparation:</strong> Available as 1% (10 mg/mL), 2% (20 mg/mL)<br>
+        • For infusion: Mix 1 g in 250 mL D5W = 4 mg/mL OR 2 g in 250 mL = 8 mg/mL<br>
+        • <strong>Cardiac formulation:</strong> Preservative-free preferred for IV<br>
+        • Compatible with most IV solutions
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Drowsiness, dizziness<br>
+        • Paresthesias, numbness<br>
+        • Metallic taste<br>
+        • Nausea, vomiting<br>
+        • Lightheadedness
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • CNS toxicity: confusion → seizures → coma<br>
+        • Cardiovascular toxicity: hypotension, bradycardia, asystole<br>
+        • Respiratory depression/arrest<br>
+        • Allergic reactions (rare)<br>
+        • Torsades de pointes (rare)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>Beta-blockers:</strong> Increased lidocaine levels (reduced hepatic blood flow)<br>
+        • <strong>Cimetidine:</strong> Increases levels (inhibits metabolism)<br>
+        • <strong>Phenytoin:</strong> Additive cardiac depression<br>
+        • <strong>Other local anesthetics:</strong> Additive toxicity<br>
+        • <strong>Succinylcholine:</strong> Prolongs paralysis
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>Toxicity signs:</strong> "Lidocaine Lethargy" → Lip tingling → Lightheadedness → Loss of consciousness → Seizures<br>
+        • <strong>Half-life:</strong> 1.5-2 hours (prolonged with heart failure, liver disease)<br>
+        • <strong>Metabolite MEGX</strong> is cardioactive and toxic<br>
+        • <strong>Reduce dose</strong> in heart failure, hepatic disease, elderly<br>
+        • <strong>Not effective for atrial arrhythmias</strong><br>
+        • <strong>Monitor:</strong> ECG, neurological status, plasma levels if prolonged use (>3 mg/min)<br>
+        • <strong>Therapeutic level:</strong> 1.5-5 mcg/mL, toxic >6 mcg/mL<br>
+        • <strong>Antidote for toxicity:</strong> Stop infusion, supportive care, lipids if severe
+    </div>
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 AMIODARONE vs LIDOCAINE in CARDIAC ARREST:</strong><br>
+    • <strong>Amiodarone:</strong> Preferred for recurrent VF/pVT, better evidence for survival to hospital admission<br>
+    • <strong>Lidocaine:</strong> Alternative if amiodarone unavailable, may be better for ischemia-related VF<br>
+    • <strong>Both:</strong> Consider after 2-3 shocks, during CPR, while preparing for next shock
+</div>
+
+<!-- CHAPTER 10: DRUG 8 - MAGNESIUM SULFATE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">10</span> Core Drug 8: Magnesium Sulfate</h2>
+
+<div class="drug-template">
+    <h4>MAGNESIUM SULFATE - ELECTROLYTE WITH ANTIARRHYTHMIC PROPERTIES</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Electrolyte replacement, natural calcium channel blocker
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Natural calcium antagonist → vasodilation, bronchodilation<br>
+        • Membrane stabilizer → prolongs conduction, raises fibrillation threshold<br>
+        • Cofactor for Na⁺/K⁺ ATPase (helps correct potassium)<br>
+        • Inhibits acetylcholine release at neuromuscular junction<br>
+        • Smooth muscle relaxant (uterus, bronchial, vascular)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</strong></span>
+        • <strong>Torsades de pointes</strong> (first-line treatment)<br>
+        • Polymorphic VT (with normal QT)<br>
+        • Severe asthma exacerbations (adjunct)<br>
+        • Eclampsia/severe preeclampsia<br>
+        • Hypomagnesemia<br>
+        • Digoxin toxicity (for arrhythmias)<br>
+        • Refractory VF/VT (consider)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Myasthenia gravis (can worsen weakness)<br>
+        • Heart block (without pacemaker)<br>
+        • Severe renal impairment (CrCl <30 mL/min)<br>
+        • Hypermagnesemia<br>
+        • Concurrent use of calcium channel blockers (relative)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Torsades/Polymorphic VT:</strong> 1-2 g IV over 5-20 minutes, then infusion 0.5-1 g/hr<br>
+        • <strong>Severe asthma:</strong> 2 g IV over 20 minutes<br>
+        • <strong>Eclampsia:</strong> 4-6 g IV load over 20 min, then 1-2 g/hr infusion<br>
+        • <strong>Hypomagnesemia:</strong> 1-2 g IV over 1 hour, then 0.5-1 g/hr<br>
+        • <strong>Cardiac arrest (refractory VF):</strong> 1-2 g IV push
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>Torsades:</strong> 25-50 mg/kg IV (max 2 g) over 10-20 minutes<br>
+        • <strong>Asthma:</strong> 25-50 mg/kg IV (max 2 g) over 20 minutes<br>
+        • <strong>Eclampsia (adolescent):</strong> 4-6 g load, then 1-2 g/hr (as adult)<br>
+        • Use with caution - limited evidence
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Routes:</strong> IV, IM (painful)<br>
+        • <strong>Preparation:</strong> Available as 1 g/2 mL (50%), 2 g/10 mL (20%), 4 g/8 mL (50%)<br>
+        • For infusion: Dilute to ≤20% concentration (200 mg/mL)<br>
+        • IV push for arrest: Give undiluted or diluted in 10 mL D5W/NS<br>
+        • IM: Use 50% solution, deep injection, massage site
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Flushing, warmth sensation<br>
+        • Nausea, vomiting<br>
+        • Headache, dizziness<br>
+        • Muscle weakness<br>
+        • Sedation
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Hypotension (vasodilation)<br>
+        • Bradycardia, heart block<br>
+        • Respiratory depression/arrest<br>
+        • Loss of deep tendon reflexes (>4-5 mEq/L)<br>
+        • Cardiac arrest (>10-15 mEq/L)<br>
+        • Calcium antagonist effect (reversed with calcium)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>Neuromuscular blockers:</strong> Potentiates effect<br>
+        • <strong>Digoxin:</strong> May worsen heart block<br>
+        • <strong>Calcium channel blockers:</strong> Additive effects<br>
+        • <strong>Aminoglycosides, cisplatin:</strong> Increased magnesium loss<br>
+        • <strong>Calcium:</strong> Antagonizes effects
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>For torsades:</strong> "Magnesium First" regardless of magnesium level<br>
+        • <strong>Monitor reflexes</strong> during infusion - loss indicates toxicity<br>
+        • <strong>Antidote:</strong> Calcium gluconate/chloride (1 g IV) for toxicity<br>
+        • <strong>Onset:</strong> Immediate for arrhythmias, 30-60 min for asthma<br>
+        • <strong>Renal excretion:</strong> Reduce dose/frequency in renal impairment<br>
+        • <strong>Normal level:</strong> 1.5-2.5 mg/dL (0.6-1 mmol/L)<br>
+        • <strong>Therapeutic for arrhythmias:</strong> 4-6 mg/dL<br>
+        • <strong>Check magnesium level</strong> 2 hours after loading dose
+    </div>
+</div>
+
+<!-- CHAPTER 11: DRUG 9 - PHENYLEPHRINE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">11</span> Core Drug 9: Phenylephrine</h2>
+
+<div class="drug-template">
+    <h4>PHENYLEPHRINE - PURE ALPHA AGONIST</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Selective alpha-1 adrenergic agonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Pure alpha-1 agonist → vasoconstriction<br>
+        • No beta activity → no direct cardiac stimulation<br>
+        • Increases SVR and BP via peripheral vasoconstriction<br>
+        • Reflex bradycardia often occurs (baroreceptor response)<br>
+        • Reduces mucosal edema (nasal decongestant effect)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Drug-induced hypotension (especially anesthesia-related)<br>
+        • Spinal/neurogenic shock<br>
+        • Supraventricular tachycardia (to increase vagal tone via reflex)<br>
+        • Nasal decongestion (topical)<br>
+        • Pupillary dilation (ophthalmic)<br>
+        • Hypotension in aortic stenosis (preserves coronary perfusion)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Hypovolemia (correct first)<br>
+        • Severe hypertension<br>
+        • Ventricular tachycardia<br>
+        • Severe peripheral vascular disease<br>
+        • Narrow-angle glaucoma (for ophthalmic use)<br>
+        • Concurrent MAOI use
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>IV bolus:</strong> 40-100 mcg every 1-2 minutes as needed<br>
+        • <strong>Infusion:</strong> Start 0.5-1 mcg/kg/min, titrate to effect (usual 0.5-6 mcg/kg/min)<br>
+        • <strong>For SVT:</strong> 100-250 mcg rapid IV push (causes reflex bradycardia)<br>
+        • <strong>Max single dose:</strong> 200 mcg, max infusion: 10 mcg/kg/min
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>IV bolus:</strong> 1-2 mcg/kg every 10-15 minutes<br>
+        • <strong>Infusion:</strong> 0.1-0.5 mcg/kg/min, titrate<br>
+        • Use with caution - limited pediatric data
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Routes:</strong> IV, IM, subcutaneous, ophthalmic, intranasal<br>
+        • <strong>Preparation:</strong> Comes as 10 mg/mL (1%)<br>
+        • For infusion: Mix 10 mg in 250 mL NS = 40 mcg/mL<br>
+        • For bolus: Dilute 1 mg (0.1 mL of 10 mg/mL) in 9.9 mL NS = 100 mcg/mL<br>
+        • Compatible with most IV solutions
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Reflex bradycardia<br>
+        • Headache<br>
+        • Anxiety, restlessness<br>
+        • Reduced urine output (renal vasoconstriction)<br>
+        • Extravasation injury risk
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Severe hypertension<br>
+        • Myocardial ischemia (increased afterload)<br>
+        • Tissue necrosis with extravasation<br>
+        • Arrhythmias (less than other pressors)<br>
+        • Mesenteric/renal ischemia<br>
+        • Pulmonary hypertension
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>MAOIs:</strong> Hypertensive crisis<br>
+        • <strong>Beta-blockers:</strong> Severe hypertension, reflex bradycardia exaggerated<br>
+        • <strong>TCAs:</strong> Potentiates effect<br>
+        • <strong>Oxytocics:</strong> Severe hypertension<br>
+        • <strong>Ergot alkaloids:</strong> Extreme vasoconstriction
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>"Pharmacologic tourniquet"</strong> - pure vasoconstrictor<br>
+        • Causes reflex bradycardia - can be used to terminate SVT<br>
+        • <strong>Good for spinal shock</strong> (preserves spinal perfusion pressure)<br>
+        • <strong>Monitor urine output</strong> - can cause renal impairment<br>
+        • <strong>Short half-life</strong> (~5 minutes) - easy titration<br>
+        • <strong>Extravasation treatment:</strong> Phentolamine infiltration<br>
+        • <strong>Less arrhythmogenic</strong> than other pressors (no beta effect)<br>
+        • <strong>Not first-line for septic shock</strong> (lacks cardiac support)
+    </div>
+</div>
+
+<!-- CHAPTER 12: DRUG 10 - VASOPRESSIN (OVERVIEW) -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">12</span> Core Drug 10: Vasopressin (Overview)</h2>
+
+<div class="drug-template">
+    <h4>VASOPRESSIN - NON-ADRENERGIC VASOPRESSOR</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Endogenous hormone (ADH), V₁ receptor agonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • <strong>V₁ receptors:</strong> Vasoconstriction (splanchnic, cutaneous, coronary)<br>
+        • <strong>V₂ receptors:</strong> Water reabsorption in kidneys (antidiuretic effect)<br>
+        • Non-adrenergic → works even with catecholamine resistance<br>
+        • Synergistic with norepinephrine<br>
+        • Increases sensitivity to catecholamines
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • <strong>Vasodilatory shock</strong> refractory to norepinephrine<br>
+        • <strong>Alternative to adrenaline</strong> in cardiac arrest (ACLS)<br>
+        • Septic shock (as adjunct to norepinephrine)<br>
+        • Variceal bleeding (causes splanchnic vasoconstriction)<br>
+        • Diabetes insipidus (different dose)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Hypersensitivity<br>
+        • Coronary artery disease (relative - causes coronary vasoconstriction)<br>
+        • Peripheral vascular disease<br>
+        • Asthma (can cause bronchoconstriction)<br>
+        • Pregnancy (can cause uterine contractions)<br>
+        • Hyponatremia (relative)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong>Cardiac arrest:</strong> 40 units IV/IO single dose (replaces first/second adrenaline)<br>
+        • <strong>Septic shock:</strong> 0.01-0.04 units/min as adjunct to norepinephrine<br>
+        • <strong>Variceal bleed:</strong> 0.2-0.4 units/min, reduce after bleeding controlled<br>
+        • <strong>Max dose:</strong> 0.04 units/min (higher doses increase adverse effects)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong>Cardiac arrest:</strong> 0.5-1 unit/kg IV/IO (max 40 units)<br>
+        • <strong>Shock:</strong> 0.0003-0.002 units/kg/min<br>
+        • Limited evidence - use with caution
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong>Routes:</strong> IV, IO<br>
+        • <strong>Preparation:</strong> Comes as 20 units/mL<br>
+        • For infusion: Mix 100 units in 250 mL NS = 0.4 units/mL<br>
+        • For arrest: Give undiluted or diluted in 10-20 mL NS<br>
+        • Compatible with most IV solutions
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Facial pallor<br>
+        • Abdominal cramping<br>
+        • Nausea, vomiting<br>
+        • Bronchoconstriction<br>
+        • Increased bowel sounds
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Myocardial ischemia (coronary vasoconstriction)<br>
+        • Severe hypertension<br>
+        • Hyponatremia (SIADH-like effect)<br>
+        • Peripheral/splanchnic ischemia<br>
+        • Thrombocytopenia<br>
+        • Cardiac arrest (with rapid IV push)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong>Ganglionic blockers:</strong> Potentiates effect<br>
+        • <strong>Catecholamines:</strong> Synergistic pressor effect<br>
+        • <strong>Carbamazepine, chlorpropamide, TCAs:</strong> Potentiate antidiuretic effect<br>
+        • <strong>Lithium, demeclocycline:</strong> Antagonize antidiuretic effect
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong>In cardiac arrest:</strong> Can replace first or second dose of adrenaline<br>
+        • <strong>Fixed dose</strong> - not weight-based (40 units for all adults)<br>
+        • <strong>Works in acidotic states</strong> where catecholamines fail<br>
+        • <strong>Monitor sodium</strong> - causes water retention<br>
+        • <strong>For septic shock:</strong> Add when norepinephrine >0.25-0.5 mcg/kg/min<br>
+        • <strong>Half-life:</strong> 10-35 minutes (shorter than catecholamines)<br>
+        • <strong>Refractory to beta-blockers</strong> (non-adrenergic mechanism)<br>
+        • <strong>VASST trial:</strong> No mortality benefit over norepinephrine alone in septic shock
+    </div>
+</div>
+
+<!-- CHAPTER 13: INFUSION VS BOLUS -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">13</span> Infusion vs Bolus: When to Use Each</h2>
+
+<h3>13.1 Bolus Administration (IV Push)</h3>
+
+<div class="clinical-pearl">
+    <strong>🧠 BOLUS = "NOW" effect:</strong> Use when you need immediate, short-term effect. Think: Cardiac arrest, rapid sequence intubation, status epilepticus.
+</div>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Drug</th>
+            <th>When to Bolus</th>
+            <th>Rate</th>
+            <th>Special Instructions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Adrenaline</strong></td>
+            <td>Cardiac arrest, anaphylaxis (IM)</td>
+            <td>Rapid IV push (arrest), Slow IV (anaphylaxis)</td>
+            <td>During CPR, not during pulse checks</td>
+        </tr>
+        <tr>
+            <td><strong>Atropine</strong></td>
+            <td>Symptomatic bradycardia</td>
+            <td>Rapid IV push</td>
+            <td>Minimum 0.5 mg to avoid paradoxical bradycardia</td>
+        </tr>
+        <tr>
+            <td><strong>Amiodarone</strong></td>
+            <td>VF/pVT arrest, perfusing VT load</td>
+            <td>Rapid (arrest), Slow (perfusing)</td>
+            <td>Over 10 min for perfusing to avoid hypotension</td>
+        </tr>
+        <tr>
+            <td><strong>Lidocaine</strong></td>
+            <td>VF/pVT arrest, VT load</td>
+            <td>Rapid IV push</td>
+            <td>Max 3 mg/kg total loading dose</td>
+        </tr>
+        <tr>
+            <td><strong>Magnesium</strong></td>
+            <td>Torsades, severe asthma</td>
+            <td>Over 5-20 minutes</td>
+            <td>Slower if hypotensive</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>13.2 Infusion Administration</h3>
+
+<div class="clinical-pearl">
+    <strong>🧠 INFUSION = "SUSTAINED" effect:</strong> Use when you need continuous effect. Think: Shock, maintenance of sedation, status epilepticus maintenance.
+</div>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Drug</th>
+            <th>When to Infuse</th>
+            <th>Starting Rate</th>
+            <th>Titration Endpoint</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Norepinephrine</strong></td>
+            <td>Septic shock, distributive shock</td>
+            <td>0.05-0.1 mcg/kg/min</td>
+            <td>MAP ≥65 mmHg</td>
+        </tr>
+        <tr>
+            <td><strong>Dopamine</strong></td>
+            <td>Cardiogenic shock, bradycardia</td>
+            <td>5 mcg/kg/min</td>
+            <td>MAP ≥65 mmHg, HR response</td>
+        </tr>
+        <tr>
+            <td><strong>Dobutamine</strong></td>
+            <td>Cardiogenic shock, low CO</td>
+            <td>2-3 mcg/kg/min</td>
+            <td>Improved perfusion, CO</td>
+        </tr>
+        <tr>
+            <td><strong>Adrenaline</strong></td>
+            <td>Refractory anaphylaxis, shock</td>
+            <td>0.05-0.1 mcg/kg/min</td>
+            <td>BP response, perfusion</td>
+        </tr>
+        <tr>
+            <td><strong>Vasopressin</strong></td>
+            <td>Refractory vasodilatory shock</td>
+            <td>0.01-0.03 units/min</td>
+            <td>MAP ≥65 mmHg, reduce NE dose</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>13.3 Common Infusion Concentrations & Calculations</h3>
+
+<div class="dosing-card">
+    <h4>📊 STANDARD INFUSION CONCENTRATIONS</h4>
+    
+    <strong>Norepinephrine:</strong> 4 mg in 250 mL D5W = 16 mcg/mL<br>
+    <em>Example for 70 kg at 0.1 mcg/kg/min:</em> (0.1 × 70 × 60) ÷ 16 = 26 mL/hr<br><br>
+    
+    <strong>Dopamine:</strong> 400 mg in 250 mL = 1600 mcg/mL<br>
+    <em>Example for 70 kg at 5 mcg/kg/min:</em> (5 × 70 × 60) ÷ 1600 = 13 mL/hr<br><br>
+    
+    <strong>Dobutamine:</strong> 250 mg in 250 mL = 1000 mcg/mL<br>
+    <em>Example for 70 kg at 5 mcg/kg/min:</em> (5 × 70 × 60) ÷ 1000 = 21 mL/hr<br><br>
+    
+    <strong>Adrenaline:</strong> 1 mg in 250 mL = 4 mcg/mL<br>
+    <em>Example for 70 kg at 0.1 mcg/kg/min:</em> (0.1 × 70 × 60) ÷ 4 = 105 mL/hr
+</div>
+
+<!-- APPENDIX: QUICK REFERENCE -->
+<div class="page-break"></div>
+<h2>Appendix: Quick Reference Guide</h2>
+
+<h3>Shock Drug Selection Algorithm</h3>
+
+<div class="algorithm-box">
+    <strong>STEP 1: Assess volume status → Give fluids if hypovolemic</strong><br>
+    <strong>STEP 2: Identify shock type:</strong><br>
+    &nbsp;&nbsp;• <strong>Distributive (warm, vasodilated):</strong> Norepinephrine FIRST<br>
+    &nbsp;&nbsp;• <strong>Cardiogenic (cold, wet, low CO):</strong> Dobutamine FIRST (if BP okay)<br>
+    &nbsp;&nbsp;• <strong>Cardiogenic + Low BP:</strong> Dopamine or Dobutamine + Norepinephrine<br>
+    &nbsp;&nbsp;• <strong>Hypovolemic (cold, dry):</strong> FLUIDS → Norepinephrine if refractory<br>
+    &nbsp;&nbsp;• <strong>Obstructive:</strong> Treat cause (needle decompression, etc.)<br>
+    <strong>STEP 3: Add second agent if refractory:</strong><br>
+    &nbsp;&nbsp;• Norepinephrine + Vasopressin (for distributive)<br>
+    &nbsp;&nbsp;• Dobutamine + Norepinephrine (for cardiogenic with low BP)<br>
+    &nbsp;&nbsp;• Consider adrenaline if severely hypotensive
+</div>
+
+<h3>ACLS Drug Summary</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Rhythm</th>
+            <th>First Drug</th>
+            <th>Second Drug</th>
+            <th>Special Considerations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>VF/pVT</strong></td>
+            <td>Adrenaline 1 mg after 2nd shock</td>
+            <td>Amiodarone 300 mg or Lidocaine 1.5 mg/kg</td>
+            <td>Consider magnesium if torsades suspected</td>
+        </tr>
+        <tr>
+            <td><strong>PEA/Asystole</strong></td>
+            <td>Adrenaline 1 mg ASAP</td>
+            <td>Consider atropine if bradycardic</td>
+            <td>Treat reversible causes (Hs and Ts)</td>
+        </tr>
+        <tr>
+            <td><strong>Bradycardia</strong></td>
+            <td>Atropine 0.5 mg (min)</td>
+            <td>Adrenaline 2-10 mcg/min infusion</td>
+            <td>Consider pacing if drugs fail</td>
+        </tr>
+        <tr>
+            <td><strong>Tachycardia (Stable)</strong></td>
+            <td>Assess rhythm first</td>
+            <td>Drugs per specific rhythm</td>
+            <td>Consider cardioversion if unstable</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Monitoring Parameters for Vasoactive Drugs</h3>
+<ul>
+    <li><strong>Continuous:</strong> ECG, BP (arterial line preferred), pulse oximetry</li>
+    <li><strong>Every 5-15 minutes during titration:</strong> BP, HR, perfusion</li>
+    <li><strong>Every hour:</strong> Urine output (target >0.5 mL/kg/hr)</li>
+    <li><strong>Every 4-6 hours:</strong> Lactate, ABG if indicated</li>
+    <li><strong>Daily:</strong> ECG, electrolytes, renal function</li>
+    <li><strong>For specific drugs:</strong>
+        <ul class="sub-list">
+            <li><strong>Dobutamine:</strong> Cardiac output if available</li>
+            <li><strong>Amiodarone:</strong> LFTs, TFTs, CXR periodically</li>
+            <li><strong>Vasopressin:</strong> Sodium daily</li>
+            <li><strong>Magnesium:</strong> Reflexes during infusion, Mg level</li>
+        </ul>
+    </li>
+</ul>
+
+<div class="study-format">
+    <h2><span class="emoji">🧠</span> DRUG TEMPLATE SUMMARY</h2>
+    <p><strong>Remember this format for ALL drugs in subsequent modules:</strong></p>
+    <ol>
+        <li><strong>Drug class</strong> - Know the category</li>
+        <li><strong>Mechanism of action</strong> - How it works at molecular/physiological level</li>
+        <li><strong>Indications</strong> - When to use it</li>
+        <li><strong>Contraindications</strong> - When NOT to use it</li>
+        <li><strong>Adult dose</strong> - Exact dosing (bolus, infusion, max)</li>
+        <li><strong>Pediatric dose</strong> - Weight-based calculations</li>
+        <li><strong>Route & preparation</strong> - How to make it, give it</li>
+        <li><strong>Side effects</strong> - Common, expected effects</li>
+        <li><strong>Adverse effects / ADR</strong> - Serious, harmful effects</li>
+        <li><strong>Drug interactions</strong> - What to watch for with other drugs</li>
+        <li><strong>Emergency pearls</strong> - Clinical tips, exam favorites</li>
+    </ol>
+</div>
+
+<div class="footer-note">
+    <strong>© Emergency Medicine Education Team | Confidential Educational Material</strong><br>
+    This document is for educational purposes only. Always follow local protocols and guidelines.<br>
+    Medications and doses may vary by institution. Verify all information before clinical application.<br>
+    Version 1.0 | Last updated: [Current Date] | Module 2 of 10
+</div>
+</body> </html> 

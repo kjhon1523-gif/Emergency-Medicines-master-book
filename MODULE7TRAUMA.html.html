@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 7: Trauma, Bleeding & Surgical Emergencies</title>
+    <style>
+        /* EXACT STYLES FROM MODULE 6 */
+        body {
+            font-family: 'Calibri', 'Segoe UI', sans-serif;
+            line-height: 1.5;
+            color: #2c3e50;
+            margin: 2cm;
+            background-color: #ffffff;
+            counter-reset: chapter section figure table;
+        }
+        
+        h1 {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #1a5276;
+            text-align: center;
+            border-bottom: 3px double #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #2980b9;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #154360;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+        
+        h4 {
+            font-size: 12.5pt;
+            font-weight: bold;
+            color: #21618c;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        
+        .module-title {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #21618c;
+            margin-top: 40px;
+            border-left: 6px solid #3498db;
+            padding-left: 15px;
+        }
+        
+        .chapter-number {
+            background-color: #3498db;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        /* Lists */
+        ul, ol {
+            padding-left: 1.5em;
+            margin-bottom: 1em;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-size: 11.5pt;
+        }
+        
+        .sub-list {
+            list-style-type: lower-alpha;
+            padding-left: 2.5em;
+        }
+        
+        .drug-list {
+            columns: 2;
+            column-gap: 50px;
+            margin-top: 15px;
+        }
+        
+        .drug-list li {
+            break-inside: avoid;
+        }
+        
+        /* Special Boxes */
+        .study-format {
+            background-color: #e8f4fc;
+            border: 1px solid #aed6f1;
+            border-left: 6px solid #2e86c1;
+            padding: 20px;
+            margin-top: 30px;
+            page-break-inside: avoid;
+        }
+        
+        .clinical-pearl {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 6px solid #fdcb6e;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .warning-box {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-left: 6px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .definition-box {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-left: 6px solid #17a2b8;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        /* Tables */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 11pt;
+        }
+        
+        .comparison-table th {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #1a5276;
+        }
+        
+        .comparison-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        /* Page Layout */
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .footer-note {
+            font-size: 9pt;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 10px;
+        }
+        
+        /* Drug Template - EXACT MATCH */
+        .drug-template {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+            page-break-inside: avoid;
+        }
+        
+        .drug-template h4 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        
+        .template-section {
+            margin-bottom: 15px;
+        }
+        
+        .template-label {
+            font-weight: bold;
+            color: #2980b9;
+            display: inline-block;
+            width: 180px;
+        }
+        
+        /* Emoji Styling */
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        /* Print Specific */
+        @media print {
+            body {
+                margin: 1.5cm;
+                font-size: 11pt;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            .no-print {
+                display: none;
+            }
+            
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        
+        /* Learning Objectives */
+        .learning-objectives {
+            background-color: #e8f6f3;
+            border: 1px solid #a2d9ce;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .objective-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .objective-list li:before {
+            content: "✓ ";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* Module 7 Specific Colors */
+        .trauma-red {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .bleeding-blue {
+            color: #2980b9;
+            font-weight: bold;
+        }
+        
+        .analgesia-green {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .opioid-purple {
+            color: #8e44ad;
+            font-weight: bold;
+        }
+        
+        .anti-inflammatory-orange {
+            color: #e67e22;
+            font-weight: bold;
+        }
+        
+        .immunization-teal {
+            color: #17a2b8;
+            font-weight: bold;
+        }
+        
+        /* Module 7 Specific Boxes */
+        .trauma-box {
+            background-color: #f2d7d5;
+            border: 2px solid #c0392b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .tranexamic-box {
+            background-color: #d4e6f1;
+            border: 2px solid #21618c;
+            color: #1a5276;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .analgesia-box {
+            background-color: #e8f8f5;
+            border: 2px solid #45b39d;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .tetanus-box {
+            background-color: #fef9e7;
+            border: 2px solid #f1c40f;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .massive-transfusion-box {
+            background-color: #2c3e50;
+            border: 2px solid #34495e;
+            color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .procedure-box {
+            background-color: #f4ecf7;
+            border: 2px solid #8e44ad;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="module-title">
+    <span class="emoji">🟥</span> MODULE 7: TRAUMA, BLEEDING & SURGICAL EMERGENCIES (HIGH-YIELD)
+    <div style="font-size: 12pt; font-weight: normal; font-style: italic; color: #7f8c8d;">
+        (Tranexamic Acid, Vitamin K, Morphine, Fentanyl, Ketorolac, Tetanus Immunization)
+    </div>
+</div>
+
+<div class="learning-objectives">
+    <h3 style="color: #148f77; margin-top: 0;">📖 Learning Objectives</h3>
+    <ul class="objective-list">
+        <li>Master trauma resuscitation principles and massive transfusion protocols</li>
+        <li>Understand TXA timing and dosing in trauma and major hemorrhage</li>
+        <li>Learn acute pain management strategies in trauma and surgical emergencies</li>
+        <li>Recognize and manage anticoagulation reversal scenarios</li>
+        <li>Apply appropriate tetanus prophylaxis in wound management</li>
+        <li>Understand opioid and NSAID selection based on patient factors</li>
+        <li>Apply knowledge to ATLS protocols and trauma scenarios</li>
+        <li>Manage perioperative emergencies and surgical complications</li>
+    </ul>
+</div>
+
+<!-- INTRODUCTION -->
+<h2><span class="chapter-number">0</span> Introduction: Trauma & Surgical Pharmacology</h2>
+
+<div class="warning-box">
+    <strong>⚠️ TRAUMA IS A RACE AGAINST TIME:</strong> The first hour is the "golden hour." TXA within 3 hours of injury. Tetanus within 24 hours of contaminated wounds. Pain control immediately. Know these timelines cold.
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 Core Concept:</strong> Trauma management follows three phases:<br>
+    1. <strong class="trauma-red">Primary survey</strong> (ABCDEs: Airway, Breathing, Circulation, Disability, Exposure)<br>
+    2. <strong class="trauma-red">Resuscitation</strong> (Fluids, blood products, medications to support physiology)<br>
+    3. <strong class="trauma-red">Definitive care</strong> (Specific treatments for injuries, pain control, prevention)<br>
+    This module focuses on the pharmacological interventions you MUST know.
+</div>
+
+<!-- STUDY FORMAT -->
+<div class="study-format">
+    <h3><span class="emoji">📋</span> HOW WE WILL STUDY EACH DRUG (FIXED TEMPLATE)</h3>
+    <p><strong>For every drug, we will follow ONE SAME FORMAT:</strong></p>
+    <ol>
+        <li><strong>Drug class</strong> - Pharmacological category</li>
+        <li><strong>Mechanism of action</strong> - How it works at receptor/physiological level</li>
+        <li><strong>Indications</strong> - Specific trauma/surgical scenarios</li>
+        <li><strong>Contraindications</strong> - Absolute and relative contraindications</li>
+        <li><strong>Adult dose</strong> - Exact emergency dosing</li>
+        <li><strong>Pediatric dose</strong> - Weight-based calculations</li>
+        <li><strong>Route & preparation</strong> - How to prepare and administer safely</li>
+        <li><strong>Side effects</strong> - Common, expected effects</li>
+        <li><strong>Adverse effects / ADR</strong> - Serious reactions and risks</li>
+        <li><strong>Drug interactions</strong> - Important combinations to avoid/watch</li>
+        <li><strong>Emergency pearls</strong> - Clinical tips, exam favorites, practical wisdom</li>
+    </ol>
+</div>
+
+<!-- CHAPTER 1: TRAUMA RESUSCITATION & MASSIVE TRANSFUSION -->
+<h2><span class="chapter-number">1</span> Trauma Resuscitation & Massive Transfusion</h2>
+
+<div class="definition-box">
+    <strong>Damage Control Resuscitation (DCR):</strong> A strategy for major trauma involving permissive hypotension, haemostatic resuscitation, and damage control surgery to prevent the "lethal triad" of hypothermia, acidosis, and coagulopathy.
+</div>
+
+<h3>1.1 The Lethal Triad in Trauma</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">Component</th>
+            <th>Causes</th>
+            <th>Effects</th>
+            <th>Pharmacological Interventions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Hypothermia</strong></td>
+            <td>Exposure, cold fluids, impaired thermoregulation</td>
+            <td>• Coagulopathy (enzymes don't work)<br>• Cardiac instability<br>• Increased oxygen consumption</td>
+            <td>• Warm fluids/blood<br>• Active warming devices<br>• Minimize exposure</td>
+        </tr>
+        <tr>
+            <td><strong>Acidosis</strong></td>
+            <td>Hypoperfusion, anaerobic metabolism, shock</td>
+            <td>• Myocardial depression<br>• Coagulopathy<br>• Vasodilation</td>
+            <td>• Restore perfusion<br>• Sodium bicarbonate (limited role)<br>• Avoid excessive saline</td>
+        </tr>
+        <tr>
+            <td><strong>Coagulopathy</strong></td>
+            <td>Dilution, consumption, fibrinolysis, platelet dysfunction</td>
+            <td>• Ongoing hemorrhage<br>• Multi-organ failure<br>• Death</td>
+            <td>• TXA<br>• Blood products (FFP, platelets, cryo)<br>• Vitamin K (for warfarin)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>1.2 Massive Transfusion Protocol (MTP)</h3>
+
+<div class="massive-transfusion-box">
+    <strong>🩸 MASSIVE TRANSFUSION PROTOCOL (1:1:1 RATIO):</strong><br>
+    • <strong>Definition:</strong> >10 units PRBCs in 24h OR >4 units in 1h OR replacement of entire blood volume<br>
+    • <strong>Ratio:</strong> 1 unit PRBCs : 1 unit FFP : 1 unit platelets (or 1 pack = 6 pooled units)<br>
+    • <strong>Additions:</strong> Cryoprecipitate/fibrinogen concentrate, calcium, TXA<br>
+    • <strong>Monitoring:</strong> TEG/ROTEM if available, labs q30-60min (Hb, PT/INR, fibrinogen, Ca²⁺)<br>
+    <br>
+    <strong>CRYSTALLOID RESTRICTION:</strong><br>
+    • Limit to 1-2L initially, then switch to blood products<br>
+    • Avoid excessive saline (dilutional coagulopathy, hyperchloremic acidosis)<br>
+    • Use balanced solutions (PlasmaLyte, Hartmann's) if available
+</div>
+
+<!-- CHAPTER 2: DRUG 1 - TRANEXAMIC ACID (TXA) -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">2</span> Core Drug 1: Tranexamic Acid (TXA)</h2>
+
+<div class="drug-template">
+    <h4>TRANEXAMIC ACID (TXA) - ANTIFIBRINOLYTIC FOR TRAUMA & HEMORRHAGE</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Synthetic lysine analogue, antifibrinolytic
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Competitively inhibits plasminogen activation to plasmin<br>
+        • At higher doses, non-competitively inhibits plasmin<br>
+        • Reduces breakdown of fibrin clots → stabilizes clot formation<br>
+        • Reduces bleeding without increasing thrombotic risk at trauma doses<br>
+        • Also has anti-inflammatory properties (reduces complement activation)<br>
+        • Minimal effect on coagulation parameters (PT/INR, aPTT)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Trauma with significant hemorrhage or risk of significant hemorrhage<br>
+        • Post-partum hemorrhage (obstetric emergencies)<br>
+        • Major surgical bleeding (cardiac, orthopaedic, spinal surgery)<br>
+        • Hereditary angioedema (prophylaxis and treatment)<br>
+        • Menorrhagia (oral formulation)<br>
+        • Upper GI bleeding (emerging evidence)<br>
+        • Epistaxis refractory to packing
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Active thrombosis (DVT, PE, stroke within 30 days)<br>
+        • Known hypersensitivity to tranexamic acid<br>
+        • Subarachnoid hemorrhage (increased risk of cerebral ischemia)<br>
+        • Color vision disturbances (rare side effect, avoid if history)<br>
+        • Severe renal impairment (CrCl <30 mL/min) - requires dose reduction<br>
+        • Concurrent use of factor IX complex or anti-inhibitor coagulant complex
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="bleeding-blue">Trauma hemorrhage (CRASH-2 protocol):</strong> 1 g IV over 10 min, then 1 g IV over 8 hours<br>
+        • <strong class="bleeding-blue">Massive hemorrhage:</strong> 1 g IV bolus, consider additional 1 g after 1 hour if ongoing bleed<br>
+        • <strong class="bleeding-blue">Surgical bleeding:</strong> 10-20 mg/kg IV pre-incision, then 1 mg/kg/hr infusion<br>
+        • <strong class="bleeding-blue">Post-partum hemorrhage:</strong> 1 g IV over 10 min, may repeat after 30 min if needed<br>
+        • <strong class="bleeding-blue">Oral (menorrhagia):</strong> 1-1.5 g TID-QID during menses<br>
+        • <strong class="bleeding-blue">Max daily dose:</strong> 4-6 g (trauma/surgical), 4 g (other indications)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="bleeding-blue">Trauma/surgical:</strong> 15 mg/kg IV load, then 2 mg/kg/hr infusion<br>
+        • <strong class="bleeding-blue">Alternative:</strong> 10 mg/kg IV q6-8h<br>
+        • <strong class="bleeding-blue">Neonates/infants:</strong> Limited data - 10 mg/kg IV over 10 min<br>
+        • <strong class="bleeding-blue">Cardiac surgery:</strong> Load 30 mg/kg, then 16 mg/kg/hr, then 2 mg/kg/hr<br>
+        • <strong class="bleeding-blue">Max pediatric dose:</strong> Adult dosing if weight >50 kg
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="bleeding-blue">Routes:</strong> IV (preferred in emergencies), oral, topical<br>
+        • <strong class="bleeding-blue">Preparation:</strong> 100 mg/mL (10 mL = 1 g), 500 mg/5 mL vials<br>
+        • <strong class="bleeding-blue">For IV bolus:</strong> Give undiluted over 10 minutes (at least)<br>
+        • <strong class="bleeding-blue">For infusion:</strong> Dilute in 50-100 mL NS or D5W, infuse over 8 hours<br>
+        • <strong class="bleeding-blue">Compatibility:</strong> Compatible with most IV solutions, NOT with penicillin, blood products<br>
+        • <strong class="bleeding-blue">Oral:</strong> 500 mg tablets, crush and give via NG if needed
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Nausea, vomiting, diarrhea (especially oral)<br>
+        • Headache, dizziness<br>
+        • Visual disturbances (rare, reversible)<br>
+        • Hypotension with rapid IV administration<br>
+        • Injection site reactions<br>
+        • Fatigue, malaise
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Thromboembolic events (DVT, PE, stroke) - risk increases with higher doses/longer use<br>
+        • Seizures (especially with high doses in cardiac surgery patients)<br>
+        • Anaphylaxis (rare)<br>
+        • Color vision abnormalities, retinal changes<br>
+        • Acute renal cortical necrosis (rare, with ureteral obstruction)<br>
+        • Intracranial thrombosis (avoid in subarachnoid hemorrhage)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="bleeding-blue">Anticoagulants/antiplatelets:</strong> May reduce effectiveness of TXA<br>
+        • <strong class="bleeding-blue">Factor IX complex:</strong> Increased thrombosis risk - contraindicated<br>
+        • <strong class="bleeding-blue">Ticlopidine:</strong> Increased thrombosis risk<br>
+        • <strong class="bleeding-blue">Hormonal contraceptives:</strong> Increased thrombosis risk (theoretical)<br>
+        • <strong class="bleeding-blue">Tissue plasminogen activators (tPA):</strong> Antagonizes effect
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="bleeding-blue">"3 HOUR RULE":</strong> Give within 3 hours of injury - mortality benefit up to 3h, harmful after?<br>
+        • <strong class="bleeding-blue">CRASH-2 trial:</strong> 1g load + 1g over 8h reduced mortality 1.5% (NNT=67)<br>
+        • <strong class="bleeding-blue">MATTERs study:</strong> Combat trauma with MTP - 6.5% absolute mortality reduction<br>
+        • <strong class="bleeding-blue">SBP <90 or HR >110:</strong> Clinical signs of significant hemorrhage - give TXA<br>
+        • <strong class="bleeding-blue">Not for minor bleeding:</strong> Use only when significant hemorrhage suspected<br>
+        • <strong class="bleeding-blue">Avoid in head injury alone:</strong> CRASH-3 showed benefit only if GCS >8 or no significant ICH<br>
+        • <strong class="bleeding-blue">Cost-effective:</strong> ~$5 per treatment - one of most cost-effective interventions<br>
+        • <strong class="bleeding-blue">Pre-hospital use:</strong> Safe and effective when given by paramedics
+    </div>
+</div>
+
+<div class="tranexamic-box">
+    <strong>🩸 TXA IN TRAUMA - CRITICAL TIMING:</strong><br>
+    • <strong>WITHIN 1 HOUR:</strong> Maximum benefit (32% mortality reduction)<br>
+    • <strong>1-3 HOURS:</strong> Still beneficial (mortality reduction)<br>
+    • <strong>>3 HOURS:</strong> May be harmful (increased mortality in CRASH-2)<br>
+    • <strong>DOSING:</strong> 1g IV over 10 min + 1g over 8 hours<br>
+    • <strong>WHEN:</strong> SBP <90 OR HR >110 OR significant hemorrhage suspected
+</div>
+
+<!-- CHAPTER 3: DRUG 2 - VITAMIN K (INJECTABLE) -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">3</span> Core Drug 2: Vitamin K (Injectable)</h2>
+
+<div class="drug-template">
+    <h4>VITAMIN K (PHYTOMENADIONE) - ANTICOAGULATION REVERSAL</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Fat-soluble vitamin, cofactor for clotting factors
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Essential cofactor for γ-glutamyl carboxylase enzyme<br>
+        • Converts inactive clotting factors II, VII, IX, X to active forms<br>
+        • Also activates proteins C, S, and Z (natural anticoagulants)<br>
+        • Does NOT reverse heparin or direct oral anticoagulants (DOACs)<br>
+        • IV form works within hours, oral takes 24+ hours<br>
+        • Fat-soluble - requires bile salts for oral absorption
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Warfarin/coumarin overdose or excessive anticoagulation<br>
+        • Reversal of vitamin K antagonists before urgent surgery/procedures<br>
+        • Vitamin K deficiency bleeding (VKDB) in neonates<br>
+        • Malabsorption syndromes (IBD, cystic fibrosis, short bowel)<br>
+        • Antibiotic-associated hypoprothrombinemia<br>
+        • Liver disease with prolonged INR (partial correction)<br>
+        • Rodenticide poisoning (superwarfarin exposure)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Known hypersensitivity to vitamin K preparations<br>
+        • Severe hepatic failure (may not respond)<br>
+        • Not for heparin reversal (use protamine)<br>
+        • Not for DOAC reversal (use specific antidotes)<br>
+        • Relative: Recent thrombotic event (risk of thrombosis with reversal)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="bleeding-blue">Warfarin reversal (no bleeding):</strong> 1-2.5 mg PO, repeat in 24h if needed<br>
+        • <strong class="bleeding-blue">Warfarin reversal (minor bleeding):</strong> 2.5-5 mg PO, may repeat in 24h<br>
+        • <strong class="bleeding-blue">Warfarin reversal (major bleeding):</strong> 5-10 mg IV slow + 4-factor PCC<br>
+        • <strong class="bleeding-blue">INR >10 no bleeding:</strong> 2.5-5 mg PO, repeat as needed<br>
+        • <strong class="bleeding-blue">Pre-procedure:</strong> 1-2.5 mg PO for 3 days prior, check INR day of<br>
+        • <strong class="bleeding-blue">Rodenticide poisoning:</strong> 10-25 mg PO daily for weeks to months
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="bleeding-blue">Neonatal VKDB prophylaxis:</strong> 0.5-1 mg IM at birth (single dose)<br>
+        • <strong class="bleeding-blue">Neonatal VKDB treatment:</strong> 1-2 mg IV (severe cases may need FFP)<br>
+        • <strong class="bleeding-blue">Warfarin reversal:</strong> 0.025-0.1 mg/kg IV/PO<br>
+        • <strong class="bleeding-blue">Vitamin K deficiency:</strong> 1-2 mg IM/SC weekly, or 2.5-5 mg PO twice weekly<br>
+        • <strong class="bleeding-blue">Cystic fibrosis/malabsorption:</strong> 2.5-5 mg PO daily or 1-2 mg IM weekly
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="bleeding-blue">Routes:</strong> IV (slow infusion), IM, SC, PO<br>
+        • <strong class="bleeding-blue">Preparation:</strong> 1 mg/mL (1 mL ampoules), 10 mg/mL (multidose vials)<br>
+        • <strong class="bleeding-blue">For IV:</strong> MUST dilute and give slowly - 1 mg/min max rate<br>
+        • <strong class="bleeding-blue">Dilution:</strong> Mix with 50 mL NS or D5W, infuse over 20-60 minutes<br>
+        • <strong class="bleeding-blue">IM/SC:</strong> Preferred over IV when possible (less anaphylactoid risk)<br>
+        • <strong class="bleeding-blue">Oral:</strong> 5 mg tablets, liquid formulations available
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Flushing, dizziness (especially with rapid IV)<br>
+        • Altered taste (with IV administration)<br>
+        • Pain/swelling at injection site (IM/SC)<br>
+        • Hyperbilirubinemia in neonates (especially with high doses)<br>
+        • Skin reactions (rash, urticaria)<br>
+        • Gastrointestinal upset (oral)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Anaphylactoid reactions (with rapid IV administration)<br>
+        • Death (rare, with rapid IV undiluted)<br>
+        • Hyperbilirubinemia/kernicterus in neonates<br>
+        • Thrombosis (with rapid reversal of anticoagulation)<br>
+        • Hemolytic anemia in G6PD deficiency (theoretical)<br>
+        • "Purple glove syndrome" - skin discoloration at injection site
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="bleeding-blue">Warfarin:</strong> Antagonizes effect (obvious)<br>
+        • <strong class="bleeding-blue">Antibiotics:</strong> Broad-spectrum abx reduce vitamin K production by gut flora<br>
+        • <strong class="bleeding-blue">Orlistat, cholestyramine:</strong> Reduce absorption of oral vitamin K<br>
+        • <strong class="bleeding-blue">Phenytoin, barbiturates:</strong> Increase metabolism via CYP induction<br>
+        • <strong class="bleeding-blue">Vitamin E:</strong> High doses may antagonize vitamin K
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="bleeding-blue">"IV = Slow or No":</strong> Never give IV push - dilute and infuse over 20-60 min<br>
+        • <strong class="bleeding-blue">Major bleeding + warfarin:</strong> Give 4-factor PCC (immediate) + Vitamin K 5-10 mg IV (sustained)<br>
+        • <strong class="bleeding-blue">Onset of action:</strong> IV: 1-2 hours, PO: 6-12 hours, full effect 24-48 hours<br>
+        • <strong class="bleeding-blue">Duration:</strong> Single dose lasts 2-5 days depending on liver function<br>
+        • <strong class="bleeding-blue">Liver disease:</strong> May have partial response - often need FFP as well<br>
+        • <strong class="bleeding-blue">Resistance:</strong> Superwarfarins (rodenticides) may need months of treatment<br>
+        • <strong class="bleeding-blue">Neonates:</strong> IM vitamin K at birth prevents hemorrhagic disease (standard care)<br>
+        • <strong class="bleeding-blue">Antidote for vitamin K antagonists ONLY</strong> - not heparin, not DOACs
+    </div>
+</div>
+
+<!-- CHAPTER 4: DRUG 3 - MORPHINE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">4</span> Core Drug 3: Morphine</h2>
+
+<div class="drug-template">
+    <h4>MORPHINE - GOLD STANDARD OPIOID FOR MODERATE-SEVERE PAIN</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Natural opium alkaloid, mu-opioid receptor agonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Primarily agonizes mu-opioid receptors in CNS and periphery<br>
+        • Also has delta and kappa opioid receptor activity<br>
+        • Inhibits pain transmission in dorsal horn of spinal cord<br>
+        • Activates descending inhibitory pathways from brainstem<br>
+        • Alters emotional response to pain (limbic system)<br>
+        • Causes peripheral vasodilation (histamine release)<br>
+        • Metabolized to active metabolites (M6G - more potent, M3G - neuroexcitatory)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Moderate to severe acute pain (trauma, post-op, MI, sickle cell crisis)<br>
+        • Chronic cancer pain (oral formulations)<br>
+        • Dyspnea in palliative care (reduces air hunger)<br>
+        • Sedation in mechanically ventilated patients (ICU)<br>
+        • Pre-medication before anesthesia<br>
+        • Acute pulmonary edema (reduces preload and anxiety)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Known hypersensitivity to morphine or opioids<br>
+        • Acute or severe asthma/COPD (risk of respiratory depression)<br>
+        • Paralytic ileus, GI obstruction<br>
+        • Increased intracranial pressure (risk of hypercapnia → increased ICP)<br>
+        • Severe hepatic impairment (accumulation of metabolites)<br>
+        • Concurrent MAOI use or within 14 days (risk of serotonin syndrome)<br>
+        • Acute pancreatitis (may cause spasm of sphincter of Oddi)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="opioid-purple">IV acute pain:</strong> 2-5 mg IV q5-15min titrated to pain relief<br>
+        • <strong class="opioid-purple">IV infusion:</strong> 1-5 mg/hr after loading dose, titrate to effect<br>
+        • <strong class="opioid-purple">IM/SC:</strong> 5-15 mg q4h (less preferred due to variable absorption)<br>
+        • <strong class="opioid-purple">MI/pulmonary edema:</strong> 2-4 mg IV, repeat q5-15min<br>
+        • <strong class="opioid-purple">Oral immediate-release:</strong> 10-30 mg q4h<br>
+        • <strong class="opioid-purple">Oral controlled-release:</strong> Not for acute pain initiation
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="opioid-purple">IV/IM/SC:</strong> 0.05-0.1 mg/kg q2-4h (max initial dose 4-5 mg)<br>
+        • <strong class="opioid-purple">IV infusion:</strong> 0.01-0.04 mg/kg/hr after loading dose<br>
+        • <strong class="opioid-purple">Oral:</strong> 0.2-0.5 mg/kg q4-6h<br>
+        • <strong class="opioid-purple">Neonates:</strong> 0.05 mg/kg IV/IM q4-8h (prolonged half-life)<br>
+        • <strong class="opioid-purple">PCA (patient-controlled analgesia):</strong> 0.01-0.02 mg/kg q6-10min + background
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="opioid-purple">Routes:</strong> IV (preferred in emergencies), IM, SC, PO, PR, epidural, intrathecal<br>
+        • <strong class="opioid-purple">Preparation:</strong> 1 mg/mL, 2 mg/mL, 4 mg/mL, 5 mg/mL, 10 mg/mL, 15 mg/mL<br>
+        • <strong class="opioid-purple">For IV push:</strong> Dilute to at least 1 mg/mL, give over 4-5 minutes<br>
+        • <strong class="opioid-purple">For infusion:</strong> Typical concentration 1 mg/mL in NS or D5W<br>
+        • <strong class="opioid-purple">Compatibility:</strong> Compatible with most solutions, NOT with alkaline solutions (precipitate)<br>
+        • <strong class="opioid-purple">Stability:</strong> 24 hours at room temperature when diluted
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Sedation, drowsiness, confusion (especially elderly)<br>
+        • Nausea, vomiting (30% of patients)<br>
+        • Constipation (almost universal with chronic use)<br>
+        • Pruritus (especially facial, not allergy - histamine release)<br>
+        • Urinary retention<br>
+        • Dry mouth, sweating<br>
+        • Miosis (pinpoint pupils - pathognomonic but tolerance develops)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Respiratory depression (dose-related, watch for <8 breaths/min)<br>
+        • Hypotension (especially with hypovolemia or rapid administration)<br>
+        • Severe bronchospasm (histamine release in susceptible)<br>
+        • Seizures (with high doses or accumulation of M3G metabolite in renal failure)<br>
+        • Hyperalgesia (with chronic high-dose use)<br>
+        • Adrenal insufficiency (chronic use)<br>
+        • Serotonin syndrome (especially with other serotonergic drugs)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="opioid-purple">Other CNS depressants:</strong> Synergistic respiratory depression (benzos, alcohol, barbiturates)<br>
+        • <strong class="opioid-purple">MAOIs:</strong> Serotonin syndrome risk - contraindicated<br>
+        • <strong class="opioid-purple">SSRIs, SNRIs, TCAs:</strong> Increased serotonin syndrome risk<br>
+        • <strong class="opioid-purple">Anticholinergics:</strong> Increased constipation/urinary retention risk<br>
+        • <strong class="opioid-purple">Mixed agonist-antagonists (pentazocine):</strong> Precipitate withdrawal<br>
+        • <strong class="opioid-purple">Protease inhibitors (ritonavir):</strong> Increased morphine levels
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="opioid-purple">"Start low, go slow"</strong> especially in opioid-naïve, elderly, renal impairment<br>
+        • <strong class="opioid-purple">Renal failure warning:</strong> Metabolites accumulate → neuroexcitation, seizures, myoclonus<br>
+        • <strong class="opioid-purple">Histamine release:</strong> Causes flushing, itching, hypotension - NOT anaphylaxis<br>
+        • <strong class="opioid-purple">Equianalgesic:</strong> 10 mg IV morphine = 30 mg PO morphine (3:1 ratio)<br>
+        • <strong class="opioid-purple">Naloxone ready:</strong> Have reversal agent available (0.4 mg/mL)<br>
+        • <strong class="opioid-purple">Pain is the 5th vital sign:</strong> Assess before and after administration (0-10 scale)<br>
+        • <strong class="opioid-purple">MI pain:</strong> Morphine reduces anxiety, preload, oxygen demand - still first line<br>
+        • <strong class="opioid-purple">PCA:</strong> Patient-controlled analgesia gives better pain control with less total dose
+    </div>
+</div>
+
+<!-- CHAPTER 5: DRUG 4 - FENTANYL -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">5</span> Core Drug 4: Fentanyl</h2>
+
+<div class="drug-template">
+    <h4>FENTANYL - POTENT, RAPID-ONSET SYNTHETIC OPIOID</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Synthetic phenylpiperidine, mu-opioid receptor agonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Highly selective mu-opioid receptor agonist (100x more potent than morphine)<br>
+        • Lipid soluble - rapid CNS penetration (onset 1-2 minutes IV)<br>
+        • Minimal histamine release → less hypotension than morphine<br>
+        • Short context-sensitive half-time (accumulates less with infusion)<br>
+        • Metabolized by CYP3A4 to inactive metabolites (mostly)<br>
+        • Transdermal and transmucosal formulations have different pharmacokinetics
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Severe acute pain (trauma, burns, post-op)<br>
+        • Procedural sedation and analgesia (PSA)<br>
+        • Rapid sequence intubation analgesia component<br>
+        • Chronic cancer pain (transdermal patches)<br>
+        • Breakthrough cancer pain (oral transmucosal)<br>
+        • Pre-medication before painful procedures<br>
+        • Cardiac surgery/ICU analgesia (hemodynamically stable)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Known hypersensitivity to fentanyl<br>
+        • Opioid-naïve patients for transdermal use (high overdose risk)<br>
+        • Acute or severe asthma/COPD (risk of respiratory depression)<br>
+        • Paralytic ileus<br>
+        • Increased intracranial pressure (risk of hypercapnia)<br>
+        • Hepatic impairment (may prolong effect)<br>
+        • MAOI use within 14 days
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="opioid-purple">IV analgesia:</strong> 25-100 mcg (0.025-0.1 mg) q5-10min titrated<br>
+        • <strong class="opioid-purple">IV infusion:</strong> 25-100 mcg/hr after loading dose<br>
+        • <strong class="opioid-purple">PSA/procedural:</strong> 50-100 mcg IV with midazolam 1-2 mg<br>
+        • <strong class="opioid-purple">RSI analgesia:</strong> 1-3 mcg/kg IV (typically 100-300 mcg)<br>
+        • <strong class="opioid-purple">Transdermal:</strong> 12-100 mcg/hr patch q72h (chronic pain only)<br>
+        • <strong class="opioid-purple">Oral transmucosal:</strong> 200-400 mcg for breakthrough cancer pain
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="opioid-purple">IV analgesia:</strong> 0.5-1 mcg/kg q30-60min (max 50 mcg/dose)<br>
+        • <strong class="opioid-purple">IV infusion:</strong> 0.5-2 mcg/kg/hr after loading dose<br>
+        • <strong class="opioid-purple">PSA:</strong> 1-2 mcg/kg IV with midazolam 0.05 mg/kg<br>
+        • <strong class="opioid-purple">Neonates:</strong> 0.5-3 mcg/kg IV q2-4h (prolonged half-life)<br>
+        • <strong class="opioid-purple">Transdermal:</strong> Not recommended <12 years<br>
+        • <strong class="opioid-purple">PCA:</strong> 0.25-0.5 mcg/kg q6-10min
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="opioid-purple">Routes:</strong> IV, IM, transdermal, transmucosal, intranasal, epidural<br>
+        • <strong class="opioid-purple">Preparation:</strong> 50 mcg/mL (most common), 100 mcg/mL<br>
+        • <strong class="opioid-purple">For IV push:</strong> Give undiluted over 1-2 minutes<br>
+        • <strong class="opioid-purple">For infusion:</strong> Typical concentration 10-40 mcg/mL in NS or D5W<br>
+        • <strong class="opioid-purple">Transdermal:</strong> 12, 25, 50, 75, 100 mcg/hr patches (apply to chest/back/upper arm)<br>
+        • <strong class="opioid-purple">Compatibility:</strong> Compatible with most solutions, incompatible with barbiturates
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Respiratory depression (dose-related)<br>
+        • Sedation, dizziness<br>
+        • Nausea, vomiting (less than morphine)<br>
+        • Constipation (with chronic use)<br>
+        • Pruritus (less histamine release than morphine)<br>
+        • Muscle rigidity (especially with high rapid doses - "wooden chest")<br>
+        • Bradycardia (opioid receptor effect)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Severe respiratory depression/apnea<br>
+        • Chest wall rigidity (treat with naloxone or neuromuscular blockade)<br>
+        • Hypotension (less than morphine)<br>
+        • Serotonin syndrome (with other serotonergic drugs)<br>
+        • Transdermal overdose (heat increases absorption, delayed onset/offset)<br>
+        • Withdrawal symptoms if stopped abruptly (chronic use)<br>
+        • Adrenal insufficiency (chronic use)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="opioid-purple">CYP3A4 inhibitors:</strong> Increased levels (ketoconazole, ritonavir, erythromycin)<br>
+        • <strong class="opioid-purple">CYP3A4 inducers:</strong> Decreased levels (rifampin, carbamazepine, phenytoin)<br>
+        • <strong class="opioid-purple">Other CNS depressants:</strong> Synergistic effects (benzos, alcohol, barbiturates)<br>
+        • <strong class="opioid-purple">MAOIs:</strong> Contraindicated - serotonin syndrome risk<br>
+        • <strong class="opioid-purple">Neuromuscular blockers:</strong> Potentiation of muscle relaxation
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="opioid-purple">"Mcg not mg!"</strong> 100x more potent than morphine - dosing errors can be fatal<br>
+        • <strong class="opioid-purple">Onset:</strong> 1-2 minutes IV, peak 3-5 minutes, duration 30-60 minutes<br>
+        • <strong class="opioid-purple">Wooden chest syndrome:</strong> High rapid doses cause chest wall rigidity - treat with naloxone 0.4 mg or suxamethonium<br>
+        • <strong class="opioid-purple">Transdermal patches:</strong> Heat (fever, heating pads) increases absorption 3x - overdose risk<br>
+        • <strong class="opioid-purple">Equianalgesic:</strong> 100 mcg IV fentanyl ≈ 10 mg IV morphine ≈ 1 mg IV hydromorphone<br>
+        • <strong class="opioid-purple">PSA with midazolam:</strong> Classic combination - fentanyl for pain, midazolam for amnesia/anxiety<br>
+        • <strong class="opioid-purple">Street fentanyl:</strong> Illicit fentanyl is 50-100x more potent than heroin - tiny amounts fatal<br>
+        • <strong class="opioid-purple">Naloxone:</strong> May need higher doses for fentanyl overdose (2-10 mg sometimes needed)
+    </div>
+</div>
+
+<!-- CHAPTER 6: DRUG 5 - KETOROLAC -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">6</span> Core Drug 5: Ketorolac</h2>
+
+<div class="drug-template">
+    <h4>KETOROLAC - POTENT PARENTERAL NSAID FOR ACUTE PAIN</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Non-steroidal anti-inflammatory drug (NSAID), pyrrolizine carboxylic acid derivative
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Reversible inhibition of cyclooxygenase (COX-1 and COX-2) enzymes<br>
+        • Reduces prostaglandin synthesis → decreased inflammation, pain, fever<br>
+        • Peripheral and central analgesic effects<br>
+        • No effect on opioid receptors → no respiratory depression<br>
+        • Antiplatelet effect (reversible, lasts 24-48 hours after dose)<br>
+        • No development of tolerance or physical dependence
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Short-term management (≤5 days) of moderate to severe acute pain<br>
+        • Post-operative pain (often used as opioid-sparing agent)<br>
+        • Renal colic (particularly effective for ureteric stone pain)<br>
+        • Musculoskeletal trauma (fractures, sprains, soft tissue injury)<br>
+        • Migraine headache (IV/IM route)<br>
+        • Alternative to opioids when respiratory depression concern<br>
+        • Dental pain (oral formulation)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Active or history of peptic ulcer disease/GI bleeding<br>
+        • Advanced renal disease (CrCl <30 mL/min) or volume depletion<br>
+        • History of asthma, urticaria, or allergic reaction to NSAIDs/ASA<br>
+        • Peri-operative pain in CABG surgery (increased CV/thrombotic events)<br>
+        • Pregnancy (especially 3rd trimester - premature ductus closure)<br>
+        • Hemorrhagic diathesis or coagulopathy<br>
+        • Concurrent use of other NSAIDs or anticoagulants<br>
+        • Age ≥65 years (relative - increased risk of adverse effects)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="anti-inflammatory-orange">IV/IM loading dose:</strong> 15-30 mg (30 mg for patients <50 kg only if benefits > risks)<br>
+        • <strong class="anti-inflammatory-orange">IV/IM maintenance:</strong> 15-30 mg q6h (max 60 mg first day, then max 120 mg/day)<br>
+        • <strong class="anti-inflammatory-orange">Oral:</strong> 10 mg q4-6h (max 40 mg/day) after parenteral therapy<br>
+        • <strong class="anti-inflammatory-orange">Renal colic:</strong> 30 mg IV single dose often sufficient<br>
+        • <strong class="anti-inflammatory-orange">MAXIMUM DURATION:</strong> 5 days total (IV/IM + PO combined)<br>
+        • <strong class="anti-inflammatory-orange">Elderly (≥65 years):</strong> Reduce dose by 50% (7.5-15 mg q6h)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="anti-inflammatory-orange">IV (≥2 years):</strong> 0.5 mg/kg (max 15 mg) q6h<br>
+        • <strong class="anti-inflammatory-orange">IM (≥2 years):</strong> 1 mg/kg (max 30 mg) single dose, then 0.5 mg/kg q6h<br>
+        • <strong class="anti-inflammatory-orange">Oral (≥2 years):</strong> 0.25 mg/kg q6-8h after parenteral therapy<br>
+        • <strong class="anti-inflammatory-orange">Maximum duration:</strong> 5 days total<br>
+        • <strong class="anti-inflammatory-orange">Neonates/infants <2 years:</strong> Not recommended
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="anti-inflammatory-orange">Routes:</strong> IV (preferred), IM, PO<br>
+        • <strong class="anti-inflammatory-orange">Preparation:</strong> 15 mg/mL (1 mL), 30 mg/mL (1 mL, 2 mL)<br>
+        • <strong class="anti-inflammatory-orange">For IV push:</strong> Give undiluted over at least 15 seconds<br>
+        • <strong class="anti-inflammatory-orange">For IV infusion:</strong> Can dilute in 50-100 mL NS or D5W, infuse over 15-30 min<br>
+        • <strong class="anti-inflammatory-orange">IM:</strong> Deep IM injection, rotate sites<br>
+        • <strong class="anti-inflammatory-orange">Oral:</strong> 10 mg tablets, typically started after 2 days of parenteral therapy
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Nausea, dyspepsia, abdominal pain (less than opioids)<br>
+        • Headache, dizziness, drowsiness<br>
+        • Injection site pain (IM route)<br>
+        • Fluid retention, edema<br>
+        • Hypertension<br>
+        • Pruritus, rash
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • GI bleeding/perforation (1-2% with short-term use)<br>
+        • Acute kidney injury (especially in volume-depleted, elderly, CKD)<br>
+        • Cardiovascular events (MI, stroke) - risk increases with duration<br>
+        • Anaphylactoid reactions (asthma exacerbation in aspirin-sensitive)<br>
+        • Platelet dysfunction (increased bleeding time)<br>
+        • Hepatotoxicity (rare)<br>
+        • Aseptic meningitis (rare, in SLE patients)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="anti-inflammatory-orange">Anticoagulants/antiplatelets:</strong> Increased bleeding risk (warfarin, heparin, clopidogrel)<br>
+        • <strong class="anti-inflammatory-orange">ACE inhibitors/ARBs:</strong> Reduced antihypertensive effect, renal impairment risk<br>
+        • <strong class="anti-inflammatory-orange">Diuretics:</strong> Reduced diuretic effect, renal impairment risk<br>
+        • <strong class="anti-inflammatory-orange">Lithium:</strong> Increased lithium levels (decreased renal clearance)<br>
+        • <strong class="anti-inflammatory-orange">Methotrexate:</strong> Increased methotrexate toxicity<br>
+        • <strong class="anti-inflammatory-orange">Other NSAIDs:</strong> Additive toxicity - avoid concurrent use<br>
+        • <strong class="anti-inflammatory-orange">SSRIs/SNRIs:</strong> Increased bleeding risk
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="anti-inflammatory-orange">"5 DAY RULE":</strong> Maximum duration 5 days - no exceptions!<br>
+        • <strong class="anti-inflammatory-orange">Opioid-sparing:</strong> Reduces opioid requirements by 30-50% when used with opioids<br>
+        • <strong class="anti-inflammatory-orange">Renal colic gold standard:</strong> More effective than opioids for ureteric stone pain<br>
+        • <strong class="anti-inflammatory-orange">IV vs IM:</strong> IV preferred - faster onset, less painful, same efficacy<br>
+        • <strong class="anti-inflammatory-orange">Elderly/renal risk:</strong> Check creatinine before use, avoid if CrCl <30 mL/min<br>
+        • <strong class="anti-inflammatory-orange">GI protection:</strong> Consider PPI if GI risk factors, but NO evidence for short-term use<br>
+        • <strong class="anti-inflammatory-orange">Asthma warning:</strong> Contraindicated in aspirin-sensitive asthma (cross-reactivity 10%)<br>
+        • <strong class="anti-inflammatory-orange">Pregnancy:</strong> Category C (1st/2nd trimester), Category D (3rd trimester - ductus closure)
+    </div>
+</div>
+
+<!-- CHAPTER 7: DRUG 6 - TETANUS IMMUNIZATION -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">7</span> Core Drug 6: Tetanus Immunization</h2>
+
+<div class="drug-template">
+    <h4>TETANUS TOXOID & IMMUNOGLOBULIN - WOUND PROPHYLAXIS</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Vaccine (toxoid) and passive immunization (immunoglobulin)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • <strong>Tetanus toxoid (TT/Td/Tdap):</strong> Inactivated toxin stimulates active immunity<br>
+        • <strong>Tetanus immunoglobulin (TIG):</strong> Pre-formed antibodies provide immediate passive immunity<br>
+        • Neutralizes circulating tetanus toxin before it binds to neurons<br>
+        • Does NOT reverse bound toxin (once bound, only supportive care)<br>
+        • Tetanus toxoid provides long-term protection (10 years booster)<br>
+        • TIG provides immediate but temporary protection (weeks)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • <strong>Tetanus toxoid:</strong> Primary immunization, booster every 10 years, wound prophylaxis<br>
+        • <strong>Tetanus immunoglobulin:</strong> Passive immunization for high-risk wounds in inadequately immunized<br>
+        • <strong>Wound management:</strong> Based on wound type and vaccination history<br>
+        • <strong>Neonatal tetanus prevention:</strong> Maternal immunization during pregnancy<br>
+        • <strong>Tetanus treatment:</strong> TIG as part of management (doesn't reverse symptoms)<br>
+        • <strong>Post-exposure prophylaxis:</strong> For contaminated wounds in unvaccinated/unknown status
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • <strong>Absolute:</strong> Severe allergic reaction to previous dose<br>
+        • <strong>Toxoid contraindications:</strong> Encephalopathy within 7 days of previous dose<br>
+        • <strong>Precautions:</strong> Moderate/severe acute illness (delay until recovered)<br>
+        • <strong>Guillain-Barré syndrome:</strong> Within 6 weeks of previous tetanus vaccine<br>
+        • <strong>Immunoglobulin precautions:</strong> IgA deficiency (risk of anaphylaxis)<br>
+        • <strong>Live vaccines:</strong> MMR/varicella should be given same day or separated by 4 weeks
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="immunization-teal">Tetanus toxoid (Td/Tdap):</strong> 0.5 mL IM single dose<br>
+        • <strong class="immunization-teal">Tetanus immunoglobulin (TIG):</strong> 250-500 units IM single dose<br>
+        • <strong class="immunization-teal">Wound management:</strong> Follow CDC algorithm (clean vs dirty wound, vaccination history)<br>
+        • <strong class="immunization-teal">Primary series:</strong> 3 doses: 0, 1-2 months, 6-12 months<br>
+        • <strong class="immunization-teal">Booster:</strong> Every 10 years (Td) or once as adult with Tdap, then Td<br>
+        • <strong class="immunization-teal">Tetanus treatment:</strong> 3000-6000 units IM (part in wound edges)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="immunization-teal">DTaP (children <7 years):</strong> 0.5 mL IM at 2, 4, 6, 15-18 months, 4-6 years<br>
+        • <strong class="immunization-teal">Tdap (≥7 years):</strong> 0.5 mL IM single dose (booster at 11-12 years)<br>
+        • <strong class="immunization-teal">TIG:</strong> 4 units/kg IM (max 250 units)<br>
+        • <strong class="immunization-teal">Neonates:</strong> Maternal immunization during pregnancy protects infant<br>
+        • <strong class="immunization-teal">Primary series:</strong> Complete if unknown/incomplete status
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="immunization-teal">Routes:</strong> IM only (deltoid or vastus lateralis)<br>
+        • <strong class="immunization-teal">Toxoid preparation:</strong> 0.5 mL prefilled syringe or vial<br>
+        • <strong class="immunization-teal">TIG preparation:</strong> 250 units/mL vial<br>
+        • <strong class="immunization-teal">Administration site:</strong> Different limbs for TIG and toxoid if both needed<br>
+        • <strong class="immunization-teal">Needle size:</strong> 22-25 gauge, 1-1.5 inch for deltoid (based on size)<br>
+        • <strong class="immunization-teal">Storage:</strong> Refrigerate (2-8°C), do not freeze
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Injection site: Pain, redness, swelling (80% of recipients)<br>
+        • Fever, malaise, headache (10-15%)<br>
+        • Arthralgia, myalgia<br>
+        • Nausea, vomiting, diarrhea<br>
+        • Lymphadenopathy (regional)<br>
+        • Mild allergic reactions (urticaria)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Anaphylaxis (rare: 1 in 1,000,000 doses)<br>
+        • Brachial neuritis (rare)<br>
+        • Guillain-Barré syndrome (rare association)<br>
+        • Arthus reaction (severe local reaction in over-immunized)<br>
+        • Syncope (especially adolescents)<br>
+        • Extensive limb swelling (more common with boosters)<br>
+        • Encephalopathy (extremely rare)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="immunization-teal">Immunosuppressants:</strong> Reduced immune response (chemotherapy, steroids, biologics)<br>
+        • <strong class="immunization-teal">Other vaccines:</strong> Can be given simultaneously at different sites<br>
+        • <strong class="immunization-teal">Blood products/immunoglobulins:</strong> May interfere with live vaccines (not tetanus)<br>
+        • <strong class="immunization-teal">Warfarin:</strong> Increased bleeding risk at injection site (check INR)<br>
+        • <strong class="immunization-teal">Aspirin/NSAIDs:</strong> Not contraindicated but may mask fever
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="immunization-teal">"Dirty wound + unknown vaccine = TIG + Toxoid"</strong><br>
+        • <strong class="immunization-teal">Tdap vs Td:</strong> Tdap has pertussis component - give once as adult, then Td boosters<br>
+        • <strong class="immunization-teal">Wound classification:</strong> Clean minor vs contaminated/tetanus-prone wounds<br>
+        • <strong class="immunization-teal">History unknown/3 doses:</strong> Treat as unimmunized (give toxoid ± TIG)<br>
+        • <strong class="immunization-teal">Last dose <5 years:</strong> No toxoid needed for clean minor wounds<br>
+        • <strong class="immunization-teal">Last dose >10 years:</strong> Booster needed for any wound<br>
+        • <strong class="immunization-teal">HIV/immunocompromised:</strong> Give TIG for any wound regardless of vaccine history<br>
+        • <strong class="immunization-teal">Cost-effectiveness:</strong> $30 for TIG vs $3 million for tetanus treatment
+    </div>
+</div>
+
+<div class="tetanus-box">
+    <strong>💉 TETANUS PROPHYLAXIS DECISION GUIDE:</strong><br>
+    <br>
+    <strong>CLEAN MINOR WOUND:</strong><br>
+    • Unknown/≤3 doses: Give Td/Tdap<br>
+    • Last dose ≥10 years: Give Td/Tdap<br>
+    • Last dose <10 years: No vaccine needed<br>
+    <br>
+    <strong>CONTAMINATED/TETANUS-PRONE WOUND:</strong><br>
+    • Unknown/≤3 doses: Give Td/Tdap + TIG<br>
+    • Last dose ≥5 years: Give Td/Tdap<br>
+    • Last dose <5 years: No vaccine needed<br>
+    • NEVER give TIG if >24 hours post-injury (still give but less effective)
+</div>
+
+<!-- CHAPTER 8: TRAUMA ANALGESIA STRATEGY -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">8</span> Trauma Analgesia Strategy</h2>
+
+<div class="analgesia-box">
+    <h3>8.1 Analgesia Ladder for Trauma & Surgical Pain</h3>
+    
+    <strong>MILD PAIN (1-3/10):</strong><br>
+    • <strong class="analgesia-green">Paracetamol:</strong> 1g IV/PO q6h (max 4g/day)<br>
+    • <strong class="analgesia-green">NSAIDs:</strong> Ibuprofen 400-800mg PO q6-8h (if no contraindications)<br>
+    <br>
+    <strong>MODERATE PAIN (4-6/10):</strong><br>
+    • <strong class="analgesia-green">Paracetamol + NSAID combination</strong><br>
+    • <strong class="analgesia-green">Weak opioids:</strong> Codeine 30-60mg PO q4-6h, Tramadol 50-100mg PO q6h<br>
+    • <strong class="analgesia-green">Ketorolac:</strong> 15-30mg IV/IM q6h (max 5 days)<br>
+    <br>
+    <strong>MODERATE-SEVERE PAIN (6-8/10):</strong><br>
+    • <strong class="analgesia-green">Strong opioids:</strong> Morphine 2-5mg IV q5-15min titrated<br>
+    • <strong class="analgesia-green">Fentanyl:</strong> 25-100mcg IV q5-10min titrated<br>
+    • <strong class="analgesia-green">Multimodal:</strong> Opioid + paracetamol + ketorolac (if no contraindications)<br>
+    <br>
+    <strong>SEVERE PAIN (9-10/10):</strong><br>
+    • <strong class="analgesia-green">IV opioids titrated to effect</strong> with monitoring<br>
+    • <strong class="analgesia-green">Consider regional anesthesia</strong> (nerve blocks, epidural)<br>
+    • <strong class="analgesia-green">PCA (patient-controlled analgesia)</strong><br>
+    • <strong class="analgesia-green">Ketamine</strong> (adjunct or primary for opioid-tolerant)<br>
+</div>
+
+<h3>8.2 Special Trauma Scenarios</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 25%;">Scenario</th>
+            <th>Preferred Analgesic</th>
+            <th>Alternative</th>
+            <th>Avoid/Use with Caution</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Head injury + pain</strong></td>
+            <td>Fentanyl (minimal hemodynamic effects)</td>
+            <td>Paracetamol, short-acting opioids</td>
+            <td>Morphine (respiratory depression → increased ICP)</td>
+        </tr>
+        <tr>
+            <td><strong>Hemorrhagic shock + pain</strong></td>
+            <td>Fentanyl (titrated small doses)</td>
+            <td>Ketamine (analgesic with pressor effects)</td>
+            <td>Morphine (hypotension), NSAIDs (renal risk)</td>
+        </tr>
+        <tr>
+            <td><strong>Multiple rib fractures</strong></td>
+            <td>Epidural analgesia (gold standard)</td>
+            <td>Paravertebral block, multimodal opioids</td>
+            <td>High-dose opioids alone (respiratory depression)</td>
+        </tr>
+        <tr>
+            <td><strong>Burn pain</strong></td>
+            <td>IV opioids (morphine/fentanyl) + ketamine</td>
+            <td>Gabapentinoids for neuropathic component</td>
+            <td>IM injections (unreliable absorption)</td>
+        </tr>
+        <tr>
+            <td><strong>Renal colic</strong></td>
+            <td>Ketorolac 30mg IV (first line)</td>
+            <td>Opioids (morphine/fentanyl) if NSAID contraindicated</td>
+            <td>High fluid loads (no proven benefit, may increase pain)</td>
+        </tr>
+        <tr>
+            <td><strong>Acute abdominal pain (undifferentiated)</strong></td>
+            <td>Morphine/fentanyl titrated (safe, doesn't mask findings)</td>
+            <td>Paracetamol</td>
+            <td>NSAIDs (may worsen some conditions), antispasmodics</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- CHAPTER 9: SURGICAL EMERGENCIES PHARMACOLOGY -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">9</span> Surgical Emergencies Pharmacology</h2>
+
+<div class="trauma-box">
+    <h3>9.1 Common Surgical Emergencies & Drug Management</h3>
+    
+    <strong>🩺 ACUTE ABDOMINAL PAIN (UNDIFFERENTIATED):</strong><br>
+    • <strong>Analgesia:</strong> Opioids safe (morphine 2-5mg IV q5-15min)<br>
+    • <strong>Antiemetics:</strong> Ondansetron 4-8mg IV, Metoclopramide 10mg IV<br>
+    • <strong>Fluids:</strong> Resuscitation if septic/hypovolemic<br>
+    • <strong>Antibiotics:</strong> If signs of infection/peritonitis<br>
+    <br>
+    <strong>🔪 TRAUMA LAPAROTOMY PREPARATION:</strong><br>
+    • <strong>Antibiotics:</strong> Cefazolin 2g IV (add metronidazole if bowel injury)<br>
+    • <strong>TXA:</strong> 1g IV load if within 3h of injury, 1g over 8h<br>
+    • <strong>Blood products:</strong> Type & cross, consider MTP activation<br>
+    • <strong>Analgesia:</strong> Fentanyl 50-100mcg IV boluses<br>
+    <br>
+    <strong>🦴 OPEN FRACTURES:</strong><br>
+    • <strong>Antibiotics:</strong> Cefazolin 2g IV (add gentamicin for Grade III)<br>
+    • <strong>Tetanus:</strong> Per wound prophylaxis guidelines<br>
+    • <strong>Analgesia:</strong> Multimodal (opioid + ketorolac + regional block)<br>
+    • <strong>Timing:</strong> OR within 6 hours (golden period)<br>
+    <br>
+    <strong>🔥 MAJOR BURNS:</strong><br>
+    • <strong>Fluids:</strong> Parkland formula: 4mL × kg × %TBSA in first 24h<br>
+    • <strong>Analgesia:</strong> IV opioids (morphine 0.1mg/kg), consider ketamine<br>
+    • <strong>Tetanus:</strong> Update if >5 years since last dose<br>
+    • <strong>Antibiotics:</strong> Not prophylactically, only for proven infection
+</div>
+
+<h3>9.2 Peri-operative Medication Management</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Medication Class</th>
+            <th>Pre-operative Management</th>
+            <th>Intra-operative Considerations</th>
+            <th>Post-operative Management</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Anticoagulants (Warfarin)</strong></td>
+            <td>Hold 5 days, check INR, consider bridging</td>
+            <td>Reverse if emergent (PCC + Vitamin K)</td>
+            <td>Restart when bleeding risk low (often 24-48h)</td>
+        </tr>
+        <tr>
+            <td><strong>DOACs (Apixaban, Rivaroxaban)</strong></td>
+            <td>Hold 2-3 days (CrCl dependent)</td>
+            <td>Idarucizumab (dabigatran) or Andexanet (Xa inhibitors) if bleeding</td>
+            <td>Restart 24-72h post-op depending on bleed risk</td>
+        </tr>
+        <tr>
+            <td><strong>Antiplatelets (Aspirin, Clopidogrel)</strong></td>
+            <td>Continue aspirin, hold clopidogrel 5-7 days if possible</td>
+            <td>Increased bleeding risk, may need platelets</td>
+            <td>Restart clopidogrel when safe (often 24h)</td>
+        </tr>
+        <tr>
+            <td><strong>Beta-blockers</strong></td>
+            <td>Continue (prevents peri-op MI)</td>
+            <td>May need intra-operative titration</td>
+            <td>Continue, watch for bradycardia</td>
+        </tr>
+        <tr>
+            <td><strong>ACE inhibitors/ARBs</strong></td>
+            <td>Hold morning of surgery (hypotension risk)</td>
+            <td>May need vasopressors for hypotension</td>
+            <td>Restart when BP stable, eating/drinking</td>
+        </tr>
+        <tr>
+            <td><strong>Insulin</strong></td>
+            <td>Long-acting: Give 50-80% dose, short-acting: hold</td>
+            <td>Sliding scale, target glucose 6-10 mmol/L</td>
+            <td>Resume usual regimen when eating</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- APPENDIX: QUICK REFERENCE GUIDES -->
+<div class="page-break"></div>
+<h2>Appendix: Quick Reference Guides</h2>
+
+<h3>Trauma Drug Dosing Quick Guide</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Drug</th>
+            <th>Adult Dose</th>
+            <th>Pediatric Dose</th>
+            <th>Onset</th>
+            <th>Duration</th>
+            <th>Special Considerations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Tranexamic Acid</strong></td>
+            <td>1g IV over 10min, then 1g over 8h</td>
+            <td>15 mg/kg load, then 2 mg/kg/hr</td>
+            <td>Minutes</td>
+            <td>8h infusion</td>
+            <td>Within 3h of injury maximum benefit</td>
+        </tr>
+        <tr>
+            <td><strong>Vitamin K (IV)</strong></td>
+            <td>5-10 mg IV over 20-60min</td>
+            <td>0.025-0.1 mg/kg IV</td>
+            <td>1-2h</td>
+            <td>2-5 days</td>
+            <td>NEVER IV push, dilute and infuse slowly</td>
+        </tr>
+        <tr>
+            <td><strong>Morphine IV</strong></td>
+            <td>2-5 mg q5-15min titrated</td>
+            <td>0.05-0.1 mg/kg q2-4h</td>
+            <td>5-10min</td>
+            <td>3-4h</td>
+            <td>Histamine release → itching, hypotension</td>
+        </tr>
+        <tr>
+            <td><strong>Fentanyl IV</strong></td>
+            <td>25-100 mcg q5-10min</td>
+            <td>0.5-1 mcg/kg q30-60min</td>
+            <td>1-2min</td>
+            <td>30-60min</td>
+            <td>100x morphine potency, chest wall rigidity risk</td>
+        </tr>
+        <tr>
+            <td><strong>Ketorolac IV</strong></td>
+            <td>15-30 mg q6h (max 5 days)</td>
+            <td>0.5 mg/kg q6h</td>
+            <td>30min</td>
+            <td>6-8h</td>
+            <td>MAX 5 DAYS total, renal/GI risk</td>
+        </tr>
+        <tr>
+            <td><strong>Tetanus Toxoid</strong></td>
+            <td>0.5 mL IM single dose</td>
+            <td>0.5 mL IM (DTaP/Tdap)</td>
+            <td>Days (immunity)</td>
+            <td>10 years</td>
+            <td>Follow wound prophylaxis guidelines</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Tetanus Prophylaxis Algorithm</h3>
+
+<div class="clinical-pearl">
+    <strong>📋 TETANUS WOUND MANAGEMENT (CDC GUIDELINES):</strong><br>
+    <br>
+    <strong>STEP 1: Classify wound</strong><br>
+    • <em>Clean, minor:</em> Little contamination, >6h old<br>
+    • <em>Tetanus-prone:</em> >6h old, >1cm deep, puncture, avulsion, crush, burn, frostbite, contaminated<br>
+    <br>
+    <strong>STEP 2: Check vaccine history</strong><br>
+    • Unknown or <3 doses: Consider unvaccinated<br>
+    • 3 doses: Consider vaccinated but check timing<br>
+    <br>
+    <strong>STEP 3: Decide on Tetanus Toxoid (Td/Tdap)</strong><br>
+    • Clean minor: Give if >10 years since last dose<br>
+    • Tetanus-prone: Give if >5 years since last dose<br>
+    • Unknown/<3 doses: Always give<br>
+    <br>
+    <strong>STEP 4: Decide on Tetanus Immunoglobulin (TIG)</strong><br>
+    • Clean minor: Never needed<br>
+    • Tetanus-prone: Give if unknown/<3 doses or if HIV/immunocompromised<br>
+    • Give TIG and toxoid in different limbs with different syringes
+</div>
+
+<h3>Massive Hemorrhage Protocol (MHP) Checklist</h3>
+<ol>
+    <li><strong>Activate MHP</strong> early (>4 units predicted in 1h or ongoing shock)</li>
+    <li><strong>TXA 1g IV</strong> if within 3h of injury</li>
+    <li><strong>Blood products</strong> in 1:1:1 ratio (PRBC:FFP:platelets)</li>
+    <li><strong>Consider cryoprecipitate/fibrinogen</strong> if fibrinogen <1.5 g/L</li>
+    <li><strong>Calcium chloride</strong> 1g IV if massive transfusion (citrate toxicity)</li>
+    <li><strong>Avoid excessive crystalloid</strong> (<2L initially)</li>
+    <li><strong>Permissive hypotension</strong> (SBP 80-90 mmHg) if no head injury</li>
+    <li><strong>Damage control surgery</strong> if ongoing bleed</li>
+    <li><strong>Rewarm patient</strong> (avoid hypothermia)</li>
+    <li><strong>Monitor</strong> labs q30-60min (Hb, INR, fibrinogen, Ca²⁺, pH)</li>
+</ol>
+
+<div class="footer-note">
+    <strong>© Emergency Medicine Education Team | Confidential Educational Material</strong><br>
+    This document is for educational purposes only. Always follow local protocols and guidelines.<br>
+    Medications and doses may vary by institution. Verify all information before clinical application.<br>
+    Version 1.0 | Last updated: [Current Date] | Module 7 of 10
+</div>
+
+</body>
+</html>
