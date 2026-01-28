@@ -1,0 +1,1536 @@
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Module 6: Poisoning & Antidotes</title> <style> /* Main Styles from Previous Document - EXACT MATCH */ body { font-family: 'Calibri', 'Segoe UI', sans-serif; line-height: 1.5; color: #2c3e50; margin: 2cm; background-color: #ffffff; counter-reset: chapter section figure table; }
+    h1 {
+        font-size: 28pt;
+        font-weight: bold;
+        color: #1a5276;
+        text-align: center;
+        border-bottom: 3px double #3498db;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+    
+    h2 {
+        font-size: 18pt;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #2980b9;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 30px;
+        page-break-after: avoid;
+    }
+    
+    h3 {
+        font-size: 14pt;
+        font-weight: bold;
+        color: #154360;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        page-break-after: avoid;
+    }
+    
+    h4 {
+        font-size: 12.5pt;
+        font-weight: bold;
+        color: #21618c;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    
+    .module-title {
+        font-size: 20pt;
+        font-weight: bold;
+        color: #21618c;
+        margin-top: 40px;
+        border-left: 6px solid #3498db;
+        padding-left: 15px;
+    }
+    
+    .chapter-number {
+        background-color: #3498db;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    /* Lists */
+    ul, ol {
+        padding-left: 1.5em;
+        margin-bottom: 1em;
+    }
+    
+    li {
+        margin-bottom: 8px;
+        font-size: 11.5pt;
+    }
+    
+    .sub-list {
+        list-style-type: lower-alpha;
+        padding-left: 2.5em;
+    }
+    
+    .drug-list {
+        columns: 2;
+        column-gap: 50px;
+        margin-top: 15px;
+    }
+    
+    .drug-list li {
+        break-inside: avoid;
+    }
+    
+    /* Special Boxes - EXACT MATCH */
+    .study-format {
+        background-color: #e8f4fc;
+        border: 1px solid #aed6f1;
+        border-left: 6px solid #2e86c1;
+        padding: 20px;
+        margin-top: 30px;
+        page-break-inside: avoid;
+    }
+    
+    .clinical-pearl {
+        background-color: #fff3cd;
+        border: 1px solid #ffeaa7;
+        border-left: 6px solid #fdcb6e;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .warning-box {
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-left: 6px solid #e74c3c;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .definition-box {
+        background-color: #d1ecf1;
+        border: 1px solid #bee5eb;
+        border-left: 6px solid #17a2b8;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    /* Tables - EXACT MATCH */
+    .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 11pt;
+    }
+    
+    .comparison-table th {
+        background-color: #2980b9;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #1a5276;
+    }
+    
+    .comparison-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        vertical-align: top;
+    }
+    
+    .comparison-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+    
+    /* Figures and Captions - EXACT MATCH */
+    .figure {
+        text-align: center;
+        margin: 20px 0;
+        page-break-inside: avoid;
+    }
+    
+    .figure img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .caption {
+        font-style: italic;
+        font-size: 10.5pt;
+        color: #666;
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+    /* Page Layout - EXACT MATCH */
+    .page-break {
+        page-break-before: always;
+    }
+    
+    .footer-note {
+        font-size: 9pt;
+        color: #7f8c8d;
+        text-align: center;
+        margin-top: 30px;
+        border-top: 1px solid #ecf0f1;
+        padding-top: 10px;
+    }
+    
+    /* Drug Template - EXACT MATCH */
+    .drug-template {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 5px;
+        page-break-inside: avoid;
+    }
+    
+    .drug-template h4 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+        margin-top: 0;
+    }
+    
+    .template-section {
+        margin-bottom: 15px;
+    }
+    
+    .template-label {
+        font-weight: bold;
+        color: #2980b9;
+        display: inline-block;
+        width: 180px;
+    }
+    
+    /* Emoji Styling - EXACT MATCH */
+    .emoji {
+        font-size: 1.2em;
+    }
+    
+    /* Print Specific - EXACT MATCH */
+    @media print {
+        body {
+            margin: 1.5cm;
+            font-size: 11pt;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    
+    /* Learning Objectives - EXACT MATCH */
+    .learning-objectives {
+        background-color: #e8f6f3;
+        border: 1px solid #a2d9ce;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    
+    .objective-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .objective-list li:before {
+        content: "✓ ";
+        color: #27ae60;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    /* Additional Styles for Module 6 */
+    .antidote-box {
+        background-color: #e8f8f5;
+        border: 2px solid #45b39d;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+    
+    .toxicology-alert {
+        background-color: #fdebd0;
+        border: 2px solid #f39c12;
+        color: #d35400;
+        padding: 15px;
+        margin: 20px 0;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .opioid-box {
+        background-color: #f2d7d5;
+        border: 2px solid #c0392b;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    
+    .organophosphate-box {
+        background-color: #fef9e7;
+        border: 2px solid #f1c40f;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+    
+    .antidote-grid {
+        background-color: #f4ecf7;
+        border: 2px solid #8e44ad;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    
+    .charcoal-box {
+        background-color: #2c3e50;
+        border: 2px solid #34495e;
+        color: white;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    
+    /* Module 6 Specific Colors */
+    .organophosphate-green {
+        color: #27ae60;
+        font-weight: bold;
+    }
+    
+    .opioid-blue {
+        color: #2980b9;
+        font-weight: bold;
+    }
+    
+    .paracetamol-red {
+        color: #e74c3c;
+        font-weight: bold;
+    }
+    
+    .methaemoglobin-purple {
+        color: #8e44ad;
+        font-weight: bold;
+    }
+    
+    .benzodiazepine-orange {
+        color: #e67e22;
+        font-weight: bold;
+    }
+    
+    .antidote-teal {
+        color: #17a2b8;
+        font-weight: bold;
+    }
+</style>
+</head> <body>
+<div class="module-title">
+    <span class="emoji">🟦</span> MODULE 6: POISONING & ANTIDOTES (HIGH-YIELD)
+    <div style="font-size: 12pt; font-weight: normal; font-style: italic; color: #7f8c8d;">
+        (Atropine, Pralidoxime, Naloxone, Acetylcysteine, Methylene Blue, Flumazenil, Activated Charcoal)
+    </div>
+</div>
+
+<div class="learning-objectives">
+    <h3 style="color: #148f77; margin-top: 0;">📖 Learning Objectives</h3>
+    <ul class="objective-list">
+        <li>Master the management of organophosphate/carbamate poisoning (SLUDGE syndrome)</li>
+        <li>Understand opioid overdose recognition and naloxone administration</li>
+        <li>Learn paracetamol overdose management with acetylcysteine protocols</li>
+        <li>Recognize and treat methaemoglobinaemia with methylene blue</li>
+        <li>Understand benzodiazepine reversal with flumazenil (risks and benefits)</li>
+        <li>Apply the appropriate use of activated charcoal in poisoning</li>
+        <li>Recognize toxidromes and select appropriate antidotes</li>
+        <li>Apply knowledge to clinical scenarios and exam questions</li>
+    </ul>
+</div>
+
+<!-- INTRODUCTION -->
+<h2><span class="chapter-number">0</span> Introduction: The Antidote Arsenal</h2>
+
+<div class="warning-box">
+    <strong>⚠️ POISONS WORK FAST, ANTIDOTES WORK FASTER:</strong> For organophosphates, minutes matter. For opioids, seconds count. For paracetamol, hours determine outcome. Know your antidotes, know them well, and give them early.
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 Core Concept:</strong> Poisoning management follows three principles:<br>
+    1. <strong class="organophosphate-green">Supportive care</strong> (ABCs, monitoring, specific treatments)<br>
+    2. <strong class="organophosphate-green">Decontamination</strong> (charcoal, gastric lavage, skin decontamination)<br>
+    3. <strong class="organophosphate-green">Antidotes</strong> (specific reversal agents)<br>
+    This module focuses on the high-yield antidotes you MUST know.
+</div>
+
+<!-- CHAPTER 1: TOXIDROMES & ANTIDOTE GRID -->
+<h2><span class="chapter-number">1</span> Toxidromes & Antidote Grid</h2>
+
+<div class="definition-box">
+    <strong>Toxidrome:</strong> A constellation of signs and symptoms characteristic of a particular class of poison. Recognizing toxidromes allows for targeted treatment even before laboratory confirmation.
+</div>
+
+<h3>1.1 Common Toxidromes</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">Toxidrome</th>
+            <th>Key Features (Mnemonic)</th>
+            <th>Common Poisons</th>
+            <th>Antidote</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Anticholinergic</strong></td>
+            <td>"Hot as a hare, blind as a bat, dry as a bone, red as a beet, mad as a hatter"</td>
+            <td>Atropine, antihistamines, TCAs, antipsychotics</td>
+            <td>Physostigmine (careful!)</td>
+        </tr>
+        <tr>
+            <td><strong>Cholinergic</strong></td>
+            <td>"SLUDGE" + "BBB"<br>Salivation, Lacrimation, Urination, Defecation, GI upset, Emesis + Bronchospasm, Bradycardia, Bronchorrhea</td>
+            <td>Organophosphates, carbamates, nerve agents</td>
+            <td>Atropine + Pralidoxime</td>
+        </tr>
+        <tr>
+            <td><strong>Opioid</strong></td>
+            <td>"Opioid Triad":<br>Respiratory depression, pinpoint pupils, decreased consciousness</td>
+            <td>Heroin, morphine, fentanyl, methadone</td>
+            <td>Naloxone</td>
+        </tr>
+        <tr>
+            <td><strong>Sympathomimetic</strong></td>
+            <td>"FIGHT":<br>Fever, Increased vitals, Grandiosity, Hallucinations, Tremor</td>
+            <td>Cocaine, amphetamines, MDMA, pseudoephedrine</td>
+            <td>Benzodiazepines</td>
+        </tr>
+        <tr>
+            <td><strong>Sedative-hypnotic</strong></td>
+            <td>"COMA":<br>Confusion, Overdose, Miosis, Ataxia (also respiratory depression)</td>
+            <td>Benzodiazepines, barbiturates, alcohol, GHB</td>
+            <td>Flumazenil (BZDs only), supportive</td>
+        </tr>
+        <tr>
+            <td><strong>Serotonin syndrome</strong></td>
+            <td>"SHE":<br>Shivering, Hyperthermia, Encephalopathy + Clonus, Hyperreflexia</td>
+            <td>SSRIs, MAOIs, TCAs, tramadol, MDMA</td>
+            <td>Cyproheptadine</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>1.2 High-Yield Antidote Grid</h3>
+
+<div class="antidote-grid">
+    <strong>🧪 MUST-KNOW ANTIDOTES (Exam Favorites):</strong><br>
+    <br>
+    <strong>💀 Organophosphate/Carbamate:</strong> <span class="organophosphate-green">ATROPINE + PRALIDOXIME</span><br>
+    • Atropine for muscarinic effects, PAM for nicotinic effects<br>
+    • Give until secretions dry (atropinization)<br>
+    <br>
+    <strong>💊 Opioid Overdose:</strong> <span class="opioid-blue">NALOXONE</span><br>
+    • Works in 1-2 minutes IV, 30-90 minute duration<br>
+    • Short-acting - may need infusion for long-acting opioids<br>
+    <br>
+    <strong>🩸 Paracetamol Overdose:</strong> <span class="paracetamol-red">ACETYLCYSTEINE (NAC)</span><br>
+    • Use Rumack-Matthew nomogram<br>
+    • Works up to 24+ hours post-ingestion (but better early)<br>
+    <br>
+    <strong>🌀 Benzodiazepine Overdose:</strong> <span class="benzodiazepine-orange">FLUMAZENIL</span><br>
+    • Use with CAUTION - seizures in mixed overdoses<br>
+    • Contraindicated in epileptics, chronic BZD users<br>
+    <br>
+    <strong>🔵 Methaemoglobinaemia:</strong> <span class="methaemoglobin-purple">METHYLENE BLUE</span><br>
+    • For symptoms or MetHb >20% (or >10% if cardiac disease)<br>
+    • Works by reducing MetHb to Hb<br>
+    <br>
+    <strong>🌑 General Decontamination:</strong> <span class="antidote-teal">ACTIVATED CHARCOAL</span><br>
+    • Within 1 hour of ingestion for most drugs<br>
+    • Not for caustics, hydrocarbons, lithium, iron
+</div>
+
+<!-- CHAPTER 2: DRUG 1 - ATROPINE (POISONING FOCUS) -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">2</span> Core Drug 1: Atropine (Poisoning Focus)</h2>
+
+<div class="drug-template">
+    <h4>ATROPINE - ANTIDOTE FOR ORGANOPHOSPHATE/CARBAMATE POISONING</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Anticholinergic, competitive muscarinic antagonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Competitive inhibition of acetylcholine at muscarinic receptors<br>
+        • Reverses excessive parasympathetic activity in cholinergic crisis<br>
+        • Dries secretions, reduces bronchorrhea, improves oxygenation<br>
+        • Increases heart rate (reverses bradycardia)<br>
+        • Dilates pupils (reverses miosis)<br>
+        • Does NOT reverse nicotinic effects (muscle weakness, fasciculations)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Organophosphate poisoning (insecticides, nerve agents)<br>
+        • Carbamate poisoning (similar to organophosphates)<br>
+        • Mushroom poisoning (muscarinic-type: Clitocybe, Inocybe)<br>
+        • Symptomatic bradycardia (covered in Module 2)<br>
+        • Pre-anesthetic medication (reduce secretions)<br>
+        • Nerve agent exposure (sarin, VX, etc.)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Narrow-angle glaucoma (relative - life vs vision)<br>
+        • Myasthenia gravis (can worsen weakness)<br>
+        • Obstructive uropathy (BPH)<br>
+        • Obstructive GI disorders<br>
+        • Tachycardia (may worsen - but often needed in poisoning)<br>
+        • Hypersensitivity to atropine
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="organophosphate-green">Organophosphate poisoning:</strong> 2-5 mg IV bolus initially<br>
+        • <strong class="organophosphate-green">Repeat:</strong> Double the dose every 5-10 minutes until atropinization<br>
+        • <strong class="organophosphate-green">Severe cases:</strong> May require 20-50 mg in first hour, hundreds of mg total<br>
+        • <strong class="organophosphate-green">Maintenance:</strong> 10-20% of loading dose per hour as continuous infusion<br>
+        • <strong class="organophosphate-green">Mushroom poisoning:</strong> 1-2 mg IV, repeat as needed
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="organophosphate-green">Organophosphate poisoning:</strong> 0.05-0.1 mg/kg IV initially (min 0.1 mg)<br>
+        • <strong class="organophosphate-green">Repeat:</strong> Double every 5-10 minutes until atropinization<br>
+        • <strong class="organophosphate-green">Severe cases:</strong> May require 1-2 mg/kg in first 24 hours<br>
+        • <strong class="organophosphate-green">Maintenance:</strong> 0.02-0.08 mg/kg/hr infusion<br>
+        • <strong class="organophosphate-green">Nerve agent exposure:</strong> Auto-injector: 2 mg IM (≥10 years), 1 mg IM (2-9 years)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="organophosphate-green">Routes:</strong> IV (preferred), IM, IO, endotracheal<br>
+        • <strong class="organophosphate-green">Preparation:</strong> 0.1 mg/mL, 0.5 mg/mL, 1 mg/mL ampoules<br>
+        • For IV: Give rapidly (over 1-2 minutes) in poisoning<br>
+        • For IM: Auto-injectors available for nerve agent exposure<br>
+        • For infusion: Mix in NS or D5W, typical concentration 0.1-1 mg/mL<br>
+        • Compatible with most IV solutions
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Dry mouth, dry skin (desired in poisoning)<br>
+        • Blurred vision, photophobia<br>
+        • Urinary retention<br>
+        • Constipation<br>
+        • Flushing, fever (especially children)<br>
+        • Tachycardia (expected and often desired)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Delirium, hallucinations (central anticholinergic syndrome)<br>
+        • Hyperthermia (reduced sweating)<br>
+        • Ileus, urinary retention requiring catheterization<br>
+        • Ventricular arrhythmias (with very high doses)<br>
+        • Paradoxical bradycardia with low doses (<0.5 mg in adults)<br>
+        • Angle-closure glaucoma (in susceptible individuals)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="organophosphate-green">Other anticholinergics:</strong> Additive effects (TCAs, antihistamines, antipsychotics)<br>
+        • <strong class="organophosphate-green">Cholinergic drugs:</strong> Antagonizes effects (neostigmine, pilocarpine)<br>
+        • <strong class="organophosphate-green">Pralidoxime:</strong> Synergistic - use together in organophosphate poisoning<br>
+        • <strong class="organophosphate-green">Digoxin:</strong> May increase heart rate<br>
+        • <strong class="organophosphate-green">Ketamine:</strong> Often given together (reduces secretions)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="organophosphate-green">"Secretions, secretions, secretions"</strong> - main target in poisoning<br>
+        • <strong class="organophosphate-green">Atropinization endpoints:</strong> Clear chest (no wheezes/rales), dry axillae, HR >80 bpm, pupils dilating<br>
+        • <strong class="organophosphate-green">Double dosing:</strong> Start 2 mg IV, double every 5-10 min until endpoints reached<br>
+        • <strong class="organophosphate-green">Aging/reactivation:</strong> Organophosphates bind irreversibly - may need atropine for days<br>
+        • <strong class="organophosphate-green">Carbamates vs organophosphates:</strong> Carbamates reversible - less PAM needed<br>
+        • <strong class="organophosphate-green">Nerve agents:</strong> Auto-injectors (AtroPen®): 2 mg IM, may need 3 injections initially<br>
+        • <strong class="organophosphate-green">Monitor:</strong> Secretions, lung sounds, heart rate, pupil size, temperature<br>
+        • <strong class="organophosphate-green">Weaning:</strong> Taper slowly over days to avoid rebound cholinergic crisis
+    </div>
+</div>
+
+<div class="organophosphate-box">
+    <strong>☠️ ORGANOPHOSPHATE POISONING (SLUDGE + BBB):</strong><br>
+    • <strong>S</strong>alivation, <strong>L</strong>acrimation, <strong>U</strong>rination, <strong>D</strong>efecation, <strong>G</strong>I upset, <strong>E</strong>mesis<br>
+    • <strong>B</strong>ronchospasm, <strong>B</strong>radycardia, <strong>B</strong>ronchorrhea<br>
+    • PLUS: Muscle fasciculations, weakness, paralysis (nicotinic effects)<br>
+    • <strong>TREATMENT:</strong> 1. DECONTAMINATION → 2. ATROPINE → 3. PRALIDOXIME
+</div>
+
+<!-- CHAPTER 3: DRUG 2 - PRALIDOXIME (PAM) -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">3</span> Core Drug 2: Pralidoxime (PAM)</h2>
+
+<div class="drug-template">
+    <h4>PRALIDOXIME (PAM) - REACTIVATES CHOLINESTERASE IN ORGANOPHOSPHATE POISONING</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Oxime, cholinesterase reactivator
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Reactivates acetylcholinesterase (AChE) by removing organophosphate molecule<br>
+        • Cleaves phosphorylated AChE → restores enzyme function<br>
+        • Only effective before "aging" occurs (irreversible binding)<br>
+        • Aging time varies: Sarin (5 hours), VX (48 hours), soman (2 minutes!)<br>
+        • Also has some direct anticholinergic effects<br>
+        • Does NOT cross blood-brain barrier well (limited CNS effect)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Organophosphate poisoning (insecticides, nerve agents)<br>
+        • Carbamate poisoning (controversial - may worsen in some cases)<br>
+        • Nerve agent exposure (military/terrorism incidents)<br>
+        • <strong>Always use with atropine</strong> - PAM alone is insufficient<br>
+        • Not for pure muscarinic poisoning (mushrooms, pilocarpine)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Known hypersensitivity to pralidoxime<br>
+        • Myasthenia gravis (relative - may worsen)<br>
+        • Renal impairment (requires dose adjustment)<br>
+        • Carbamate poisoning (relative - may worsen with certain carbamates)<br>
+        • No absolute contraindication in life-threatening poisoning
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="organophosphate-green">Loading dose:</strong> 1-2 g IV over 15-30 minutes<br>
+        • <strong class="organophosphate-green">Alternative loading:</strong> 30 mg/kg IV over 30 minutes (max 2 g)<br>
+        • <strong class="organophosphate-green">Maintenance infusion:</strong> 500 mg/hr OR 8-10 mg/kg/hr<br>
+        • <strong class="organophosphate-green">Intermittent dosing:</strong> 1 g IV every 4-12 hours (less preferred)<br>
+        • <strong class="organophosphate-green">Severe cases:</strong> May give second 1-2 g dose 1 hour after first<br>
+        • <strong class="organophosphate-green">Nerve agents:</strong> Auto-injector: 600 mg IM (may repeat ×2)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="organophosphate-green">Loading dose:</strong> 25-50 mg/kg IV over 15-30 minutes (max 2 g)<br>
+        • <strong class="organophosphate-green">Maintenance:</strong> 10-20 mg/kg/hr IV infusion<br>
+        • <strong class="organophosphate-green">Intermittent:</strong> 25-50 mg/kg every 4-12 hours<br>
+        • <strong class="organophosphate-green">Nerve agent:</strong> Auto-injector: 15 mg/kg IM (600 mg if >40 kg)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="organophosphate-green">Routes:</strong> IV infusion (preferred), IM, slow IV push<br>
+        • <strong class="organophosphate-green">Preparation:</strong> 1 g vial (powder), reconstitute with 20 mL sterile water = 50 mg/mL<br>
+        • <strong class="organophosphate-green">For IV infusion:</strong> Dilute in 100-250 mL NS, infuse over 15-30 min<br>
+        • <strong class="organophosphate-green">For IM:</strong> Auto-injector (600 mg/2 mL) - may use up to 3 injections<br>
+        • <strong class="organophosphate-green">Incompatible with:</strong> Thiopental, many other drugs - use dedicated line<br>
+        • <strong class="organophosphate-green">Stability:</strong> Use within hours of reconstitution (check manufacturer)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Hypertension, tachycardia<br>
+        • Dizziness, headache, blurred vision<br>
+        • Nausea, vomiting<br>
+        • Pain at injection site (IM route)<br>
+        • Hyperventilation<br>
+        • Metallic taste
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Laryngospasm, muscle rigidity (with rapid IV administration)<br>
+        • Respiratory arrest (rare)<br>
+        • Hypertension crisis<br>
+        • Hepatitis, elevated LFTs<br>
+        • Renal impairment (high doses)<br>
+        • Seizures (rare)<br>
+        • Cholinergic crisis if stopped abruptly
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="organophosphate-green">Atropine:</strong> Synergistic - always use together<br>
+        • <strong class="organophosphate-green">Barbiturates:</strong> May be antagonized (metabolism induction)<br>
+        • <strong class="organophosphate-green">Succinylcholine:</strong> Prolonged paralysis in organophosphate poisoning<br>
+        • <strong class="organophosphate-green">Theophylline, aminophylline:</strong> Increased toxicity risk<br>
+        • <strong class="organophosphate-green">Morphine:</strong> May be potentiated
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="organophosphate-green">"Time is brain (and muscle)"</strong> - give within hours of exposure<br>
+        • <strong class="organophosphate-green">Aging matters:</strong> Soman ages in 2 minutes - PAM useless unless given immediately<br>
+        • <strong class="organophosphate-green">Nicotinic effects:</strong> PAM helps muscle weakness/fasciculations; atropine does not<br>
+        • <strong class="organophosphate-green">Carbamate caution:</strong> Some carbamates (carbaryl) may worsen with PAM<br>
+        • <strong class="organophosphate-green">Red urine:</strong> Normal - drug and metabolites turn urine red-brown<br>
+        • <strong class="organophosphate-green">Duration:</strong> Half-life 1-2 hours - continuous infusion preferred<br>
+        • <strong class="organophosphate-green">Monitoring:</strong> Muscle strength, respiratory function, atropine requirements<br>
+        • <strong class="organophosphate-green">Weaning:</strong> Continue for 24-48 hours after atropine stopped, taper slowly
+    </div>
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 ATROPINE + PAM SYNERGY:</strong><br>
+    • <strong>Atropine:</strong> Treats muscarinic effects (secretions, bradycardia, bronchorrhea)<br>
+    • <strong>Pralidoxime:</strong> Treats nicotinic effects (muscle weakness, fasciculations, paralysis)<br>
+    • <em>Both are needed for complete treatment of organophosphate poisoning</em>
+</div>
+
+<!-- CHAPTER 4: DRUG 3 - NALOXONE (POISONING FOCUS) -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">4</span> Core Drug 3: Naloxone (Poisoning Focus)</h2>
+
+<div class="drug-template">
+    <h4>NALOXONE - LIFESAVER FOR OPIOID OVERDOSE</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Competitive opioid receptor antagonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Competitive antagonist at mu, kappa, and delta opioid receptors<br>
+        • Higher affinity than most opioids → displaces opioids from receptors<br>
+        • Reverses respiratory depression, sedation, hypotension, miosis<br>
+        • Pure antagonist - no opioid agonist activity<br>
+        • Rapid onset but short duration (shorter than most opioids)<br>
+        • Also reverses opioid-induced pruritus, urinary retention
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Opioid overdose (respiratory depression <12/min, pinpoint pupils, coma)<br>
+        • Post-operative opioid reversal (respiratory depression)<br>
+        • Diagnostic: Suspected opioid overdose (therapeutic trial)<br>
+        • Opioid-induced pruritus (low dose 0.04-0.08 mg IV)<br>
+        • Neonatal respiratory depression from maternal opioids<br>
+        • Opioid overdose in pregnancy (saves both mother and fetus)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Hypersensitivity to naloxone (rare)<br>
+        • <strong>Note:</strong> No absolute contraindications in opioid overdose (life-saving)<br>
+        • Relative: Opioid-dependent patients (precipitates withdrawal)<br>
+        • Cardiac patients (may cause pulmonary edema, arrhythmias)<br>
+        • Neonates of opioid-dependent mothers (use with caution - withdrawal)<br>
+        • Mixed overdose with non-opioid sedatives (may cause seizures)
+    </div>
+    
+    <div class="template-label">Adult dose:</span>
+        • <strong class="opioid-blue">Opioid overdose (unknown opioid):</strong> 0.4-2 mg IV/IM/SC, repeat every 2-3 min (max 10 mg)<br>
+        • <strong class="opioid-blue">Post-op reversal:</strong> 0.1-0.2 mg IV every 2-3 min to desired effect<br>
+        • <strong class="opioid-blue">Infusion:</strong> 2/3 of initial effective dose per hour (e.g., 0.4 mg/hr)<br>
+        • <strong class="opioid-blue">Intranasal:</strong> 2 mg (1 mg per nostril) - pre-hospital use<br>
+        • <strong class="opioid-blue">Auto-injector:</strong> 0.4 mg IM (Evzio®) or 2 mg IM (higher dose formulations)<br>
+        • <strong class="opioid-blue">Buprenorphine overdose:</strong> May need 2-10 mg (high receptor affinity)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="opioid-blue">Opioid overdose:</strong> 0.01 mg/kg IV/IM/SC, repeat every 2-3 min (max 2 mg)<br>
+        • <strong class="opioid-blue">Neonates:</strong> 0.01 mg/kg IV/IM/SC, repeat every 2-3 min<br>
+        • <strong class="opioid-blue">Infusion:</strong> 0.0025-0.16 mg/kg/hr after initial bolus<br>
+        • <strong class="opioid-blue">Intranasal:</strong> 2 mg (same as adult - absorption varies)<br>
+        • <strong class="opioid-blue">Maternal opioid use:</strong> 0.1 mg/kg IM to mother before delivery
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="opioid-blue">Routes:</strong> IV (fastest), IM, SC, intranasal, endotracheal<br>
+        • <strong class="opioid-blue">Preparation:</strong> 0.4 mg/mL, 1 mg/mL, 2 mg/2mL prefilled syringes<br>
+        • <strong class="opioid-blue">For IV:</strong> Give undiluted, rapid push for overdose, slow titration for post-op<br>
+        • <strong class="opioid-blue">For infusion:</strong> Mix 2 mg in 500 mL D5W or NS = 4 mcg/mL<br>
+        • <strong class="opioid-blue">Intranasal:</strong> Use mucosal atomizer device or prefilled device (Narcan®)<br>
+        • <strong class="opioid-blue">Endotracheal:</strong> 2-2.5 times IV dose diluted in 5-10 mL NS
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Acute opioid withdrawal (agitation, nausea, vomiting, diarrhea)<br>
+        • Tachycardia, hypertension<br>
+        • Nausea, vomiting<br>
+        • Sweating, tremors<br>
+        • Pulmonary edema (non-cardiogenic)<br>
+        • Seizures (rare, usually in mixed overdoses)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Severe opioid withdrawal (dangerous in opioid-dependent patients)<br>
+        • Pulmonary edema (especially in cardiac patients)<br>
+        • Ventricular arrhythmias, cardiac arrest<br>
+        • Seizures (in mixed overdoses with pro-convulsants)<br>
+        • Hypertension → cerebral hemorrhage (in hypertensive patients)<br>
+        • Re-sedation (when naloxone wears off before opioid)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="opioid-blue">Opioid agonists:</strong> Antagonizes effects (obvious)<br>
+        • <strong class="opioid-blue">Opioid partial agonists (buprenorphine):</strong> May require higher doses<br>
+        • <strong class="opioid-blue">Clonidine:</strong> May precipitate hypertension when reversing opioids<br>
+        • <strong class="opioid-blue">Flumazenil:</strong> Used together in mixed overdoses (opioid + benzodiazepine)<br>
+        • <strong class="opioid-blue">Naltrexone:</strong> Additive effects (both opioid antagonists)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="opioid-blue">"Start low, go slow"</strong> in opioid-dependent patients to avoid severe withdrawal<br>
+        • <strong class="opioid-blue">Duration mismatch:</strong> Naloxone 30-90 min vs opioids hours to days → RE-DOSE OFTEN<br>
+        • <strong class="opioid-blue">Observe period:</strong> At least 4-6 hours after last dose (longer for long-acting opioids)<br>
+        • <strong class="opioid-blue">Fentanyl analogs:</strong> May require higher doses (carfentanil up to 12 mg needed)<br>
+        • <strong class="opioid-blue">Intranasal:</strong> Takes 2-5 minutes vs 30-60 seconds IV<br>
+        • <strong class="opioid-blue">Pulmonary edema:</strong> Treat with oxygen, PEEP; usually resolves in 24-48 hours<br>
+        • <strong class="opioid-blue">Harm reduction:</strong> Provide take-home naloxone to at-risk patients<br>
+        • <strong class="opioid-blue">Mixed overdoses:</strong> May need both naloxone and flumazenil (give separately)
+    </div>
+</div>
+
+<div class="opioid-box">
+    <strong>💊 OPIOID OVERDOSE MANAGEMENT:</strong><br>
+    1. <strong>ABCDE</strong> - especially Airway and Breathing (may need intubation)<br>
+    2. <strong>Naloxone</strong> 0.4-2 mg IV/IM/IN - repeat every 2-3 min up to 10 mg<br>
+    3. <strong>Observe</strong> 4-6 hours (longer for methadone, fentanyl patches)<br>
+    4. <strong>Consider infusion</strong> if re-sedation occurs (2/3 of initial bolus per hour)<br>
+    5. <strong>Treat complications</strong> (pulmonary edema, withdrawal, aspiration)
+</div>
+
+<!-- CHAPTER 5: DRUG 4 - ACETYLCYSTEINE (NAC) -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">5</span> Core Drug 4: Acetylcysteine (NAC)</h2>
+
+<div class="drug-template">
+    <h4>ACETYLCYSTEINE (NAC) - ANTIDOTE FOR PARACETAMOL OVERDOSE</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Thiol compound, glutathione precursor
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Replenishes glutathione stores → detoxifies NAPQI (toxic paracetamol metabolite)<br>
+        • Directly conjugates with NAPQI as glutathione substitute<br>
+        • Antioxidant properties - scavenges free radicals<br>
+        • Mucolytic action (different mechanism - breaks disulfide bonds in mucus)<br>
+        • May improve hepatic blood flow<br>
+        • Multiple mechanisms of hepatoprotection
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Paracetamol (acetaminophen) overdose (within 24+ hours of ingestion)<br>
+        • Prevention of contrast-induced nephropathy (oral)<br>
+        • Mucolytic for thick secretions (nebulized, different dosing)<br>
+        • Diagnostic: Acetaminophen level in toxic range per Rumack-Matthew nomogram<br>
+        • Early acute liver failure (some evidence)<br>
+        • Carbon tetrachloride poisoning (limited evidence)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Known hypersensitivity to acetylcysteine<br>
+        • <strong>Note:</strong> No absolute contraindication in paracetamol overdose (life-saving)<br>
+        • Relative: Asthma (nebulized form can cause bronchospasm)<br>
+        • Pregnancy (but benefits outweigh risks in overdose)<br>
+        • Caution in severe COPD/asthma when giving IV (anaphylactoid reactions)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="paracetamol-red">IV protocol (3-bag method):</strong><br>
+        &nbsp;&nbsp;• Bag 1: 150 mg/kg in 200 mL D5W over 1 hour<br>
+        &nbsp;&nbsp;• Bag 2: 50 mg/kg in 500 mL D5W over 4 hours<br>
+        &nbsp;&nbsp;• Bag 3: 100 mg/kg in 1000 mL D5W over 16 hours<br>
+        • <strong class="paracetamol-red">Oral protocol:</strong> 140 mg/kg loading, then 70 mg/kg every 4 hours × 17 doses<br>
+        • <strong class="paracetamol-red">Late presentation (>24 hours):</strong> Start full protocol regardless of level<br>
+        • <strong class="paracetamol-red">Mucolytic:</strong> 3-5 mL of 20% solution nebulized TID-QID (different use)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="paracetamol-red">IV protocol:</strong> Same weight-based dosing as adults<br>
+        • <strong class="paracetamol-red">Oral protocol:</strong> Same as adults (140/70 mg/kg regimen)<br>
+        • <strong class="paracetamol-red">Neonates:</strong> Limited data - consult toxicology/neonatology<br>
+        • <strong class="paracetamol-red">Adjust fluid volumes</strong> for small children (may need more concentrated solutions)<br>
+        • <strong class="paracetamol-red">Mucolytic:</strong> 3-5 mL of 10% solution nebulized
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="paracetamol-red">Routes:</strong> IV (preferred), PO, nebulized<br>
+        • <strong class="paracetamol-red">Preparation (IV):</strong> 200 mg/mL vial (10g/50mL), dilute in D5W only<br>
+        • <strong class="paracetamol-red">Dilution:</strong> Use glass or PVC containers (not polyethylene)<br>
+        • <strong class="paracetamol-red">Filters:</strong> Use 0.22 micron filter (IV administration set)<br>
+        • <strong class="paracetamol-red">Oral:</strong> Dilute 20% solution 1:4 with juice/soda to mask taste (final 5%)<br>
+        • <strong class="paracetamol-red">Incompatible with:</strong> Most other drugs - use dedicated line
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Anaphylactoid reactions (rash, flushing, bronchospasm) - IV route<br>
+        • Nausea, vomiting (especially oral route - "rotten egg" smell)<br>
+        • Headache, dizziness<br>
+        • Fever, chills<br>
+        • Injection site reactions<br>
+        • Hypotension (with rapid IV infusion)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Severe anaphylaxis (rare but serious)<br>
+        • Bronchospasm, respiratory distress (especially in asthmatics)<br>
+        • Angioedema, urticaria<br>
+        • Hypertension (paradoxical)<br>
+        • Hepatic encephalopathy (if given too late)<br>
+        • False-positive ketones in urine<br>
+        • Haemolysis in G6PD deficiency (theoretical)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="paracetamol-red">Activated charcoal:</strong> Binds oral NAC - separate by 2 hours if possible<br>
+        • <strong class="paracetamol-red">Nitroglycerin:</strong> Potentiates vasodilation → severe hypotension<br>
+        • <strong class="paracetamol-red">Antiemetics:</strong> May be needed for oral NAC administration<br>
+        • <strong class="paracetamol-red">Paracetamol level:</strong> NAC does not affect assay<br>
+        • <strong class="paracetamol-red">INR:</strong> May increase during treatment (hepatic injury)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="paracetamol-red">Rumack-Matthew nomogram:</strong> Use for single acute ingestions 4-24 hours post-ingestion<br>
+        • <strong class="paracetamol-red">Treatment line:</strong> 150 mg/L (1000 μmol/L) at 4 hours, lower for extended-release<br>
+        • <strong class="paracetamol-red">"150 rule":</strong> If level >150 mg/L at 4 hours → TREAT<br>
+        • <strong class="paracetamol-red">Late presentation:</strong> Start NAC if >24 hours and any detectable paracetamol or ALT elevated<br>
+        • <strong class="paracetamol-red">Anaphylactoid reaction:</strong> Slow or stop infusion, give antihistamines, resume at slower rate<br>
+        • <strong class="paracetamol-red">Extended-release:</strong> Check levels at 4 hours AND 8 hours, use lower treatment line<br>
+        • <strong class="paracetamol-red">Pregnancy:</strong> NAC crosses placenta - treat mother to protect fetus<br>
+        • <strong class="paracetamol-red">Monitoring:</strong> ALT, INR, creatinine, glucose during treatment
+    </div>
+</div>
+
+<div class="clinical-pearl">
+    <strong>🧠 PARACETAMOL OVERDOSE TIMELINE:</strong><br>
+    • <strong>0-24 hours:</strong> Often asymptomatic or mild GI symptoms<br>
+    • <strong>24-72 hours:</strong> RUQ pain, elevated LFTs, rising INR<br>
+    • <strong>72-96 hours:</strong> Peak hepatotoxicity (jaundice, encephalopathy)<br>
+    • <strong>>96 hours:</strong> Recovery or death (fulminant hepatic failure)<br>
+    • <em>NAC works best early but has benefit even late (>24 hours)</em>
+</div>
+
+<!-- CHAPTER 6: DRUG 5 - METHYLENE BLUE -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">6</span> Core Drug 5: Methylene Blue</h2>
+
+<div class="drug-template">
+    <h4>METHYLENE BLUE - FOR METH AEMOGLOBINAEMIA</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Redox agent, electron acceptor
+    </div>
+    
+    <div class="template-label">Mechanism of action:</span> 
+        • Accepts electrons from NADPH via NADPH methaemoglobin reductase<br>
+        • Reduced to leukomethylene blue, which reduces methaemoglobin (MetHb) to haemoglobin<br>
+        • Requires functional NADPH pathway (G6PD dependent)<br>
+        • Also has mild antibacterial, antifungal properties<br>
+        • Urinary antiseptic (historical use)<br>
+        • Vasopressor at high doses (monoamine oxidase inhibition)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Symptomatic methaemoglobinaemia (dyspnoea, cyanosis, headache)<br>
+        • Methaemoglobin level >20% (or >10% with cardiac disease)<br>
+        • Known exposure to methaemoglobin-inducing agents<br>
+        • Ifosfamide-induced encephalopathy (different mechanism)<br>
+        • Vasoplegic syndrome post-cardiac surgery (high dose)<br>
+        • Cyanide poisoning (adjunct with sodium nitrite/thiosulfate)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • G6PD deficiency (may cause haemolysis)<br>
+        • Renal impairment (excreted renally)<br>
+        • Known hypersensitivity to methylene blue<br>
+        • Serotonin syndrome risk (MAOI properties)<br>
+        • Pregnancy (relative - crosses placenta, fetal concerns)<br>
+        • Concurrent serotoninergic drugs (SSRIs, SNRIs, tramadol, etc.)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="methaemoglobin-purple">Methaemoglobinaemia:</strong> 1-2 mg/kg IV over 5-10 minutes<br>
+        • <strong class="methaemoglobin-purple">Repeat:</strong> May repeat 1 mg/kg in 1 hour if MetHb >30% or symptoms persist<br>
+        • <strong class="methaemoglobin-purple">Max total dose:</strong> 7 mg/kg (rarely needed)<br>
+        • <strong class="methaemoglobin-purple">Ifosfamide encephalopathy:</strong> 50 mg IV every 4-6 hours<br>
+        • <strong class="methaemoglobin-purple">Vasoplegic syndrome:</strong> 1.5 mg/kg over 1 hour, then 1 mg/kg/hr × 6 hours<br>
+        • <strong class="methaemoglobin-purple">Cyanide poisoning:</strong> Part of Cyanokit® protocol
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="methaemoglobin-purple">Methaemoglobinaemia:</strong> 1-2 mg/kg IV over 5-10 minutes<br>
+        • <strong class="methaemoglobin-purple">Repeat:</strong> 1 mg/kg in 1 hour if needed<br>
+        • <strong class="methaemoglobin-purple">Infants:</strong> Same mg/kg dosing<br>
+        • <strong class="methaemoglobin-purple">Neonates:</strong> Use with caution - kernicterus risk<br>
+        • <strong class="methaemoglobin-purple">Max:</strong> 7 mg/kg total (as adult)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="methaemoglobin-purple">Routes:</strong> IV only (slow push or infusion), oral (not for emergencies)<br>
+        • <strong class="methaemoglobin-purple">Preparation:</strong> 1% solution = 10 mg/mL<br>
+        • <strong class="methaemoglobin-purple">For IV:</strong> Dilute in 50-100 mL NS or D5W, infuse over 5-10 minutes<br>
+        • <strong class="methaemoglobin-purple">Direct IV push:</strong> Can give undiluted slowly (over 5+ minutes)<br>
+        • <strong class="methaemoglobin-purple">Extravasation:</strong> Causes tissue necrosis - ensure IV patency<br>
+        • <strong class="methaemoglobin-purple">Incompatible with:</strong> Many drugs - use dedicated line
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Blue-green discoloration of urine, skin, mucous membranes<br>
+        • Nausea, vomiting, abdominal pain<br>
+        • Headache, dizziness, confusion<br>
+        • Sweating, fever<br>
+        • Injection site pain<br>
+        • Hypertension (high doses)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Haemolytic anaemia in G6PD deficiency<br>
+        • Serotonin syndrome (MAOI properties)<br>
+        • Cardiac arrhythmias<br>
+        • Tissue necrosis with extravasation<br>
+        • False low SpO₂ readings (pulse oximetry interference)<br>
+        • Kernicterus in neonates (displaces bilirubin from albumin)<br>
+        • Methaemoglobinaemia paradoxically (at high doses >7 mg/kg)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="methaemoglobin-purple">Serotoninergic drugs:</strong> Serotonin syndrome risk (SSRIs, SNRIs, TCAs, tramadol)<br>
+        • <strong class="methaemoglobin-purple">MAOIs:</strong> Additive effects<br>
+        • <strong class="methaemoglobin-purple">Dapsone, nitrites, local anesthetics:</strong> May cause methaemoglobinaemia<br>
+        • <strong class="methaemoglobin-purple">Reducing agents (ascorbic acid):</strong> May reduce effectiveness<br>
+        • <strong class="methaemoglobin-purple">Chloroquine, primaquine:</strong> Increased haemolysis risk in G6PD deficiency
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="methaemoglobin-purple">"Chocolate brown blood"</strong> - doesn't turn red with oxygen (bedside test)<br>
+        • <strong class="methaemoglobin-purple">Pulse oximetry:</strong> Reads 85% regardless of true saturation (plateau effect)<br>
+        • <strong class="methaemoglobin-purple">G6PD deficiency:</strong> Check if possible; if suspected, use lower dose or consider alternatives<br>
+        • <strong class="methaemoglobin-purple">Onset:</strong> 30-60 minutes, peak 1-2 hours<br>
+        • <strong class="methaemoglobin-purple">Repeat dosing:</strong> May need every 4-6 hours for dapsone poisoning (long half-life)<br>
+        • <strong class="methaemoglobin-purple">Refractory cases:</strong> Consider exchange transfusion, hyperbaric oxygen, ascorbic acid<br>
+        • <strong class="methaemoglobin-purple">Causes of methaemoglobinaemia:</strong> Nitrites/nitrates, dapsone, local anesthetics (prilocaine), aniline dyes<br>
+        • <strong class="methaemoglobin-purple">Monitoring:</strong> MetHb level 1 hour after dose, CBC, urine color (should be blue-green)
+    </div>
+</div>
+
+<!-- CHAPTER 7: DRUG 6 - FLUMAZENIL -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">7</span> Core Drug 6: Flumazenil</h2>
+
+<div class="drug-template">
+    <h4>FLUMAZENIL - BENZODIAZEPINE ANTAGONIST (USE WITH CAUTION)</h4>
+    
+    <div class="template-section">
+        <span class="template-label">Drug class:</span> Competitive benzodiazepine receptor antagonist
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Mechanism of action:</span> 
+        • Competitive antagonist at benzodiazepine binding site on GABA-A receptor<br>
+        • Reverses sedation, respiratory depression, amnesia from benzodiazepines<br>
+        • Does NOT reverse effects of other CNS depressants (alcohol, barbiturates)<br>
+        • Short duration (45-90 minutes) - shorter than most benzodiazepines<br>
+        • Pure antagonist - no intrinsic agonist or inverse agonist activity<br>
+        • Also reverses effects of non-benzodiazepine hypnotics (zolpidem, zopiclone)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Indications:</span>
+        • Reversal of conscious sedation after procedures<br>
+        • Suspected pure benzodiazepine overdose (diagnostic and therapeutic)<br>
+        • Benzodiazepine-induced respiratory depression in ICU<br>
+        • Reversal of benzodiazepines given for seizures (caution!)<br>
+        • Coma of unknown cause (diagnostic trial)<br>
+        • Hepatic encephalopathy (controversial, some evidence)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Contraindications:</span>
+        • Patients on benzodiazepines for control of seizures<br>
+        • Benzodiazepine-dependent patients (precipitates withdrawal)<br>
+        • Mixed overdose with pro-convulsant drugs (TCAs, cocaine, etc.)<br>
+        • Increased ICP (benzodiazepines may be protective)<br>
+        • Known hypersensitivity to flumazenil or benzodiazepines<br>
+        • Pregnancy (relative - limited data)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adult dose:</span>
+        • <strong class="benzodiazepine-orange">Reversal of sedation:</strong> 0.2 mg IV over 15 seconds, repeat every minute (max 1 mg)<br>
+        • <strong class="benzodiazepine-orange">Overdose reversal:</strong> 0.2 mg IV, then 0.3 mg at 1 min, then 0.5 mg at 1 min intervals (max 3 mg)<br>
+        • <strong class="benzodiazepine-orange">ICU sedation reversal:</strong> 0.2-1 mg IV, titrated to effect<br>
+        • <strong class="benzodiazepine-orange">Repeat doses:</strong> May need every 20-30 minutes (short duration)<br>
+        • <strong class="benzodiazepine-orange">Infusion:</strong> 0.1-0.4 mg/hr for long-acting benzodiazepines (rarely used)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Pediatric dose:</span>
+        • <strong class="benzodiazepine-orange">Reversal of sedation:</strong> 0.01 mg/kg (max 0.2 mg) IV over 15 seconds<br>
+        • <strong class="benzodiazepine-orange">Repeat:</strong> 0.01 mg/kg every minute (max total 0.05 mg/kg or 1 mg)<br>
+        • <strong class="benzodiazepine-orange">Overdose:</strong> 0.01 mg/kg, repeat every minute to max 0.05 mg/kg<br>
+        • <strong class="benzodiazepine-orange">Neonates:</strong> Not recommended (limited data)<br>
+        • <strong class="benzodiazepine-orange">Children <1 year:</strong> Use with extreme caution
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Route & preparation:</span>
+        • <strong class="benzodiazepine-orange">Routes:</strong> IV only (never IM, SC, or other routes)<br>
+        • <strong class="benzodiazepine-orange">Preparation:</strong> 0.1 mg/mL (5 mL vial = 0.5 mg, 10 mL vial = 1 mg)<br>
+        • <strong class="benzodiazepine-orange">For IV:</strong> Give slowly (over 15-30 seconds per 0.2 mg)<br>
+        • <strong class="benzodiazepine-orange">Dilution:</strong> Can dilute with NS, D5W, or LR to 0.1 mg/mL<br>
+        • <strong class="benzodiazepine-orange">Incompatible with:</strong> Many drugs - administer separately<br>
+        • <strong class="benzodiazepine-orange">Stability:</strong> Use within 24 hours if diluted
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Side effects:</span>
+        • Anxiety, agitation, emotional lability<br>
+        • Dizziness, headache<br>
+        • Nausea, vomiting<br>
+        • Sweating, flushing<br>
+        • Blurred vision<br>
+        • Pain at injection site
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Adverse effects / ADR:</span>
+        • Seizures (especially in mixed overdoses or epileptics)<br>
+        • Acute benzodiazepine withdrawal syndrome<br>
+        • Cardiac arrhythmias (tachycardia, PVCs)<br>
+        • Hypertension<br>
+        • Re-sedation (when flumazenil wears off)<br>
+        • Pulmonary edema (rare)<br>
+        • Death (in high-risk patients)
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Drug interactions:</span>
+        • <strong class="benzodiazepine-orange">Benzodiazepines:</strong> Antagonizes effects (obvious)<br>
+        • <strong class="benzodiazepine-orange">TCAs, cocaine, theophylline:</strong> Increased seizure risk<br>
+        • <strong class="benzodiazepine-orange">Alcohol, barbiturates, opioids:</strong> No reversal - may unmask their effects<br>
+        • <strong class="benzodiazepine-orange">Naloxone:</strong> May be used together in mixed overdoses<br>
+        • <strong class="benzodiazepine-orange">Antiepileptics:</strong> May be less effective if benzodiazepines withdrawn
+    </div>
+    
+    <div class="template-section">
+        <span class="template-label">Emergency pearls:</span>
+        • <strong class="benzodiazepine-orange">"DO NOT ROUTINELY USE"</strong> in unknown overdose - seizure risk<br>
+        • <strong class="benzodiazepine-orange">Best uses:</strong> 1) Reversal of procedural sedation 2) Pure BZD overdose in young healthy patient<br>
+        • <strong class="benzodiazepine-orange">Duration mismatch:</strong> Flumazenil 45-90 min vs BZDs hours to days → RE-SEDATION RISK<br>
+        • <strong class="benzodiazepine-orange">Observe:</strong> At least 2 hours after last dose for re-sedation<br>
+        • <strong class="benzodiazepine-orange">Seizure treatment:</strong> If seizures occur, give benzodiazepine (diazepam/midazolam)<br>
+        • <strong class="benzodiazepine-orange">Chronic users:</strong> May precipitate severe withdrawal (anxiety, tachycardia, seizures)<br>
+        • <strong class="benzodiazepine-orange">Mixed overdoses:</strong> Most dangerous scenario - flumazenil may unmask TCA cardiotoxicity<br>
+        • <strong class="benzodiazepine-orange">ICU use:</strong> May help with ventilator weaning in selected patients
+    </div>
+</div>
+
+<!-- CHAPTER 8: ACTIVATED CHARCOAL -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">8</span> Activated Charcoal (Injectable Relevance Overview)</h2>
+
+<div class="charcoal-box">
+    <h4 style="color: white;">ACTIVATED CHARCOAL - THE UNIVERSAL ADSORBENT</h4>
+    
+    <div class="template-section" style="color: white;">
+        <span class="template-label" style="color: #aed6f1;">Drug class:</span> Adsorbent, decontamination agent
+    </div>
+    
+    <div class="template-section" style="color: white;">
+        <span class="template-label" style="color: #aed6f1;">Mechanism of action:</span> 
+        • Large surface area (1000 m²/g) → binds many drugs/toxins via adsorption<br>
+        • Reduces absorption from gastrointestinal tract<br>
+        • May enhance elimination via "gastrointestinal dialysis" (multiple doses)<br>
+        • Does NOT bind all toxins (see contraindications)<br>
+        • Works best within 1 hour of ingestion (some benefit up to 4 hours)<br>
+        • Multiple-dose activated charcoal (MDAC) enhances elimination of some drugs
+    </div>
+    
+    <div class="template-section" style="color: white;">
+        <span class="template-label" style="color: #aed6f1;">Indications:</span>
+        • Recent ingestion of adsorbable toxin (within 1-2 hours, up to 4 hours)<br>
+        • Multiple-dose activated charcoal for specific drugs:<br>
+        &nbsp;&nbsp;• Theophylline<br>
+        &nbsp;&nbsp;• Phenobarbital<br>
+        &nbsp;&nbsp;• Carbamazepine<br>
+        &nbsp;&nbsp;• Dapsone<br>
+        &nbsp;&nbsp;• Quinine<br>
+        &nbsp;&nbsp;• Salicylates (controversial)<br>
+        • Reduced absorption of orally administered drugs (in overdose)
+    </div>
+    
+    <div class="template-section" style="color: white;">
+        <span class="template-label" style="color: #aed6f1;">Contraindications:</span>
+        • <strong style="color: #f5b7b1;">Caustic ingestion</strong> (acids, alkalis) - obscures endoscopy<br>
+        • <strong style="color: #f5b7b1;">Hydrocarbon ingestion</strong> (aspiration risk)<br>
+        • <strong style="color: #f5b7b1;">Bowel obstruction/perforation</strong><br>
+        • <strong style="color: #f5b7b1;">Decreased consciousness</strong> without protected airway<br>
+        • Toxins NOT adsorbed: Lithium, iron, heavy metals, alcohols, hydrocarbons<br>
+        • Planned whole bowel irrigation (WBI)
+    </div>
+    
+    <div class="template-section" style="color: white;">
+        <span class="template-label" style="color: #aed6f1;">Adult dose:</span>
+        • <strong style="color: #d5dbdb;">Single dose:</strong> 50-100 g (1 g/kg) PO/NG<br>
+        • <strong style="color: #d5dbdb;">Multiple-dose (MDAC):</strong> 50 g initially, then 25-50 g every 2-4 hours<br>
+        • <strong style="color: #d5dbdb;">Dilution:</strong> Mix with water (240-480 mL) to make slurry<br>
+        • <strong style="color: #d5dbdb;">Duration:</strong> Continue until clinical improvement or drug levels decline<br>
+        • <strong style="color: #d5dbdb;">Cathartic:</strong> May add sorbitol to first dose only (70% solution 1-2 mL/kg)
+    </div>
+    
+    <div class="template-section" style="color: white;">
+        <span class="template-label" style="color: #aed6f1;">Pediatric dose:</span>
+        • <strong style="color: #d5dbdb;">Single dose:</strong> 1 g/kg (max 50 g) PO/NG<br>
+        • <strong style="color: #d5dbdb;">Multiple-dose:</strong> 1 g/kg initially, then 0.5 g/kg every 2-4 hours<br>
+        • <strong style="color: #d5dbdb;">Dilution:</strong> Mix with water or juice to improve palatability<br>
+        • <strong style="color: #d5dbdb;">Sorbitol caution:</strong> Avoid in children <1 year, limit use due to electrolyte disturbances<br>
+        • <strong style="color: #d5dbdb;">Small children:</strong> May need NG tube administration
+    </div>
+    
+    <div class="template-section" style="color: white;">
+        <span class="template-label" style="color: #aed6f1;">Administration notes:</span>
+        • <strong style="color: #d5dbdb;">Always check airway</strong> first - consider intubation if GCS <8<br>
+        • <strong style="color: #d5dbdb;">NG tube placement:</strong> Confirm position before administration<br>
+        • <strong style="color: #d5dbdb;">Palatability:</strong> Mix with chocolate milk, juice, or soda (not cola - caffeine)<br>
+        • <strong style="color: #d5dbdb;">Storage:</strong> Ready-to-use formulations available (less messy)<br>
+        • <strong style="color: #d5dbdb;">Black stools:</strong> Expected - warn patient/family<br>
+        • <strong style="color: #d5dbdb;">Aspiration risk:</strong> Can cause pneumonitis - protect airway
+    </div>
+    
+    <div class="template-section" style="color: white;">
+        <span class="template-label" style="color: #aed6f1;">Emergency pearls:</span>
+        • <strong style="color: #d5dbdb;">"Time window":</strong> Most benefit within 1 hour, some up to 4 hours<br>
+        • <strong style="color: #d5dbdb;">Delayed absorption drugs:</strong> May give beyond 4 hours (SR preparations, anticholinergics)<br>
+        • <strong style="color: #d5dbdb;">MDAC drugs:</strong> Remember "The Poor Cat Dies Quietly Soon": Theophylline, Phenobarbital, Carbamazepine, Dapsone, Quinine, Salicylates<br>
+        • <strong style="color: #d5dbdb;">Charcoal vs NAC:</strong> Give charcoal first if within time window, then NAC (separate by 2 hours if possible)<br>
+        • <strong style="color: #d5dbdb;">Whole bowel irrigation:</strong> Consider for iron, lithium, sustained-release preparations<br>
+        • <strong style="color: #d5dbdb;">Aspiration pneumonitis:</strong> Treat with supportive care, not steroids/antibiotics prophylactically<br>
+        • <strong style="color: #d5dbdb;">Controversies:</strong> Routine use declining - consider benefit/risk for each patient<br>
+        • <strong style="color: #d5dbdb;">Hospital administration:</strong> Often given in ED, MDAC may require ICU/HDU monitoring
+    </div>
+</div>
+
+<!-- CHAPTER 9: POISONING MANAGEMENT PROTOCOL -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">9</span> Poisoning Management Protocol</h2>
+
+<div class="toxicology-alert">
+    <strong>⚠️ GENERAL POISONING MANAGEMENT (ABCDE TOXICOLOGY):</strong><br>
+    <br>
+    <strong>A - Airway with C-spine protection</strong><br>
+    • Intubate early if GCS <8, loss of gag reflex, respiratory failure<br>
+    • Rapid sequence intubation with etomidate + succinylcholine/rocuronium<br>
+    <br>
+    <strong>B - Breathing & Oxygenation</strong><br>
+    • High-flow oxygen (except paraquat, bleomycin)<br>
+    • Ventilatory support if needed<br>
+    • Consider ABG/VBG<br>
+    <br>
+    <strong>C - Circulation & Cardiac monitoring</strong><br>
+    • IV access x2 (large bore)<br>
+    • ECG immediately (QT, QRS, arrhythmias)<br>
+    • Treat hypotension: Fluids → vasopressors (norepinephrine usually first)<br>
+    <br>
+    <strong>D - Disability & Decontamination</strong><br>
+    • Glasgow Coma Scale, neurological exam<br>
+    • Check glucose (fingerstick) - treat if <4 mmol/L<br>
+    • Naloxone trial if opioid toxidrome<br>
+    • Thiamine if alcoholic/malnourished<br>
+    • <strong>DECONTAMINATION:</strong><br>
+    &nbsp;&nbsp;• Dermal: Remove clothing, wash with soap and water<br>
+    &nbsp;&nbsp;• Ocular: Irrigate with normal saline (15-20 minutes minimum)<br>
+    &nbsp;&nbsp;• GI: Activated charcoal if indicated (within 1-4 hours)<br>
+    <br>
+    <strong>E - Exposure & Examination</strong><br>
+    • Full exposure, look for toxidromes, track marks, pills<br>
+    • Core temperature (hyper/hypothermia)<br>
+    • Consider specific antidotes (see grid)<br>
+    • Consult toxicology/poisons information centre
+</div>
+
+<h3>9.1 Antidote Administration Priorities</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th style="width: 25%;">Priority</th>
+            <th>Antidote</th>
+            <th>Indication</th>
+            <th>Timing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>IMMEDIATE (Minutes)</strong></td>
+            <td>Naloxone</td>
+            <td>Opioid overdose with respiratory depression</td>
+            <td>Within 1-2 minutes</td>
+        </tr>
+        <tr>
+            <td><strong>IMMEDIATE (Minutes)</strong></td>
+            <td>Atropine</td>
+            <td>Organophosphate poisoning with bronchorrhea/bradycardia</td>
+            <td>Within 5-10 minutes</td>
+        </tr>
+        <tr>
+            <td><strong>URGENT (Hours)</strong></td>
+            <td>Acetylcysteine (NAC)</td>
+            <td>Paracetamol overdose within 24+ hours</td>
+            <td>Within 8 hours ideal, up to 24+ hours</td>
+        </tr>
+        <tr>
+            <td><strong>URGENT (Hours)</strong></td>
+            <td>Pralidoxime (PAM)</td>
+            <td>Organophosphate poisoning (with atropine)</td>
+            <td>Within hours (before aging)</td>
+        </tr>
+        <tr>
+            <td><strong>URGENT (Hours)</strong></td>
+            <td>Methylene blue</td>
+            <td>Symptomatic methaemoglobinaemia</td>
+            <td>Within hours of symptoms</td>
+        </tr>
+        <tr>
+            <td><strong>SELECTIVE (Caution)</strong></td>
+            <td>Flumazenil</td>
+            <td>Pure benzodiazepine overdose in selected patients</td>
+            <td>When diagnosis certain, risks assessed</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- CHAPTER 10: TOXICOLOGY SYNDROMES -->
+<div class="page-break"></div>
+<h2><span class="chapter-number">10</span> Toxicology Syndromes & Specific Treatments</h2>
+
+<h3>10.1 High-Yield Poisoning Scenarios</h3>
+
+<div class="antidote-box">
+    <strong>☠️ ORGANOPHOSPHATE POISONING:</strong><br>
+    • <strong>Presentation:</strong> SLUDGE + BBB + muscle fasciculations/weakness<br>
+    • <strong>Treatment:</strong><br>
+    &nbsp;&nbsp;1. DECONTAMINATION (remove clothes, wash skin)<br>
+    &nbsp;&nbsp;2. ATROPINE 2-5 mg IV, double every 5-10 min until secretions dry<br>
+    &nbsp;&nbsp;3. PRALIDOXIME 1-2 g IV over 30 min, then 500 mg/hr infusion<br>
+    &nbsp;&nbsp;4. Benzodiazepines for seizures<br>
+    &nbsp;&nbsp;5. ICU admission, ventilatory support often needed<br>
+    <br>
+    <strong>💊 PARACETAMOL OVERDOSE:</strong><br>
+    • <strong>Presentation:</strong> Often asymptomatic early, then RUQ pain, jaundice<br>
+    • <strong>Treatment:</strong><br>
+    &nbsp;&nbsp;1. Activated charcoal if within 1-4 hours (separate from NAC)<br>
+    &nbsp;&nbsp;2. NAC protocol (IV or oral) if level above treatment line or >24 hours with risk<br>
+    &nbsp;&nbsp;3. Monitor LFTs, INR, creatinine<br>
+    &nbsp;&nbsp;4. Consider liver transplant if King's College criteria met<br>
+    <br>
+    <strong>🌀 TRICYCLIC ANTIDEPRESSANT OVERDOSE:</strong><br>
+    • <strong>Presentation:</strong> Anticholinergic + cardiac (wide QRS, QT prolongation)<br>
+    • <strong>Treatment:</strong><br>
+    &nbsp;&nbsp;1. Sodium bicarbonate for QRS >100 ms (1-2 mEq/kg bolus)<br>
+    &nbsp;&nbsp;2. Hypertonic saline if refractory (controversial)<br>
+    &nbsp;&nbsp;3. Lipid emulsion therapy for cardiac arrest refractory to standard ACLS<br>
+    &nbsp;&nbsp;4. AVOID flumazenil (seizure risk)<br>
+    &nbsp;&nbsp;5. AVOID class Ia/Ic antiarrhythmics (proarrhythmic)
+</div>
+
+<h3>10.2 Less Common But Important Antidotes</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Toxin</th>
+            <th>Antidote</th>
+            <th>Dose</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Digoxin</strong></td>
+            <td>Digoxin-specific antibodies (Digibind®/Digifab®)</td>
+            <td>Varies by digoxin level or amount ingested</td>
+            <td>For life-threatening arrhythmias, hyperkalaemia</td>
+        </tr>
+        <tr>
+            <td><strong>Iron</strong></td>
+            <td>Deferoxamine</td>
+            <td>15 mg/kg/hr IV (max 6g/24h)</td>
+            <td>For serum iron >500 mcg/dL or symptomatic</td>
+        </tr>
+        <tr>
+            <td><strong>Cyanide</strong></td>
+            <td>Cyanide antidote kit (nitrites + thiosulfate)</td>
+            <td>Amyl nitrite inhaler, sodium nitrite 300 mg IV, thiosulfate 12.5g IV</td>
+            <td>For smoke inhalation, nitroprusside toxicity</td>
+        </tr>
+        <tr>
+            <td><strong>Methanol/Ethylene glycol</strong></td>
+            <td>Fomepizole or ethanol</td>
+            <td>Fomepizole: 15 mg/kg load, then 10 mg/kg Q12H</td>
+            <td>For osmolar gap + metabolic acidosis with anion gap</td>
+        </tr>
+        <tr>
+            <td><strong>Beta-blocker/CCB overdose</strong></td>
+            <td>High-dose insulin euglycaemia (HIE)</td>
+            <td>Insulin 1 unit/kg bolus, then 0.5-1 unit/kg/hr + dextrose</td>
+            <td>For refractory hypotension/bradycardia</td>
+        </tr>
+        <tr>
+            <td><strong>Warfarin/rodenticides</strong></td>
+            <td>Vitamin K, PCC, FFP</td>
+            <td>Vitamin K 10 mg IV/PO, PCC for severe bleeding</td>
+            <td>For elevated INR with bleeding risk</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- APPENDIX: QUICK REFERENCE GUIDES -->
+<div class="page-break"></div>
+<h2>Appendix: Quick Reference Guides</h2>
+
+<h3>Antidote Dosing Quick Guide</h3>
+
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>Antidote</th>
+            <th>Adult Dose</th>
+            <th>Pediatric Dose</th>
+            <th>Onset</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Naloxone</strong></td>
+            <td>0.4-2 mg IV, repeat q2-3min</td>
+            <td>0.01 mg/kg IV (max 2 mg)</td>
+            <td>1-2 min IV</td>
+            <td>30-90 min</td>
+        </tr>
+        <tr>
+            <td><strong>Atropine (OP)</strong></td>
+            <td>2-5 mg IV, double q5-10min</td>
+            <td>0.05-0.1 mg/kg IV</td>
+            <td>1-2 min</td>
+            <td>2-6 hours</td>
+        </tr>
+        <tr>
+            <td><strong>Pralidoxime</strong></td>
+            <td>1-2 g IV over 30 min, then 500 mg/hr</td>
+            <td>25-50 mg/kg IV</td>
+            <td>10-30 min</td>
+            <td>6-12 hours</td>
+        </tr>
+        <tr>
+            <td><strong>Acetylcysteine (IV)</strong></td>
+            <td>150 mg/kg over 1h, then 50 mg/kg over 4h, then 100 mg/kg over 16h</td>
+            <td>Same weight-based</td>
+            <td>Hours</td>
+            <td>21 hours total</td>
+        </tr>
+        <tr>
+            <td><strong>Methylene blue</strong></td>
+            <td>1-2 mg/kg IV over 5-10 min</td>
+            <td>1-2 mg/kg IV</td>
+            <td>30-60 min</td>
+            <td>Hours</td>
+        </tr>
+        <tr>
+            <td><strong>Flumazenil</strong></td>
+            <td>0.2 mg IV, repeat q1min to max 3 mg</td>
+            <td>0.01 mg/kg IV (max 1 mg)</td>
+            <td>1-2 min</td>
+            <td>45-90 min</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>When to Use Activated Charcoal</h3>
+
+<div class="clinical-pearl">
+    <strong>📋 ACTIVATED CHARCOAL DECISION GUIDE:</strong><br>
+    • <strong>YES (give within 1 hour):</strong> Most drug overdoses, unknown ingestion in alert patient<br>
+    • <strong>YES (may give up to 4 hours):</strong> Drugs with delayed absorption (anticholinergics, SR preparations)<br>
+    • <strong>YES (MDAC indicated):</strong> Theophylline, phenobarbital, carbamazepine, dapsone, quinine<br>
+    • <strong>NO (contraindicated):</strong> Caustics, hydrocarbons, bowel obstruction, unprotected airway<br>
+    • <strong>NO (not adsorbed):</strong> Lithium, iron, heavy metals, alcohols, electrolytes
+</div>
+
+<h3>Monitoring Parameters for Antidotes</h3>
+<ul>
+    <li><strong>Naloxone:</strong> Respiratory rate every 5-15 min, watch for re-sedation</li>
+    <li><strong>Atropine:</strong> Secretions, lung sounds, heart rate, pupil size every 5-10 min initially</li>
+    <li><strong>Pralidoxime:</strong> Muscle strength, respiratory function, atropine requirements</li>
+    <li><strong>Acetylcysteine:</strong> ALT, INR, creatinine baseline and daily; watch for anaphylactoid reactions during infusion</li>
+    <li><strong>Methylene blue:</strong> MetHb level 1 hour after dose, SpO₂ (unreliable), urine color</li>
+    <li><strong>Flumazenil:</strong> Respiratory rate, consciousness, watch for seizures for 2 hours</li>
+    <li><strong>Activated charcoal:</strong> Bowel sounds, abdominal exam, watch for aspiration</li>
+</ul>
+
+<div class="study-format">
+    <h2><span class="emoji">🧠</span> DRUG TEMPLATE SUMMARY FOR MODULE 6</h2>
+    <p><strong>All 7 drugs in this module follow the consistent 11-point format:</strong></p>
+    <ol>
+        <li><strong>Drug class</strong> - Pharmacological category</li>
+        <li><strong>Mechanism of action</strong> - How it works at receptor/physiological level</li>
+        <li><strong>Indications</strong> - Specific poisoning scenarios and toxidromes</li>
+        <li><strong>Contraindications</strong> - Absolute and relative contraindications (especially important in toxicology)</li>
+        <li><strong>Adult dose</strong> - Exact antidote dosing (critical in poisoning)</li>
+        <li><strong>Pediatric dose</strong> - Weight-based calculations</li>
+        <li><strong>Route & preparation</strong> - How to prepare and administer safely</li>
+        <li><strong>Side effects</strong> - Common, expected effects</li>
+        <li><strong>Adverse effects / ADR</strong> - Serious reactions and risks</li>
+        <li><strong>Drug interactions</strong> - Important combinations to avoid/watch</li>
+        <li><strong>Emergency pearls</strong> - Clinical tips, exam favorites, practical wisdom</li>
+    </ol>
+</div>
+
+<div class="footer-note">
+    <strong>© Emergency Medicine Education Team | Confidential Educational Material</strong><br>
+    This document is for educational purposes only. Always follow local protocols and guidelines.<br>
+    Medications and doses may vary by institution. Verify all information before clinical application.<br>
+    Version 1.0 | Last updated: [Current Date] | Module 6 of 10
+</div>
+</body> </html> 
